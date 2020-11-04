@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/consumers/api/v1/sales_groups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Authorization:
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIzYThkNWY5ZS1jMTRiLTRlNDgtOTQ2ZS05MTRiMDdkNDEzN2UiLCJuYmYiOjE2MDQ0ODc3MTQsImV4cCI6MTYwNDQ5MTMxNCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.TaY772slD2w2nkc9kBhpspyLWe1M8g94vzpNlsCYR9GJAmVV6kIXmia4-4qg91FaBzwO5VkZ8w4Ot7hne5ly9_OChhAz-KJHag8J_gXrUG4lum_wWloUfRnISRJDfpji0Y3EqnP19mEgmsyaOToS1NW0nqbv5zKBbhF62NpAhavacx5Anxjp2LdIS2wf28JSO4oOC1NTnRg9ieg1QakSh4uy6032iCoVwXICy1KBnR-3pQtvaobM7pCpanBsoAaideDl6N0ueEILnvQGkrXx5eSUZ21J8KKiXnasYuPwd9ZYt-1ox3CbAry7vBQOhbuIGX1gp-zSedJRGgwSAIV-ahszZ8TWet3FX7O7hamfVp-7pKj45Quc15UwslYEOyGSn4ACKahr-ru-2F1K7mn6ork9-T93TR3morYIfNSYRQO4EbRbs2PMeJxKvoKdIYjRIXSJEV2dxxRwY75LrKsf223BqzALisBzQy8iaGH0O-zAfaxDEF6a9XNe3vewwAUYiGX_QKaSnc2cSBYe9KDAewiMPPQ3uhKzfwvKk4IHymwFAnYzryi-kqPUGru7_oHF1k7mdsOe-fsoPnP3lIEXtBL0LcfgTebe0X-i99vISY4403y36OTOMIkD430WvkIAi8juorH4JHDnVlvv_qw3bnPNrdLcqPpm7CGjL4zBcBY
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 04 Nov 2020 11:46:39 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/consumers/api/v1/sales_groups?page=1>;
+        rel="first", <https://procurement.zaikio.test/consumers/api/v1/sales_groups?page=1>;
+        rel="last"
+      X-Total-Count:
+      - '2'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c2ce606f2243cbbbd5b2072ff22ceeb9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 604c73f9-d892-4dd9-bc61-1c34a04b9dc9
+      X-Runtime:
+      - '0.024081'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"2688312d-bca6-4851-8cc8-310bad084eb6","currency":"EUR","default":false,"exclusive":true,"name":"Paper Mill Exclusive Catalog | 0001052231 | 0001052231","created_at":"2020-10-13T10:34:36.696Z","updated_at":"2020-10-13T10:34:36.696Z"},{"id":"c5fc8f7f-148c-4554-b46e-d8623b50a0aa","currency":"EUR","default":false,"exclusive":true,"name":"WIRmachenDRUCK
+        GmbH | 0001068424 | 0001052231","created_at":"2020-10-06T11:52:38.301Z","updated_at":"2020-10-06T11:52:38.301Z"}]'
+  recorded_at: Wed, 04 Nov 2020 11:46:39 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/consumers/api/v1/prices/4a54b5c2-111d-4b6d-a7a3-007812fafabd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Authorization:
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI5OTI5NTc2NS00NmMyLTRmYmUtYjMwNS0yNzk1ZDNhMWQzNDYiLCJuYmYiOjE2MDQ0ODM2OTYsImV4cCI6MTYwNDQ4NzI5Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.NSvdep39E8vlX5qLfKQKXNKMI1cbv5CtN3mXKO5iikOyfLLPY6p5Xlvy7sKcXxNEvCx39bhNFq6bKfhuv80kNfQ_usKLOc933xeRr2fK39kiIpxZvjHEuyvNxI-8eQx-Bch6LWcGVaWzkWvjKtTkiDhFcB55W508d3BxWldgRRXcKX4XINV-NAwsIA1x3qQd2a39x9h8uXGxE7T83BXIRzJY5gsrbnNyK-AWVf1_CHCimQcqHGwcCc2nBnuctiPyxiJdqXN0pGx9sKK3y7_rYiqmO-xkLqAVzLIb40J1HzIdHk5o1gS9ddKjItBbxmq7KIWgliRlClIT_ezwXTRgdkpeA3m45vG2_0V_b8fJ4EDGWrdSDRxBF-j1tAOM--8G5dpAQ24G1dXQLWI74k6lJIQOYnX4j-WRxm2pbJimsIoixUcwmjBG7ZHFn3WiwSNS-urI4nkU7hF58hHDhtdqIyufKkQ6iYlDsELngRE_jsEZy7m_dzLRuoH661LdIOXlkPyuabS14rDPHbWGA9TyFfJj0FeYyrBh_BGnt5TiS2rqlN3pjmSPjejJn92t5Mnp-WUdf22syTPBwof6byemxJ3xXPyA0ryAiLvwcvJxxvNnwiulm_Pe670nnDdbU5Zw3ifPfuYGdsSOZfrjnLOZpKhQ7R-q9ncxNXmtqVeYlE0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 04 Nov 2020 10:11:49 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"01d727f91e56824781691b37e1c31360"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1594787f-7e0a-4803-8739-c924aa5dc125
+      X-Runtime:
+      - '0.022983'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"4a54b5c2-111d-4b6d-a7a3-007812fafabd","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2020-10-13T10:34:50.218Z","valid_until":null,"sales_group_id":"2688312d-bca6-4851-8cc8-310bad084eb6","sales_group":{"id":"2688312d-bca6-4851-8cc8-310bad084eb6","name":"Paper Mill Exclusive Catalog | 0001052231 | 0001052231","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/2688312d-bca6-4851-8cc8-310bad084eb6"}]},"sku_id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","sku":{"id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5"}]},"created_at":"2020-10-13T10:37:10.992Z","updated_at":"2020-10-13T10:37:10.992Z"}'
+  recorded_at: Wed, 04 Nov 2020 10:11:50 GMT
+recorded_with: VCR 6.0.0

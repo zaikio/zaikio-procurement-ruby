@@ -1,0 +1,52 @@
+AllCops:
+  TargetRubyVersion: 2.7.1
+  Exclude:
+    - bin/*
+    - tmp/*
+    - Rakefile
+  NewCops: disable
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+Layout/LineLength:
+  Max: 119
+
+Metrics/ClassLength:
+  Exclude:
+    - test/**/*.rb
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - test/**/*.rb
+
+Style/AndOr:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Metrics/MethodLength:
+  Max: 14
+  Exclude:
+    - test/**/*.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - test/**/*.rb
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - staging
+    - sandbox
+    - production
