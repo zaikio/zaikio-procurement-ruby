@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/contract_requests/82e673de-4d78-4959-979b-ed4f799f53b7
+    uri: https://procurement.zaikio.test/consumers/api/v1/contract_requests/8fcb6074-63cb-4ea6-aacd-b64a0a75df4a
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.1.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIzYThkNWY5ZS1jMTRiLTRlNDgtOTQ2ZS05MTRiMDdkNDEzN2UiLCJuYmYiOjE2MDQ0ODc3MTQsImV4cCI6MTYwNDQ5MTMxNCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.TaY772slD2w2nkc9kBhpspyLWe1M8g94vzpNlsCYR9GJAmVV6kIXmia4-4qg91FaBzwO5VkZ8w4Ot7hne5ly9_OChhAz-KJHag8J_gXrUG4lum_wWloUfRnISRJDfpji0Y3EqnP19mEgmsyaOToS1NW0nqbv5zKBbhF62NpAhavacx5Anxjp2LdIS2wf28JSO4oOC1NTnRg9ieg1QakSh4uy6032iCoVwXICy1KBnR-3pQtvaobM7pCpanBsoAaideDl6N0ueEILnvQGkrXx5eSUZ21J8KKiXnasYuPwd9ZYt-1ox3CbAry7vBQOhbuIGX1gp-zSedJRGgwSAIV-ahszZ8TWet3FX7O7hamfVp-7pKj45Quc15UwslYEOyGSn4ACKahr-ru-2F1K7mn6ork9-T93TR3morYIfNSYRQO4EbRbs2PMeJxKvoKdIYjRIXSJEV2dxxRwY75LrKsf223BqzALisBzQy8iaGH0O-zAfaxDEF6a9XNe3vewwAUYiGX_QKaSnc2cSBYe9KDAewiMPPQ3uhKzfwvKk4IHymwFAnYzryi-kqPUGru7_oHF1k7mdsOe-fsoPnP3lIEXtBL0LcfgTebe0X-i99vISY4403y36OTOMIkD430WvkIAi8juorH4JHDnVlvv_qw3bnPNrdLcqPpm7CGjL4zBcBY
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,30 +18,46 @@ http_interactions:
   response:
     status:
       code: 200
-      message: Not Found
+      message: OK
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 04 Nov 2020 11:49:26 GMT
+      - Mon, 23 Nov 2020 13:09:52 GMT
       Connection:
       - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Content-Type:
-      - application/json; charset=UTF-8
+      - application/json; charset=utf-8
+      Etag:
+      - W/"046c0b0a93882396f5862db812b1d705"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 125651bf-6cab-4aa1-91aa-5a439f0e69ac
+      - a16e140b-4c64-48c5-b7a0-961a344ffe2b
       X-Runtime:
-      - '0.015398'
+      - '0.020251'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
       - Origin
-      Content-Length:
-      - '34'
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"82e673de-4d78-4959-979b-ed4f799f53b7","accepted_at":null,"connectivity_checked_at":null,"contact_email":"tstark@example.com","contact_first_name":"Tony","contact_last_name":"Stark","contact_phone":"+49 1234567890","customer_number":"CUSTOMER-123456","declined_at":null,"mapped_at":null,"references":[],"state":"pending","vetted_at":null,"consumer_id":"caf44bd6-9561-5264-8451-6e676117d797","consumer":{"id":"eadd0cd3-9670-5d1b-a4ff-0cee1df11699","display_name":"Stark Industries","links":[{"rel":"self","href":null}]},"supplier":{"id":"caf44bd6-9561-5264-8451-6e676117d797","display_name":"Bounty Soap Inc.","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/bounty_soap_inc"}]},"supplier_id":"caf44bd6-9561-5264-8451-6e676117d797","created_at":"2020-09-04T08:00:15.893Z","updated_at":"2020-09-04T08:00:15.893Z"}'
-  recorded_at: Wed, 04 Nov 2020 11:49:26 GMT
+      string: '{"id":"8fcb6074-63cb-4ea6-aacd-b64a0a75df4a","accepted_at":null,"connectivity_checked_at":null,"contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","currency":"EUR","customer_number":"12345","declined_at":null,"mapped_at":null,"references":["CR/3UA9M7"],"state":"pending","vetted_at":null,"consumer_id":"5e48383d-b276-4d70-b690-9e2032e3cd3a","consumer":{"id":"5e48383d-b276-4d70-b690-9e2032e3cd3a","display_name":"Joey’s Print Ltd","links":[{"rel":"self","href":null}]},"supplier_id":"b1475f65-236c-58b8-96e1-e1778b43beb7","supplier":{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","display_name":"Bounty Soap Inc.","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/bounty_soap_inc"}]},"created_at":"2020-11-23T13:07:51.841Z","updated_at":"2020-11-23T13:07:51.841Z"}'
+  recorded_at: Mon, 23 Nov 2020 13:09:53 GMT
 recorded_with: VCR 6.0.0

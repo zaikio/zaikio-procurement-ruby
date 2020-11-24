@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.1.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI5OTI5NTc2NS00NmMyLTRmYmUtYjMwNS0yNzk1ZDNhMWQzNDYiLCJuYmYiOjE2MDQ0ODM2OTYsImV4cCI6MTYwNDQ4NzI5Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.NSvdep39E8vlX5qLfKQKXNKMI1cbv5CtN3mXKO5iikOyfLLPY6p5Xlvy7sKcXxNEvCx39bhNFq6bKfhuv80kNfQ_usKLOc933xeRr2fK39kiIpxZvjHEuyvNxI-8eQx-Bch6LWcGVaWzkWvjKtTkiDhFcB55W508d3BxWldgRRXcKX4XINV-NAwsIA1x3qQd2a39x9h8uXGxE7T83BXIRzJY5gsrbnNyK-AWVf1_CHCimQcqHGwcCc2nBnuctiPyxiJdqXN0pGx9sKK3y7_rYiqmO-xkLqAVzLIb40J1HzIdHk5o1gS9ddKjItBbxmq7KIWgliRlClIT_ezwXTRgdkpeA3m45vG2_0V_b8fJ4EDGWrdSDRxBF-j1tAOM--8G5dpAQ24G1dXQLWI74k6lJIQOYnX4j-WRxm2pbJimsIoixUcwmjBG7ZHFn3WiwSNS-urI4nkU7hF58hHDhtdqIyufKkQ6iYlDsELngRE_jsEZy7m_dzLRuoH661LdIOXlkPyuabS14rDPHbWGA9TyFfJj0FeYyrBh_BGnt5TiS2rqlN3pjmSPjejJn92t5Mnp-WUdf22syTPBwof6byemxJ3xXPyA0ryAiLvwcvJxxvNnwiulm_Pe670nnDdbU5Zw3ifPfuYGdsSOZfrjnLOZpKhQ7R-q9ncxNXmtqVeYlE0
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 04 Nov 2020 10:08:38 GMT
+      - Mon, 23 Nov 2020 13:09:53 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -45,9 +45,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 914b3b42-cc2a-4ba8-8ad2-ad3e4eda4a22
+      - eae7bf5d-ce6c-4d5e-8892-caf66ac3518a
       X-Runtime:
-      - '0.025560'
+      - '0.022559'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -61,7 +61,7 @@ http_interactions:
       string: '{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","brightness":null,"category":"PS1
         - Premium Coated","color":null,"form":"sheet","grain":"long","height":1000,"paper_weight":250,"paper_weight_unit":"grammage","roughness":null,"thickness":190,"transparency":null,"unit_system":"metric","whiteness":null,"width":700,"article_id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","article":{"id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","name":"MAGNO
         GLOSS","links":[{"rel":"self","href":"/consumers/api/v1/articles/7cbf51bd-35a8-47a1-84a2-57aa63140234"}]},"created_at":"2020-10-13T10:37:09.245Z","updated_at":"2020-10-13T10:37:10.772Z"}'
-  recorded_at: Wed, 04 Nov 2020 10:08:39 GMT
+  recorded_at: Mon, 23 Nov 2020 13:09:54 GMT
 - request:
     method: get
     uri: https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393/skus
@@ -72,7 +72,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.1.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI5OTI5NTc2NS00NmMyLTRmYmUtYjMwNS0yNzk1ZDNhMWQzNDYiLCJuYmYiOjE2MDQ0ODM2OTYsImV4cCI6MTYwNDQ4NzI5Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.NSvdep39E8vlX5qLfKQKXNKMI1cbv5CtN3mXKO5iikOyfLLPY6p5Xlvy7sKcXxNEvCx39bhNFq6bKfhuv80kNfQ_usKLOc933xeRr2fK39kiIpxZvjHEuyvNxI-8eQx-Bch6LWcGVaWzkWvjKtTkiDhFcB55W508d3BxWldgRRXcKX4XINV-NAwsIA1x3qQd2a39x9h8uXGxE7T83BXIRzJY5gsrbnNyK-AWVf1_CHCimQcqHGwcCc2nBnuctiPyxiJdqXN0pGx9sKK3y7_rYiqmO-xkLqAVzLIb40J1HzIdHk5o1gS9ddKjItBbxmq7KIWgliRlClIT_ezwXTRgdkpeA3m45vG2_0V_b8fJ4EDGWrdSDRxBF-j1tAOM--8G5dpAQ24G1dXQLWI74k6lJIQOYnX4j-WRxm2pbJimsIoixUcwmjBG7ZHFn3WiwSNS-urI4nkU7hF58hHDhtdqIyufKkQ6iYlDsELngRE_jsEZy7m_dzLRuoH661LdIOXlkPyuabS14rDPHbWGA9TyFfJj0FeYyrBh_BGnt5TiS2rqlN3pjmSPjejJn92t5Mnp-WUdf22syTPBwof6byemxJ3xXPyA0ryAiLvwcvJxxvNnwiulm_Pe670nnDdbU5Zw3ifPfuYGdsSOZfrjnLOZpKhQ7R-q9ncxNXmtqVeYlE0
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -85,7 +85,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 04 Nov 2020 10:08:39 GMT
+      - Mon, 23 Nov 2020 13:09:54 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -107,9 +107,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 35cbce17-ab28-44c2-9064-44150f0b978e
+      - 7af06a4d-187f-4b22-af63-bb36a18e9efc
       X-Runtime:
-      - '0.024638'
+      - '0.032485'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -125,5 +125,5 @@ http_interactions:
         Mix Credit","gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000|FSC|L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:09.683Z","updated_at":"2020-10-13T10:37:09.683Z"},{"id":"344e01a1-9822-465a-a390-791138ce68fb","amount":1,"amount_in_base_unit":1,"dimension_unit":"mm","environmental_certification":"PEFC
         100%","gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000|PEFC|L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:09.976Z","updated_at":"2020-10-13T10:37:09.976Z"},{"id":"52a0967c-fa30-4e0d-9870-e4e615540f76","amount":1,"amount_in_base_unit":4000,"dimension_unit":"m","environmental_certification":"FSC
         Mix Credit","gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000|FSC|L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:10.498Z","updated_at":"2020-10-13T10:37:10.498Z"},{"id":"6c63c227-8196-4acb-8670-817a8f09eae1","amount":1,"amount_in_base_unit":1,"dimension_unit":"mm","environmental_certification":null,"gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000||L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:09.418Z","updated_at":"2020-10-13T10:37:09.418Z"},{"id":"8c48e356-37ae-475a-af0e-5d8c67a3d507","amount":1,"amount_in_base_unit":4000,"dimension_unit":"m","environmental_certification":null,"gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000||L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:10.241Z","updated_at":"2020-10-13T10:37:10.241Z"}]'
-  recorded_at: Wed, 04 Nov 2020 10:08:39 GMT
+  recorded_at: Mon, 23 Nov 2020 13:09:54 GMT
 recorded_with: VCR 6.0.0

@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.1.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI5OTI5NTc2NS00NmMyLTRmYmUtYjMwNS0yNzk1ZDNhMWQzNDYiLCJuYmYiOjE2MDQ0ODM2OTYsImV4cCI6MTYwNDQ4NzI5Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.NSvdep39E8vlX5qLfKQKXNKMI1cbv5CtN3mXKO5iikOyfLLPY6p5Xlvy7sKcXxNEvCx39bhNFq6bKfhuv80kNfQ_usKLOc933xeRr2fK39kiIpxZvjHEuyvNxI-8eQx-Bch6LWcGVaWzkWvjKtTkiDhFcB55W508d3BxWldgRRXcKX4XINV-NAwsIA1x3qQd2a39x9h8uXGxE7T83BXIRzJY5gsrbnNyK-AWVf1_CHCimQcqHGwcCc2nBnuctiPyxiJdqXN0pGx9sKK3y7_rYiqmO-xkLqAVzLIb40J1HzIdHk5o1gS9ddKjItBbxmq7KIWgliRlClIT_ezwXTRgdkpeA3m45vG2_0V_b8fJ4EDGWrdSDRxBF-j1tAOM--8G5dpAQ24G1dXQLWI74k6lJIQOYnX4j-WRxm2pbJimsIoixUcwmjBG7ZHFn3WiwSNS-urI4nkU7hF58hHDhtdqIyufKkQ6iYlDsELngRE_jsEZy7m_dzLRuoH661LdIOXlkPyuabS14rDPHbWGA9TyFfJj0FeYyrBh_BGnt5TiS2rqlN3pjmSPjejJn92t5Mnp-WUdf22syTPBwof6byemxJ3xXPyA0ryAiLvwcvJxxvNnwiulm_Pe670nnDdbU5Zw3ifPfuYGdsSOZfrjnLOZpKhQ7R-q9ncxNXmtqVeYlE0
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 04 Nov 2020 10:11:49 GMT
+      - Mon, 23 Nov 2020 13:09:54 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -45,9 +45,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 74082da0-8ba4-4ef4-ac42-a6be94f04bb7
+      - c323187e-e9d2-46a4-945b-2385c449012a
       X-Runtime:
-      - '0.023683'
+      - '0.020428'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -60,7 +60,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","amount":1,"amount_in_base_unit":4000,"dimension_unit":"m","environmental_certification":"PEFC
         100%","gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:10.769Z","updated_at":"2020-10-13T10:37:10.769Z"}'
-  recorded_at: Wed, 04 Nov 2020 10:11:50 GMT
+  recorded_at: Mon, 23 Nov 2020 13:09:54 GMT
 - request:
     method: get
     uri: https://procurement.zaikio.test/consumers/api/v1/skus/08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5/prices
@@ -71,7 +71,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.1.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI5OTI5NTc2NS00NmMyLTRmYmUtYjMwNS0yNzk1ZDNhMWQzNDYiLCJuYmYiOjE2MDQ0ODM2OTYsImV4cCI6MTYwNDQ4NzI5Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.NSvdep39E8vlX5qLfKQKXNKMI1cbv5CtN3mXKO5iikOyfLLPY6p5Xlvy7sKcXxNEvCx39bhNFq6bKfhuv80kNfQ_usKLOc933xeRr2fK39kiIpxZvjHEuyvNxI-8eQx-Bch6LWcGVaWzkWvjKtTkiDhFcB55W508d3BxWldgRRXcKX4XINV-NAwsIA1x3qQd2a39x9h8uXGxE7T83BXIRzJY5gsrbnNyK-AWVf1_CHCimQcqHGwcCc2nBnuctiPyxiJdqXN0pGx9sKK3y7_rYiqmO-xkLqAVzLIb40J1HzIdHk5o1gS9ddKjItBbxmq7KIWgliRlClIT_ezwXTRgdkpeA3m45vG2_0V_b8fJ4EDGWrdSDRxBF-j1tAOM--8G5dpAQ24G1dXQLWI74k6lJIQOYnX4j-WRxm2pbJimsIoixUcwmjBG7ZHFn3WiwSNS-urI4nkU7hF58hHDhtdqIyufKkQ6iYlDsELngRE_jsEZy7m_dzLRuoH661LdIOXlkPyuabS14rDPHbWGA9TyFfJj0FeYyrBh_BGnt5TiS2rqlN3pjmSPjejJn92t5Mnp-WUdf22syTPBwof6byemxJ3xXPyA0ryAiLvwcvJxxvNnwiulm_Pe670nnDdbU5Zw3ifPfuYGdsSOZfrjnLOZpKhQ7R-q9ncxNXmtqVeYlE0
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -84,7 +84,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 04 Nov 2020 10:11:50 GMT
+      - Mon, 23 Nov 2020 13:09:54 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -102,13 +102,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"63541b846fe2d0c2c197007d925045e3"
+      - W/"1c6dfa46da8f6d4c72cd422f8d12543e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 26cfc15d-afe2-45d3-b270-84d6134100fc
+      - 32985e17-82a4-4edb-a5af-c094c38f5696
       X-Runtime:
-      - '0.035819'
+      - '0.037995'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -119,7 +119,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":"4a54b5c2-111d-4b6d-a7a3-007812fafabd","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2020-10-13T10:34:50.218Z","valid_until":null,"sales_group_id":"2688312d-bca6-4851-8cc8-310bad084eb6","sales_group":{"id":"2688312d-bca6-4851-8cc8-310bad084eb6","name":"Paper Mill Exclusive Catalog | 0001052231 | 0001052231","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/2688312d-bca6-4851-8cc8-310bad084eb6"}]},"sku_id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","sku":{"id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5"}]},"created_at":"2020-10-13T10:37:10.992Z","updated_at":"2020-10-13T10:37:10.992Z"},{"id":"67f55f4a-d3bb-4d02-8c37-3326ef760076","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2020-10-13T10:44:09.232Z","valid_until":null,"sales_group_id":"c5fc8f7f-148c-4554-b46e-d8623b50a0aa","sales_group":{"id":"c5fc8f7f-148c-4554-b46e-d8623b50a0aa","name":"WIRmachenDRUCK
-        GmbH | 0001068424 | 0001052231","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/c5fc8f7f-148c-4554-b46e-d8623b50a0aa"}]},"sku_id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","sku":{"id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5"}]},"created_at":"2020-10-13T10:45:42.783Z","updated_at":"2020-10-13T10:45:42.783Z"}]'
-  recorded_at: Wed, 04 Nov 2020 10:11:50 GMT
+      string: '[{"id":"1d996d17-88ef-4b5d-be96-6601061251a4","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2020-11-18T14:55:06.467Z","valid_until":null,"sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
+        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"sku_id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","sku":{"id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5"}]},"created_at":"2020-11-18T14:56:40.652Z","updated_at":"2020-11-18T14:56:40.652Z"},{"id":"2b301496-5823-4dcf-88b2-06693d011bb3","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2020-11-18T15:01:50.319Z","valid_until":null,"sales_group_id":"d096992b-9332-4773-924d-c5a864473ecc","sales_group":{"id":"d096992b-9332-4773-924d-c5a864473ecc","name":"WIRmachenDRUCK
+        GmbH","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/d096992b-9332-4773-924d-c5a864473ecc"}]},"sku_id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","sku":{"id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5"}]},"created_at":"2020-11-18T15:03:30.161Z","updated_at":"2020-11-18T15:03:30.161Z"}]'
+  recorded_at: Mon, 23 Nov 2020 13:09:55 GMT
 recorded_with: VCR 6.0.0

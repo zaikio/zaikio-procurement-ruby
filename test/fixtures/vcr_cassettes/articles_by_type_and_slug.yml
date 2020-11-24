@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/substrate/paper_mill/articles
+    uri: https://procurement.zaikio.test/consumers/api/v1/substrate/sappi/articles
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.1.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI5OTI5NTc2NS00NmMyLTRmYmUtYjMwNS0yNzk1ZDNhMWQzNDYiLCJuYmYiOjE2MDQ0ODM2OTYsImV4cCI6MTYwNDQ4NzI5Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.NSvdep39E8vlX5qLfKQKXNKMI1cbv5CtN3mXKO5iikOyfLLPY6p5Xlvy7sKcXxNEvCx39bhNFq6bKfhuv80kNfQ_usKLOc933xeRr2fK39kiIpxZvjHEuyvNxI-8eQx-Bch6LWcGVaWzkWvjKtTkiDhFcB55W508d3BxWldgRRXcKX4XINV-NAwsIA1x3qQd2a39x9h8uXGxE7T83BXIRzJY5gsrbnNyK-AWVf1_CHCimQcqHGwcCc2nBnuctiPyxiJdqXN0pGx9sKK3y7_rYiqmO-xkLqAVzLIb40J1HzIdHk5o1gS9ddKjItBbxmq7KIWgliRlClIT_ezwXTRgdkpeA3m45vG2_0V_b8fJ4EDGWrdSDRxBF-j1tAOM--8G5dpAQ24G1dXQLWI74k6lJIQOYnX4j-WRxm2pbJimsIoixUcwmjBG7ZHFn3WiwSNS-urI4nkU7hF58hHDhtdqIyufKkQ6iYlDsELngRE_jsEZy7m_dzLRuoH661LdIOXlkPyuabS14rDPHbWGA9TyFfJj0FeYyrBh_BGnt5TiS2rqlN3pjmSPjejJn92t5Mnp-WUdf22syTPBwof6byemxJ3xXPyA0ryAiLvwcvJxxvNnwiulm_Pe670nnDdbU5Zw3ifPfuYGdsSOZfrjnLOZpKhQ7R-q9ncxNXmtqVeYlE0
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 04 Nov 2020 10:08:40 GMT
+      - Mon, 23 Nov 2020 13:09:57 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -39,8 +39,8 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Link:
-      - <https://procurement.zaikio.test/consumers/api/v1/substrate/paper_mill/articles?page=1>;
-        rel="first", <https://procurement.zaikio.test/consumers/api/v1/substrate/paper_mill/articles?page=1>;
+      - <https://procurement.zaikio.test/consumers/api/v1/substrate/sappi/articles?page=1>;
+        rel="first", <https://procurement.zaikio.test/consumers/api/v1/substrate/sappi/articles?page=1>;
         rel="last"
       X-Total-Count:
       - '5'
@@ -51,9 +51,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 100159fe-83a9-40ab-b2a7-ac8bb81891a5
+      - 96541c96-a88b-424b-9b78-8b55908885c7
       X-Runtime:
-      - '0.044597'
+      - '0.071748'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -66,15 +66,15 @@ http_interactions:
       encoding: UTF-8
       string: '[{"id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","base_unit":"sheet","coated":"both
         sides","description":null,"finish":"GLOSS COATED","kind":"paper","name":"MAGNO
-        GLOSS","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Paper Mill Ltd.","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/paper_mill"}]},"created_at":"2020-10-13T10:34:50.322Z","updated_at":"2020-10-13T10:37:52.340Z"},{"id":"03a3eacf-08fc-424b-af75-9febead1d79b","base_unit":"sheet","coated":"both
+        GLOSS","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:34:50.322Z","updated_at":"2020-10-13T10:37:52.340Z"},{"id":"03a3eacf-08fc-424b-af75-9febead1d79b","base_unit":"sheet","coated":"both
         sides","description":null,"finish":"MATT COATED","kind":"paper","name":"MAGNO
-        MATT","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Paper Mill Ltd.","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/paper_mill"}]},"created_at":"2020-10-13T10:37:52.612Z","updated_at":"2020-10-13T10:38:31.888Z"},{"id":"34667bf6-9a74-4ed6-bec8-fae9211f1a26","base_unit":"sheet","coated":"none","description":null,"finish":"UNCOATED","kind":"paper","name":"MAGNO
-        NATURAL","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Paper Mill Ltd.","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/paper_mill"}]},"created_at":"2020-10-13T10:38:32.083Z","updated_at":"2020-10-13T10:39:50.082Z"},{"id":"bdae0561-1885-4834-b855-b604aa4c494b","base_unit":"sheet","coated":"both
+        MATT","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:37:52.612Z","updated_at":"2020-10-13T10:38:31.888Z"},{"id":"34667bf6-9a74-4ed6-bec8-fae9211f1a26","base_unit":"sheet","coated":"none","description":null,"finish":"UNCOATED","kind":"paper","name":"MAGNO
+        NATURAL","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:38:32.083Z","updated_at":"2020-10-13T10:39:50.082Z"},{"id":"bdae0561-1885-4834-b855-b604aa4c494b","base_unit":"sheet","coated":"both
         sides","description":null,"finish":"SILK COATED","kind":"paper","name":"MAGNO
-        SATIN","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Paper Mill Ltd.","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/paper_mill"}]},"created_at":"2020-10-13T10:39:50.298Z","updated_at":"2020-10-13T10:43:26.120Z"},{"id":"3c787602-c778-413c-b167-9f1e5267dfd7","base_unit":"sheet","coated":"both
+        SATIN","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:39:50.298Z","updated_at":"2020-10-13T10:43:26.120Z"},{"id":"3c787602-c778-413c-b167-9f1e5267dfd7","base_unit":"sheet","coated":"both
         sides","description":null,"finish":"MATT COATED","kind":"paper","name":"MAGNO
-        VOLUME","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Paper Mill Ltd.","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/paper_mill"}]},"created_at":"2020-10-13T10:43:26.417Z","updated_at":"2020-10-13T10:43:54.969Z"}]'
-  recorded_at: Wed, 04 Nov 2020 10:08:41 GMT
+        VOLUME","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:43:26.417Z","updated_at":"2020-10-13T10:43:54.969Z"}]'
+  recorded_at: Mon, 23 Nov 2020 13:09:58 GMT
 - request:
     method: get
     uri: https://procurement.zaikio.test/consumers/api/v1/suppliers/a8b99fd3-a790-4366-85b0-2df4af0ca000
@@ -85,7 +85,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.1.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI5OTI5NTc2NS00NmMyLTRmYmUtYjMwNS0yNzk1ZDNhMWQzNDYiLCJuYmYiOjE2MDQ0ODM2OTYsImV4cCI6MTYwNDQ4NzI5Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.NSvdep39E8vlX5qLfKQKXNKMI1cbv5CtN3mXKO5iikOyfLLPY6p5Xlvy7sKcXxNEvCx39bhNFq6bKfhuv80kNfQ_usKLOc933xeRr2fK39kiIpxZvjHEuyvNxI-8eQx-Bch6LWcGVaWzkWvjKtTkiDhFcB55W508d3BxWldgRRXcKX4XINV-NAwsIA1x3qQd2a39x9h8uXGxE7T83BXIRzJY5gsrbnNyK-AWVf1_CHCimQcqHGwcCc2nBnuctiPyxiJdqXN0pGx9sKK3y7_rYiqmO-xkLqAVzLIb40J1HzIdHk5o1gS9ddKjItBbxmq7KIWgliRlClIT_ezwXTRgdkpeA3m45vG2_0V_b8fJ4EDGWrdSDRxBF-j1tAOM--8G5dpAQ24G1dXQLWI74k6lJIQOYnX4j-WRxm2pbJimsIoixUcwmjBG7ZHFn3WiwSNS-urI4nkU7hF58hHDhtdqIyufKkQ6iYlDsELngRE_jsEZy7m_dzLRuoH661LdIOXlkPyuabS14rDPHbWGA9TyFfJj0FeYyrBh_BGnt5TiS2rqlN3pjmSPjejJn92t5Mnp-WUdf22syTPBwof6byemxJ3xXPyA0ryAiLvwcvJxxvNnwiulm_Pe670nnDdbU5Zw3ifPfuYGdsSOZfrjnLOZpKhQ7R-q9ncxNXmtqVeYlE0
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -98,7 +98,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 04 Nov 2020 10:08:41 GMT
+      - Mon, 23 Nov 2020 13:09:57 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -116,13 +116,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8950b3e3c75c7c454f6e6fdb8baf24a5"
+      - W/"680b697845657d1341166f94e1553dd1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b40514e1-37fc-4492-bd32-03ae277bdca6
+      - 3167f165-6108-4e0a-b1c3-e5ea7442509d
       X-Runtime:
-      - '0.011324'
+      - '0.039145'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -133,6 +133,6 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Paper Mill Ltd.","slug":"paper_mill","split_deliveries_supported":false,"created_at":"2020-04-28T13:16:17.689Z","updated_at":"2020-10-07T11:52:53.810Z"}'
-  recorded_at: Wed, 04 Nov 2020 10:08:41 GMT
+      string: '{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","slug":"sappi","supports_split_delivery":false,"created_at":"2020-04-28T13:16:17.689Z","updated_at":"2020-09-24T07:13:27.064Z"}'
+  recorded_at: Mon, 23 Nov 2020 13:09:58 GMT
 recorded_with: VCR 6.0.0
