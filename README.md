@@ -55,11 +55,14 @@ Zaikio::Procurement.with_token(token) do
   article.supplier
   article.variants
 
-  # Searches within all articles and variants for a supplier
-  supplier = Zaikio::Procurement::Supplier.find("a8b99fd3-a790-4366-85b0-2df4af0ca000")
-  variants = supplier.search("Magno", grain: "long", paper_weight: 80)
-  # or
-  variants = supplier.search("Magno long 80")
+  # Search for all variants of a substrate
+  search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80)
+
+  # or by providing a supplier_id to search for all variants of a substrate of from a specific supplier
+  search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80, supplier_id: "a8b99fd3-a790-4366-85b0-2df4af0ca000")
+
+  search.results # Returns a list of matching variants
+  search.facets # Returns a list of search facets that can be used to further narrow down the results
 end
 ```
 
