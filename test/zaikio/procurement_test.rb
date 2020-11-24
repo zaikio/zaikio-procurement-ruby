@@ -149,19 +149,6 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
     end
   end
 
-  test "search variants from a specific supplier" do
-    VCR.use_cassette("search_variants_from_supplier") do
-      Zaikio::Procurement.with_token(token) do
-        supplier = Zaikio::Procurement::Supplier.find("a8b99fd3-a790-4366-85b0-2df4af0ca000")
-        variants = supplier.search("Magno", grain: "long")
-
-        assert variants.first.article.name.match?(/Magno/i)
-        assert_equal "long", variants.first.grain
-        assert_equal "a8b99fd3-a790-4366-85b0-2df4af0ca000", variants.first.article.supplier.id
-      end
-    end
-  end
-
   test "search all substrate variants" do
     VCR.use_cassette("search_substrate_variants") do
       Zaikio::Procurement.with_token(token) do
