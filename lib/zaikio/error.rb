@@ -1,6 +1,8 @@
 module Zaikio
   class Error < StandardError; end
+
   class ConnectionError < Zaikio::Error; end
+
   class ResourceNotFound < Zaikio::Error; end
 end
 
