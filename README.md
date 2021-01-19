@@ -63,6 +63,12 @@ Zaikio::Procurement.with_token(token) do
 
   search.results # Returns a list of matching variants
   search.facets # Returns a list of search facets that can be used to further narrow down the results
+
+  # https://docs.zaikio.com/api/procurement_consumers/procurement.html#/LineItemSuggestions/post_variants__variant_id__line_item_suggestions
+  variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
+  variant.line_item_suggestion(amount: 10, unit: "sheet") # Returns a line item suggestion
+
+
 end
 ```
 
