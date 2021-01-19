@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.1.0
+      - Faraday v1.3.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwZGZhOTA2Yy0zNmZjLTRmYTUtYTJmOC05NGNlOGYyYTg1NzQiLCJuYmYiOjE2MDYyMDQyODMsImV4cCI6MTYwNjIwNzg4Mywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.VR4O-iCOySXVYmDrLgPzbtsgHJLIuE6KiMabb267lE1Hb5ZY0sfqdf6F7I4PdQuBVk6zWrldi1t9bmxb2aZsCH0v6lzr_PbYlKrCk-z44YJwAugrN0YzW44E13UlM1mYdbfbhmodMu6WgHZ-QqkHvP3XD-iEgSVPkqDBfPKsr-KG3qLQC6_NsJixWKxQCvHOPYjBhFhF0VCffeGwyHS2lzfoHQZY8m6hmsJywvsGG0oiAxlOmpIXL7IkWbREv1Gk0nf-9-GLTfBF7-vxbq_t_k7mmTV44DNTFpz6rdYjoRRQAHOHCNMk-p7mSI4R_Mt32nrZztFuessAIWkqaDr_lFbh01agC2V03Cdxu9yNVyzi5BHZ24q6AM4D-Vqdx01s6Dmyzx2GmKP3xqfGX3g-6ymHgE0Fq9NdTnqBMEazisabaf6u8GZ27S-iswRMBjhawVL9fXrh0hVEmEyfwqO2S5j70VoFT5Jpkelfh6r1pnoW-7_2iaWPz9XRCDqKyD11XG0U9c0hftpMBT4Nz5LdXWSKK5fLn82jOyvXkum_VT5ScCjEvO2gYKviiZXXHp5sjXFX2448qEqW2YmtBbxgsAuSrdyDDTV0m7OfkCgmoI_n70JKSkksskj1vYvm-4ePHC-zFjsQQheELtbZhtJMep0HR5u_AOJGbUraBNyfmBQ
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJmMDQ2ODM3My1hYTRkLTRlYTUtOTgwMS1lYzMzMTFiNjMxZGMiLCJuYmYiOjE2MTEwNjQ3NDYsImV4cCI6MTYxMTA2ODM0Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.AkC70WSHziqqRoIWYKTwSi_ZqQDI3b5hqhvqZWuW7_PrCmCrqJOjTQID98B9n2REE837YcOgbcl0GKbbZ3JJEQ-_tKF0uIuqIZbuBtn-st-Kqxw4sE7EggqXvbwt5bgu6LTfDOMs2f9Th1Udi_-N3emUjV3IL-9mCZTT-_O4thfhJAG2fNZgg827WpZVBUIUEGcv8JBkF7c7_7JFw1k8ObjlLwCERlHaOpQPUkO3EBl4iWgBz7QVaOC5-I-7qGwDZb77UEmd2AhBILA9HScbKZwGyqD_9PqdqU7zw1P7V4ISYEDEwWnC6i2a4Zc2boa0kEwc37dZhaet6-7GLPVjSsTQ-Xwh3c7CV0DdVBM2qYzqqNdsTvttd8FVHq52XoP7Fty7K2CxWgs2cv_kUFS23dXDwUvwEnSxwiGk7ycpEFnswnsZGNoYgMHTSCmeKBtfvVz_3q3ypSnCT5PbplleQS4RTCjRGZQpsjHGe1aocYYgoSvIwJC47HnD0TjU4N0_HWu9uwitSpd9DgPKLn0oO7ViuqM5DY-ZkETbz7CzxbUyriFjFKDj3UrevvmenZEtBpf1bpOAiU-IOWWFClosbtwCWPhSfSCHASr4ZogRu4ReR04uzAxLNBmlUwQAi4gFRAu-R_JJJmw-nTo7t8OhVIvWwthDKSWRcFsbqSM5RUE
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 24 Nov 2020 07:51:59 GMT
+      - Tue, 19 Jan 2021 14:02:20 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -47,15 +47,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"891e021b2673f4cb936bc11843fb0dbb"
+      - W/"6a3d4355ad9606f836b5d1803fa25189"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 47e84763-b010-4781-96bb-0fc1f2b26d20
+      - a41c6c31-5639-443d-bf06-f3c9b7b9ae50
       X-Runtime:
-      - '0.072179'
+      - '0.133947'
       Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains
+      - max-age=63072000; includeSubDomains
       Vary:
       - Origin
       Transfer-Encoding:
@@ -85,15 +85,15 @@ http_interactions:
         Mix Credit","PEFC 100%"]},{"id":"068a5e72-afa1-4563-80b2-0dfbbcda4979","form":"sheet","category":"PS1
         - Premium Coated","unit_system":"metric","width":700,"height":1000,"thickness":74,"paper_weight":80,"paper_weight_unit":"grammage","grain":"long","color":null,"transparency":null,"whiteness":null,"brightness":null,"roughness":null,"created_at":"2020-10-13T10:37:55.869Z","updated_at":"2020-10-13T10:37:56.818Z","article":{"id":"03a3eacf-08fc-424b-af75-9febead1d79b","base_unit":"sheet","coated":"both
         sides","description":null,"finish":"MATT COATED","kind":"paper","name":"MAGNO
-        MATT","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:37:52.612Z","updated_at":"2020-10-13T10:38:31.888Z"},"available_environmental_certifications":["FSC
+        MATT","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:37:52.612Z","updated_at":"2020-12-17T10:02:48.154Z"},"available_environmental_certifications":["FSC
         Mix Credit","PEFC 100%"]},{"id":"a0d23312-2c88-4a94-b354-5a1a60a1af9e","form":"sheet","category":"PS1
         - Premium Coated","unit_system":"metric","width":630,"height":880,"thickness":74,"paper_weight":80,"paper_weight_unit":"grammage","grain":"long","color":null,"transparency":null,"whiteness":null,"brightness":null,"roughness":null,"created_at":"2020-10-13T10:37:54.751Z","updated_at":"2020-10-13T10:37:55.722Z","article":{"id":"03a3eacf-08fc-424b-af75-9febead1d79b","base_unit":"sheet","coated":"both
         sides","description":null,"finish":"MATT COATED","kind":"paper","name":"MAGNO
-        MATT","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:37:52.612Z","updated_at":"2020-10-13T10:38:31.888Z"},"available_environmental_certifications":["FSC
+        MATT","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:37:52.612Z","updated_at":"2020-12-17T10:02:48.154Z"},"available_environmental_certifications":["FSC
         Mix Credit","PEFC 100%"]}],"facets":[{"name":"article_coated","total_count":8,"options":[{"value":"none","count":6},{"value":"both
         sides","count":2}]},{"name":"article_finish","total_count":8,"options":[{"value":"UNCOATED","count":6},{"value":"MATT
         COATED","count":2}]},{"name":"category","total_count":8,"options":[{"value":"PS5
         - Wood-free Uncoated","count":6},{"value":"PS1 - Premium Coated","count":2}]},{"name":"environmental_certifications","total_count":8,"options":[{"value":"FSC
         Mix Credit","count":8},{"value":"PEFC 100%","count":8}]},{"name":"grain","total_count":15,"options":[{"value":"long","count":8},{"value":"short","count":7}]},{"name":"height","total_count":8,"options":[{"value":880,"count":2},{"value":1000,"count":2},{"value":640,"count":1},{"value":910,"count":1},{"value":920,"count":1},{"value":1020,"count":1}]},{"name":"paper_weight","total_count":181,"options":[{"value":90,"count":20},{"value":300,"count":20},{"value":170,"count":19},{"value":250,"count":18},{"value":115,"count":17},{"value":135,"count":17},{"value":150,"count":17},{"value":100,"count":15},{"value":200,"count":15},{"value":80,"count":8},{"value":120,"count":5},{"value":350,"count":5},{"value":140,"count":3},{"value":190,"count":2}]},{"name":"thickness","total_count":8,"options":[{"value":102,"count":6},{"value":74,"count":2}]},{"name":"width","total_count":8,"options":[{"value":630,"count":2},{"value":700,"count":2},{"value":450,"count":1},{"value":640,"count":1},{"value":650,"count":1},{"value":720,"count":1}]}]}'
-  recorded_at: Tue, 24 Nov 2020 07:52:00 GMT
+  recorded_at: Tue, 19 Jan 2021 14:02:20 GMT
 recorded_with: VCR 6.0.0

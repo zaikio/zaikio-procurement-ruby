@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.1.0
+      - Faraday v1.3.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1ODNkMmMwOC0zNjEzLTQ4ZjgtYTljOC1hMjQ3YjJiM2M5MTYiLCJuYmYiOjE2MDYxMzU5MjcsImV4cCI6MTYwNjEzOTUyNywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.bm1I_KVTmiHvggJz5WBA63eE5Lp9v66CkiRwJPWtQpos4ekI5YhARySD9s0Cd6BugZIna08zkr57cBKmcYhn-C7d0_qH5mrihQ4FBBzFyLYcLMEhoRnqOvFDBgpZYMdTOKk89WFMeMbqyPn9jXxECLdItS4cuEJA5NmESChwJtJ_CUVhl5hGRnzX1IkoohVy8dRv_GAy_EyN1989x-PqleuYDxEJ58vqB27uirAYgnhxPm3s_LDeI_l5tqPgGsiNAsGL2zxSI9UmIofdV-eGx6ZRFSmS807QgUagJf-OWC4fkG9tI6dnaL2YnlNc-aytTF4xnLodOXJ6l_cADBuCvSbQHBKLcPxehNIVlWi1W_1fY-x5W41PBih0PgI1Mn4Q4rpYN1CDNLVP3qk7OKbWbPnFWO5psrk_gcjF9XAbSG16Yq8PG1taRMaVIIzDhO7inUGqaBxWqJ1T6svYeIq5dth-DAcaKLxYjzXx_7MhK4qTBaOnQd0khNqYjDa0ln5YlKIyy5bVs0R9ae2qfW-zkkKsdPw4W89mwUIQUWe6xe9Pr3tLIVMsjCYvihVpdckZWqxejTIPsemUvpBkW_JE63D75ZYQBIi548bTmpNCXvk_RpH0DKjJuEn5GJUTBmoT11IBVplHbnpha8eOP7y7DAqZlMSYPvY-E7KvLz-kCFU
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJmMDQ2ODM3My1hYTRkLTRlYTUtOTgwMS1lYzMzMTFiNjMxZGMiLCJuYmYiOjE2MTEwNjQ3NDYsImV4cCI6MTYxMTA2ODM0Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.AkC70WSHziqqRoIWYKTwSi_ZqQDI3b5hqhvqZWuW7_PrCmCrqJOjTQID98B9n2REE837YcOgbcl0GKbbZ3JJEQ-_tKF0uIuqIZbuBtn-st-Kqxw4sE7EggqXvbwt5bgu6LTfDOMs2f9Th1Udi_-N3emUjV3IL-9mCZTT-_O4thfhJAG2fNZgg827WpZVBUIUEGcv8JBkF7c7_7JFw1k8ObjlLwCERlHaOpQPUkO3EBl4iWgBz7QVaOC5-I-7qGwDZb77UEmd2AhBILA9HScbKZwGyqD_9PqdqU7zw1P7V4ISYEDEwWnC6i2a4Zc2boa0kEwc37dZhaet6-7GLPVjSsTQ-Xwh3c7CV0DdVBM2qYzqqNdsTvttd8FVHq52XoP7Fty7K2CxWgs2cv_kUFS23dXDwUvwEnSxwiGk7ycpEFnswnsZGNoYgMHTSCmeKBtfvVz_3q3ypSnCT5PbplleQS4RTCjRGZQpsjHGe1aocYYgoSvIwJC47HnD0TjU4N0_HWu9uwitSpd9DgPKLn0oO7ViuqM5DY-ZkETbz7CzxbUyriFjFKDj3UrevvmenZEtBpf1bpOAiU-IOWWFClosbtwCWPhSfSCHASr4ZogRu4ReR04uzAxLNBmlUwQAi4gFRAu-R_JJJmw-nTo7t8OhVIvWwthDKSWRcFsbqSM5RUE
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 23 Nov 2020 13:09:57 GMT
+      - Tue, 19 Jan 2021 14:02:21 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -41,15 +41,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"680b697845657d1341166f94e1553dd1"
+      - W/"6211b50d61db5dd1f5d2d1f2da49f50a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a21912ce-3a64-4e1f-801b-ff01ff9985f3
+      - 37099847-46fd-4186-8123-ef7c726e1a65
       X-Runtime:
-      - '0.014954'
+      - '0.090831'
       Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains
+      - max-age=63072000; includeSubDomains
       Vary:
       - Origin
       Transfer-Encoding:
@@ -58,6 +58,6 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","slug":"sappi","supports_split_delivery":false,"created_at":"2020-04-28T13:16:17.689Z","updated_at":"2020-09-24T07:13:27.064Z"}'
-  recorded_at: Mon, 23 Nov 2020 13:09:58 GMT
+      string: '{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","slug":"sappi","supports_split_delivery":false,"created_at":"2020-04-28T13:16:17.689Z","updated_at":"2020-12-02T13:33:12.326Z"}'
+  recorded_at: Tue, 19 Jan 2021 14:02:21 GMT
 recorded_with: VCR 6.0.0

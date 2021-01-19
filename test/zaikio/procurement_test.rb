@@ -8,7 +8,7 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
   end
 
   def token
-    "eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwZGZhOTA2Yy0zNmZjLTRmYTUtYTJmOC05NGNlOGYyYTg1NzQiLCJuYmYiOjE2MDYyMDQyODMsImV4cCI6MTYwNjIwNzg4Mywiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiXX0.VR4O-iCOySXVYmDrLgPzbtsgHJLIuE6KiMabb267lE1Hb5ZY0sfqdf6F7I4PdQuBVk6zWrldi1t9bmxb2aZsCH0v6lzr_PbYlKrCk-z44YJwAugrN0YzW44E13UlM1mYdbfbhmodMu6WgHZ-QqkHvP3XD-iEgSVPkqDBfPKsr-KG3qLQC6_NsJixWKxQCvHOPYjBhFhF0VCffeGwyHS2lzfoHQZY8m6hmsJywvsGG0oiAxlOmpIXL7IkWbREv1Gk0nf-9-GLTfBF7-vxbq_t_k7mmTV44DNTFpz6rdYjoRRQAHOHCNMk-p7mSI4R_Mt32nrZztFuessAIWkqaDr_lFbh01agC2V03Cdxu9yNVyzi5BHZ24q6AM4D-Vqdx01s6Dmyzx2GmKP3xqfGX3g-6ymHgE0Fq9NdTnqBMEazisabaf6u8GZ27S-iswRMBjhawVL9fXrh0hVEmEyfwqO2S5j70VoFT5Jpkelfh6r1pnoW-7_2iaWPz9XRCDqKyD11XG0U9c0hftpMBT4Nz5LdXWSKK5fLn82jOyvXkum_VT5ScCjEvO2gYKviiZXXHp5sjXFX2448qEqW2YmtBbxgsAuSrdyDDTV0m7OfkCgmoI_n70JKSkksskj1vYvm-4ePHC-zFjsQQheELtbZhtJMep0HR5u_AOJGbUraBNyfmBQ" # rubocop:disable Layout/LineLength
+    "eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJmMDQ2ODM3My1hYTRkLTRlYTUtOTgwMS1lYzMzMTFiNjMxZGMiLCJuYmYiOjE2MTEwNjQ3NDYsImV4cCI6MTYxMTA2ODM0Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.AkC70WSHziqqRoIWYKTwSi_ZqQDI3b5hqhvqZWuW7_PrCmCrqJOjTQID98B9n2REE837YcOgbcl0GKbbZ3JJEQ-_tKF0uIuqIZbuBtn-st-Kqxw4sE7EggqXvbwt5bgu6LTfDOMs2f9Th1Udi_-N3emUjV3IL-9mCZTT-_O4thfhJAG2fNZgg827WpZVBUIUEGcv8JBkF7c7_7JFw1k8ObjlLwCERlHaOpQPUkO3EBl4iWgBz7QVaOC5-I-7qGwDZb77UEmd2AhBILA9HScbKZwGyqD_9PqdqU7zw1P7V4ISYEDEwWnC6i2a4Zc2boa0kEwc37dZhaet6-7GLPVjSsTQ-Xwh3c7CV0DdVBM2qYzqqNdsTvttd8FVHq52XoP7Fty7K2CxWgs2cv_kUFS23dXDwUvwEnSxwiGk7ycpEFnswnsZGNoYgMHTSCmeKBtfvVz_3q3ypSnCT5PbplleQS4RTCjRGZQpsjHGe1aocYYgoSvIwJC47HnD0TjU4N0_HWu9uwitSpd9DgPKLn0oO7ViuqM5DY-ZkETbz7CzxbUyriFjFKDj3UrevvmenZEtBpf1bpOAiU-IOWWFClosbtwCWPhSfSCHASr4ZogRu4ReR04uzAxLNBmlUwQAi4gFRAu-R_JJJmw-nTo7t8OhVIvWwthDKSWRcFsbqSM5RUE" # rubocop:disable Layout/LineLength
   end
 
   test "is a module" do
@@ -33,7 +33,7 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
         suppliers = Zaikio::Procurement::Supplier.all
 
         supplier = suppliers.first
-        assert_equal "Sappi", supplier.display_name
+        assert_equal "Bounty Soap Inc.", supplier.display_name
       end
     end
   end
@@ -230,6 +230,17 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
       Zaikio::Procurement.with_token(token) do
         sales_group = Zaikio::Procurement::SalesGroup.find("42dcbaf6-e557-4423-96bc-707ebbc223c0")
         assert_equal "42dcbaf6-e557-4423-96bc-707ebbc223c0", sales_group.id
+      end
+    end
+  end
+
+  test "fetching a line item suggestion for a specific variant" do
+    VCR.use_cassette("line_item_suggestion") do
+      Zaikio::Procurement.with_token(token) do
+        variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
+        suggestion = variant.line_item_suggestion(amount: 10, unit: "sheet")
+        assert_equal "845a4d7e-db5a-46a6-9d30-bf2e884cb393",
+                     suggestion.flat_map { |h| h[:sku].values_at :variant_id }.join
       end
     end
   end
