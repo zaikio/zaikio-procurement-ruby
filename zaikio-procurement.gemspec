@@ -5,8 +5,8 @@ require "zaikio/procurement/version"
 Gem::Specification.new do |spec|
   spec.name          = "zaikio-procurement"
   spec.version       = Zaikio::Procurement::VERSION
-  spec.authors       = ["crispymtn", "Sascha Weidlich"]
-  spec.email         = ["sascha.weidlich@mac.com"]
+  spec.authors       = ["Zaikio GmbH", "Sascha Weidlich"]
+  spec.email         = ["sw@zaikio.com"]
   spec.homepage      = "https://www.zaikio.com/"
   spec.summary       = "Ruby API Client for Zaikio's Procurement Platform"
   spec.description   = "Ruby API Client for Zaikio's Procurement Platform"
