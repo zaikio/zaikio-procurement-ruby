@@ -68,7 +68,39 @@ Zaikio::Procurement.with_token(token) do
   variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
   variant.line_item_suggestion(amount: 10, unit: "sheet") # Returns a line item suggestion
 
+  # Create new resources
+  Zaikio::Procurement::Order.create(
+    contract_id: "fd677fc7-abd9-460c-b086-34de1a8349e8",
+    delivery_mode: "complete",
+    exclusive_sales_group_id: "42dcbaf6-e557-4423-96bc-707ebbc223c0",
+    references: ["CO/XXXXXX"],
+    state_event: "place",
+    deliveries_attributes: [
+      {
+        address_addressee: "Joey’s Print Ltd",
+        address_text: "Emmerich-Josef-Straße 1A, 55116 Mainz",
+        desired_delivery_date: "2021-01-29",
+        references: ["D/XXXXXX"]
+      }
+    ],
+    order_line_items_attributes: [
+      {
+        sku_id: "26b3aadc-928f-4d1a-ba2d-13ac3c8f523d",
+        amount: 108000
+      }
+    ]
+  )
 
+  order = Zaikio::Procurement::Order.find("86b4a0c5-6d54-4702-a059-da258643f260")
+  order.order_line_items.create(sku_id: "6535eeb0-45c2-4c63-8cb9-4814562bb875", amount: 68000)
+
+  # Update resources
+  line_item = Zaikio::Procurement::OrderLineItem.find("058a5513-925e-4d0c-923d-fa1ed4bfb3ce")
+  line_item.update(amount: 69000)
+
+  # Deleting resources
+  line_item = Zaikio::Procurement::OrderLineItem.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
+  line_item.destroy
 end
 ```
 
