@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.3.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJmMDQ2ODM3My1hYTRkLTRlYTUtOTgwMS1lYzMzMTFiNjMxZGMiLCJuYmYiOjE2MTEwNjQ3NDYsImV4cCI6MTYxMTA2ODM0Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.AkC70WSHziqqRoIWYKTwSi_ZqQDI3b5hqhvqZWuW7_PrCmCrqJOjTQID98B9n2REE837YcOgbcl0GKbbZ3JJEQ-_tKF0uIuqIZbuBtn-st-Kqxw4sE7EggqXvbwt5bgu6LTfDOMs2f9Th1Udi_-N3emUjV3IL-9mCZTT-_O4thfhJAG2fNZgg827WpZVBUIUEGcv8JBkF7c7_7JFw1k8ObjlLwCERlHaOpQPUkO3EBl4iWgBz7QVaOC5-I-7qGwDZb77UEmd2AhBILA9HScbKZwGyqD_9PqdqU7zw1P7V4ISYEDEwWnC6i2a4Zc2boa0kEwc37dZhaet6-7GLPVjSsTQ-Xwh3c7CV0DdVBM2qYzqqNdsTvttd8FVHq52XoP7Fty7K2CxWgs2cv_kUFS23dXDwUvwEnSxwiGk7ycpEFnswnsZGNoYgMHTSCmeKBtfvVz_3q3ypSnCT5PbplleQS4RTCjRGZQpsjHGe1aocYYgoSvIwJC47HnD0TjU4N0_HWu9uwitSpd9DgPKLn0oO7ViuqM5DY-ZkETbz7CzxbUyriFjFKDj3UrevvmenZEtBpf1bpOAiU-IOWWFClosbtwCWPhSfSCHASr4ZogRu4ReR04uzAxLNBmlUwQAi4gFRAu-R_JJJmw-nTo7t8OhVIvWwthDKSWRcFsbqSM5RUE
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 19 Jan 2021 14:02:16 GMT
+      - Tue, 26 Jan 2021 10:37:03 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -45,9 +45,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0af362c5-4dd1-4c75-bc91-aa96f86a710f
+      - e4861882-12ee-4252-94b8-f83fe2c18308
       X-Runtime:
-      - '0.292935'
+      - '0.021749'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Vary:
@@ -61,7 +61,7 @@ http_interactions:
       string: '{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","brightness":null,"category":"PS1
         - Premium Coated","color":null,"form":"sheet","grain":"long","height":1000,"paper_weight":250,"paper_weight_unit":"grammage","roughness":null,"thickness":190,"transparency":null,"unit_system":"metric","whiteness":null,"width":700,"article_id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","article":{"id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","name":"MAGNO
         GLOSS","links":[{"rel":"self","href":"/consumers/api/v1/articles/7cbf51bd-35a8-47a1-84a2-57aa63140234"}]},"created_at":"2020-10-13T10:37:09.245Z","updated_at":"2020-10-13T10:37:10.772Z"}'
-  recorded_at: Tue, 19 Jan 2021 14:02:16 GMT
+  recorded_at: Tue, 26 Jan 2021 10:37:03 GMT
 - request:
     method: get
     uri: https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393/skus
@@ -72,7 +72,7 @@ http_interactions:
       User-Agent:
       - Faraday v1.3.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJmMDQ2ODM3My1hYTRkLTRlYTUtOTgwMS1lYzMzMTFiNjMxZGMiLCJuYmYiOjE2MTEwNjQ3NDYsImV4cCI6MTYxMTA2ODM0Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.AkC70WSHziqqRoIWYKTwSi_ZqQDI3b5hqhvqZWuW7_PrCmCrqJOjTQID98B9n2REE837YcOgbcl0GKbbZ3JJEQ-_tKF0uIuqIZbuBtn-st-Kqxw4sE7EggqXvbwt5bgu6LTfDOMs2f9Th1Udi_-N3emUjV3IL-9mCZTT-_O4thfhJAG2fNZgg827WpZVBUIUEGcv8JBkF7c7_7JFw1k8ObjlLwCERlHaOpQPUkO3EBl4iWgBz7QVaOC5-I-7qGwDZb77UEmd2AhBILA9HScbKZwGyqD_9PqdqU7zw1P7V4ISYEDEwWnC6i2a4Zc2boa0kEwc37dZhaet6-7GLPVjSsTQ-Xwh3c7CV0DdVBM2qYzqqNdsTvttd8FVHq52XoP7Fty7K2CxWgs2cv_kUFS23dXDwUvwEnSxwiGk7ycpEFnswnsZGNoYgMHTSCmeKBtfvVz_3q3ypSnCT5PbplleQS4RTCjRGZQpsjHGe1aocYYgoSvIwJC47HnD0TjU4N0_HWu9uwitSpd9DgPKLn0oO7ViuqM5DY-ZkETbz7CzxbUyriFjFKDj3UrevvmenZEtBpf1bpOAiU-IOWWFClosbtwCWPhSfSCHASr4ZogRu4ReR04uzAxLNBmlUwQAi4gFRAu-R_JJJmw-nTo7t8OhVIvWwthDKSWRcFsbqSM5RUE
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -85,7 +85,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 19 Jan 2021 14:02:16 GMT
+      - Tue, 26 Jan 2021 10:37:03 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -107,9 +107,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 59f423ad-9d05-473f-8700-874c054f2b15
+      - 598bd025-f5ed-4c01-bedb-c6ed2d8f6eb4
       X-Runtime:
-      - '0.158786'
+      - '0.048776'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Vary:
@@ -125,5 +125,5 @@ http_interactions:
         Mix Credit","gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000|FSC|L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:09.683Z","updated_at":"2020-10-13T10:37:09.683Z"},{"id":"344e01a1-9822-465a-a390-791138ce68fb","amount":1,"amount_in_base_unit":1,"availability_in_days":null,"dimension_unit":"mm","environmental_certification":"PEFC
         100%","gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000|PEFC|L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:09.976Z","updated_at":"2020-10-13T10:37:09.976Z"},{"id":"52a0967c-fa30-4e0d-9870-e4e615540f76","amount":1,"amount_in_base_unit":4000,"availability_in_days":null,"dimension_unit":"m","environmental_certification":"FSC
         Mix Credit","gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000|FSC|L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:10.498Z","updated_at":"2020-10-13T10:37:10.498Z"},{"id":"6c63c227-8196-4acb-8670-817a8f09eae1","amount":1,"amount_in_base_unit":1,"availability_in_days":null,"dimension_unit":"mm","environmental_certification":null,"gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000||L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:09.418Z","updated_at":"2020-10-13T10:37:09.418Z"},{"id":"8c48e356-37ae-475a-af0e-5d8c67a3d507","amount":1,"amount_in_base_unit":4000,"availability_in_days":null,"dimension_unit":"m","environmental_certification":null,"gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000||L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"created_at":"2020-10-13T10:37:10.241Z","updated_at":"2020-10-13T10:37:10.241Z"}]'
-  recorded_at: Tue, 19 Jan 2021 14:02:17 GMT
+  recorded_at: Tue, 26 Jan 2021 10:37:04 GMT
 recorded_with: VCR 6.0.0

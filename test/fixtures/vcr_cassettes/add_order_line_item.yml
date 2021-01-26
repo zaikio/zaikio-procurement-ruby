@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/substrate/sappi/articles
+    uri: https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 26 Jan 2021 10:37:15 GMT
+      - Tue, 26 Jan 2021 10:36:59 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -38,22 +38,16 @@ http_interactions:
       - none
       Referrer-Policy:
       - strict-origin-when-cross-origin
-      Link:
-      - <https://procurement.zaikio.test/consumers/api/v1/substrate/sappi/articles?page=1>;
-        rel="first", <https://procurement.zaikio.test/consumers/api/v1/substrate/sappi/articles?page=1>;
-        rel="last"
-      X-Total-Count:
-      - '5'
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"bbaeb94b85ab93fe37d42be5f433858a"
+      - W/"44bdf9388e3e6bc6d6ff8ebc990f4e98"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c009f023-540f-49b4-81a7-644e1adb5836
+      - 48b2e849-45c2-494c-a16c-9690a8b89549
       X-Runtime:
-      - '1.969779'
+      - '0.031995'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Vary:
@@ -64,26 +58,21 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","base_unit":"sheet","coated":"both
-        sides","description":null,"finish":"GLOSS COATED","kind":"paper","name":"MAGNO
-        GLOSS","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:34:50.322Z","updated_at":"2020-12-15T08:32:20.052Z"},{"id":"03a3eacf-08fc-424b-af75-9febead1d79b","base_unit":"sheet","coated":"both
-        sides","description":null,"finish":"MATT COATED","kind":"paper","name":"MAGNO
-        MATT","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:37:52.612Z","updated_at":"2020-12-17T10:02:48.154Z"},{"id":"34667bf6-9a74-4ed6-bec8-fae9211f1a26","base_unit":"sheet","coated":"none","description":null,"finish":"UNCOATED","kind":"paper","name":"MAGNO
-        NATURAL","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:38:32.083Z","updated_at":"2020-10-13T10:39:50.082Z"},{"id":"bdae0561-1885-4834-b855-b604aa4c494b","base_unit":"sheet","coated":"both
-        sides","description":null,"finish":"SILK COATED","kind":"paper","name":"MAGNO
-        SATIN","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:39:50.298Z","updated_at":"2021-01-04T11:39:43.069Z"},{"id":"3c787602-c778-413c-b167-9f1e5267dfd7","base_unit":"sheet","coated":"both
-        sides","description":null,"finish":"MATT COATED","kind":"paper","name":"MAGNO
-        VOLUME","supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-10-13T10:43:26.417Z","updated_at":"2020-12-17T10:02:49.324Z"}]'
-  recorded_at: Tue, 26 Jan 2021 10:37:16 GMT
+      string: '{"id":"86b4a0c5-6d54-4702-a059-da258643f260","canceled_by_consumer_at":null,"canceled_by_supplier_at":null,"cancelation_requested_at":null,"confirmed_at":null,"currency":"EUR","delivery_mode":"complete","gross_total":"0.0","net_handling_fee":null,"net_shipping_fee":null,"net_total":"0.0","partially_shipped_at":null,"partially_shipped_remainder_canceled_at":null,"placed_at":null,"producing_at":null,"references":["CO/PSQGDS"],"shipped_at":null,"state":"draft","state_reason":null,"taxes":"0.0","taxes_on_fees":null,"transfer_failed_at":null,"transferred_at":null,"contract_id":"fd677fc7-abd9-460c-b086-34de1a8349e8","contract":{"id":"fd677fc7-abd9-460c-b086-34de1a8349e8","customer_number":null,"references":["C/GN9Z2W"],"links":[{"rel":"self","href":"/consumers/api/v1/contracts/fd677fc7-abd9-460c-b086-34de1a8349e8"}]},"exclusive_sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","exclusive_sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
+        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"person_id":"383663bc-149a-5b76-b50d-ee039046c12e","person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"created_at":"2021-01-26T09:28:50.597Z","updated_at":"2021-01-26T09:28:50.597Z","order_line_items":[]}'
+  recorded_at: Tue, 26 Jan 2021 10:37:00 GMT
 - request:
-    method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/suppliers/a8b99fd3-a790-4366-85b0-2df4af0ca000
+    method: post
+    uri: https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260/order_line_items
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"order_line_item":{"sku_id":"6535eeb0-45c2-4c63-8cb9-4814562bb875","amount":68000}}'
     headers:
       User-Agent:
       - Faraday v1.3.0
+      Content-Type:
+      - application/json
       Authorization:
       - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
       Accept-Encoding:
@@ -92,13 +81,13 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Tue, 26 Jan 2021 10:37:16 GMT
+      - Tue, 26 Jan 2021 10:36:59 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -116,13 +105,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5adda9aeb711e5127c24d03715419f9b"
+      - W/"83a5bc93f83df2ee88237315ae480dc5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8df0b278-4f97-4040-b240-98e68bb4ddca
+      - 93c97a8e-af6a-4a5e-9b69-5727afbfb886
       X-Runtime:
-      - '0.012219'
+      - '0.055893'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Vary:
@@ -133,6 +122,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","cancelation_policy":"before_production","display_name":"Sappi","slug":"sappi","supports_split_delivery":false,"created_at":"2020-04-28T13:16:17.689Z","updated_at":"2020-12-02T13:33:12.326Z"}'
-  recorded_at: Tue, 26 Jan 2021 10:37:16 GMT
+      string: '{"id":"058a5513-925e-4d0c-923d-fa1ed4bfb3ce","order_id":"86b4a0c5-6d54-4702-a059-da258643f260","sku_id":"6535eeb0-45c2-4c63-8cb9-4814562bb875","references":["COL/M2RKVH"],"amount":68000,"amount_in_base_unit":68000,"base_unit":"sheet","description":"MAGNO
+        GLOSS – PS1 - Premium Coated, 520 × 720 mm, 115 g/㎡, long – 1 sheet, 43.056
+        g","order_number":"MAGGLO|115|52.0|72.0|0500|000000||L|SH|MAGGLO11552720|v1","tax_rate":null,"taxes":null,"total_gross_price":null,"total_net_price":"1903.32","unit":"sheet","created_at":"2021-01-26T10:37:00.201Z","updated_at":"2021-01-26T10:37:00.201Z","catalog_price":"0.02799","confirmed_price":null,"order":{"id":"86b4a0c5-6d54-4702-a059-da258643f260","references":["CO/PSQGDS"],"links":[{"rel":"self","href":"/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260"}]},"sku":{"id":"6535eeb0-45c2-4c63-8cb9-4814562bb875","order_number":"MAGGLO|115|52.0|72.0|0500|000000||L|SH||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/6535eeb0-45c2-4c63-8cb9-4814562bb875"}]}}'
+  recorded_at: Tue, 26 Jan 2021 10:37:00 GMT
 recorded_with: VCR 6.0.0

@@ -8,7 +8,7 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
   end
 
   def token
-    "eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJmMDQ2ODM3My1hYTRkLTRlYTUtOTgwMS1lYzMzMTFiNjMxZGMiLCJuYmYiOjE2MTEwNjQ3NDYsImV4cCI6MTYxMTA2ODM0Niwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.AkC70WSHziqqRoIWYKTwSi_ZqQDI3b5hqhvqZWuW7_PrCmCrqJOjTQID98B9n2REE837YcOgbcl0GKbbZ3JJEQ-_tKF0uIuqIZbuBtn-st-Kqxw4sE7EggqXvbwt5bgu6LTfDOMs2f9Th1Udi_-N3emUjV3IL-9mCZTT-_O4thfhJAG2fNZgg827WpZVBUIUEGcv8JBkF7c7_7JFw1k8ObjlLwCERlHaOpQPUkO3EBl4iWgBz7QVaOC5-I-7qGwDZb77UEmd2AhBILA9HScbKZwGyqD_9PqdqU7zw1P7V4ISYEDEwWnC6i2a4Zc2boa0kEwc37dZhaet6-7GLPVjSsTQ-Xwh3c7CV0DdVBM2qYzqqNdsTvttd8FVHq52XoP7Fty7K2CxWgs2cv_kUFS23dXDwUvwEnSxwiGk7ycpEFnswnsZGNoYgMHTSCmeKBtfvVz_3q3ypSnCT5PbplleQS4RTCjRGZQpsjHGe1aocYYgoSvIwJC47HnD0TjU4N0_HWu9uwitSpd9DgPKLn0oO7ViuqM5DY-ZkETbz7CzxbUyriFjFKDj3UrevvmenZEtBpf1bpOAiU-IOWWFClosbtwCWPhSfSCHASr4ZogRu4ReR04uzAxLNBmlUwQAi4gFRAu-R_JJJmw-nTo7t8OhVIvWwthDKSWRcFsbqSM5RUE" # rubocop:disable Layout/LineLength
+    "eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI" # rubocop:disable Layout/LineLength
   end
 
   test "is a module" do
@@ -241,6 +241,142 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
         suggestion = variant.line_item_suggestion(amount: 10, unit: "sheet")
         assert_equal "845a4d7e-db5a-46a6-9d30-bf2e884cb393",
                      suggestion.flat_map { |h| h[:sku].values_at :variant_id }.join
+      end
+    end
+  end
+
+  test "fetching orders" do
+    VCR.use_cassette("orders") do
+      Zaikio::Procurement.with_token(token) do
+        orders = Zaikio::Procurement::Order.all
+        assert orders.any?
+      end
+    end
+  end
+
+  test "fetching a specific order" do
+    VCR.use_cassette("order") do
+      Zaikio::Procurement.with_token(token) do
+        order = Zaikio::Procurement::Order.find("a29f3c77-5e53-4658-a741-afd1824f4829")
+        assert_equal "a29f3c77-5e53-4658-a741-afd1824f4829", order.id
+      end
+    end
+  end
+
+  test "create an order" do
+    VCR.use_cassette("create_order") do
+      Zaikio::Procurement.with_token(token) do
+        order_data = {
+          contract_id: "fd677fc7-abd9-460c-b086-34de1a8349e8",
+          delivery_mode: "complete",
+          exclusive_sales_group_id: "42dcbaf6-e557-4423-96bc-707ebbc223c0",
+          references: ["CO/XXXXXX"],
+          state_event: "place",
+          deliveries_attributes: [
+            {
+              address_addressee: "Joey’s Print Ltd",
+              address_text: "Emmerich-Josef-Straße 1A, 55116 Mainz",
+              desired_delivery_date: 2.days.from_now,
+              references: ["D/XXXXXX"]
+            }
+          ],
+          order_line_items_attributes: [
+            {
+              sku_id: "26b3aadc-928f-4d1a-ba2d-13ac3c8f523d",
+              amount: 108_000
+            }
+          ]
+        }
+
+        assert_difference "Zaikio::Procurement::Order.all.count" do
+          Zaikio::Procurement::Order.create(order_data)
+        end
+      end
+    end
+  end
+
+  test "fetching order line items for a specific order" do
+    VCR.use_cassette("order_line_items") do
+      Zaikio::Procurement.with_token(token) do
+        order = Zaikio::Procurement::Order.find("a29f3c77-5e53-4658-a741-afd1824f4829")
+        assert order.order_line_items.any?
+      end
+    end
+  end
+
+  test "fetching a specific order line item" do
+    VCR.use_cassette("order_line_item") do
+      Zaikio::Procurement.with_token(token) do
+        order_line_item = Zaikio::Procurement::OrderLineItem.find("42e5b736-a015-4b9f-a8e0-218e98e2c15f")
+        assert_equal "42e5b736-a015-4b9f-a8e0-218e98e2c15f", order_line_item.id
+      end
+    end
+  end
+
+  test "add order line item to an exisiting draft order" do
+    VCR.use_cassette("add_order_line_item") do
+      Zaikio::Procurement.with_token(token) do
+        order = Zaikio::Procurement::Order.find("86b4a0c5-6d54-4702-a059-da258643f260")
+        assert_difference "order.order_line_items.count" do
+          order.order_line_items.create(sku_id: "6535eeb0-45c2-4c63-8cb9-4814562bb875", amount: 68_000)
+        end
+      end
+    end
+  end
+
+  test "update a specific order line item" do
+    VCR.use_cassette("update_order_line_item") do
+      Zaikio::Procurement.with_token(token) do
+        order_line_item = Zaikio::Procurement::OrderLineItem.find("058a5513-925e-4d0c-923d-fa1ed4bfb3ce")
+        order_line_item.update(amount: 69_000)
+        assert_equal 69_000, order_line_item.amount
+      end
+    end
+  end
+
+  test "delete a specific order line item" do
+    VCR.use_cassette("delete_order_line_item") do
+      Zaikio::Procurement.with_token(token) do
+        order_line_item = Zaikio::Procurement::OrderLineItem.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
+        assert_difference "order_line_item.order.order_line_items.count", -1 do
+          order_line_item.delete
+        end
+      end
+    end
+  end
+
+  test "fetching deliveries for a specific order" do
+    VCR.use_cassette("deliveries") do
+      Zaikio::Procurement.with_token(token) do
+        order = Zaikio::Procurement::Order.find("a29f3c77-5e53-4658-a741-afd1824f4829")
+        assert order.deliveries.any?
+      end
+    end
+  end
+
+  test "fetching a specific delivery" do
+    VCR.use_cassette("delivery") do
+      Zaikio::Procurement.with_token(token) do
+        delivery = Zaikio::Procurement::Delivery.find("46a67d80-ff21-403a-9cb3-5b3a9464ae0f")
+        assert_equal "46a67d80-ff21-403a-9cb3-5b3a9464ae0f", delivery.id
+      end
+    end
+  end
+
+  test "fetching delivery line items for a specific delivery" do
+    VCR.use_cassette("delivery_line_items") do
+      Zaikio::Procurement.with_token(token) do
+        delivery = Zaikio::Procurement::Delivery.find("46a67d80-ff21-403a-9cb3-5b3a9464ae0f")
+        assert delivery.delivery_line_items.any?
+      end
+    end
+  end
+
+  test "fetching a specific delivery line item" do
+    VCR.use_cassette("delivery_line_item") do
+      Zaikio::Procurement.with_token(token) do
+        delivery_line_item = Zaikio::Procurement::DeliveryLineItem.find("75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0")
+        assert_equal "75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0", delivery_line_item.id
       end
     end
   end

@@ -1,0 +1,261 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/consumers/api/v1/order_line_items/2f5a99c2-9734-4aac-9cee-911b061d3a5a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 26 Jan 2021 10:38:19 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6e91529f75ff3447753c8137398b3c33"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ac1411a9-3858-4381-b2d2-c7ff6189f7d6
+      X-Runtime:
+      - '0.024146'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"2f5a99c2-9734-4aac-9cee-911b061d3a5a","order_id":"86b4a0c5-6d54-4702-a059-da258643f260","sku_id":"a3bc9145-1994-4011-9651-6233d733f4b0","references":["COL/EUEWEG"],"amount":1,"amount_in_base_unit":4000,"base_unit":"sheet","description":"MAGNO
+        GLOSS – PS1 - Premium Coated, 640 × 900 mm, 300 g/㎡, long – 1 pallet, 691.2
+        kg","order_number":"MAGGLO|300|64.0|90.0|0250|004000||L|PL|MAGGLO30064904000|v1","tax_rate":null,"taxes":null,"total_gross_price":null,"total_net_price":"466.56","unit":"pallet","created_at":"2021-01-26T10:37:42.859Z","updated_at":"2021-01-26T10:37:42.859Z","catalog_price":"466.56","confirmed_price":null,"order":{"id":"86b4a0c5-6d54-4702-a059-da258643f260","references":["CO/PSQGDS"],"links":[{"rel":"self","href":"/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260"}]},"sku":{"id":"a3bc9145-1994-4011-9651-6233d733f4b0","order_number":"MAGGLO|300|64.0|90.0|0250|004000||L|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/a3bc9145-1994-4011-9651-6233d733f4b0"}]}}'
+  recorded_at: Tue, 26 Jan 2021 10:38:20 GMT
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260/order_line_items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 26 Jan 2021 10:38:19 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260/order_line_items?page=1>;
+        rel="first", <https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260/order_line_items?page=1>;
+        rel="last"
+      X-Total-Count:
+      - '2'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2f75baafde6bb74d30fe481f1f62f0ac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4d0c3a6c-4d63-4902-9e45-b27ee37a85db
+      X-Runtime:
+      - '0.025884'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"058a5513-925e-4d0c-923d-fa1ed4bfb3ce","order_id":"86b4a0c5-6d54-4702-a059-da258643f260","sku_id":"6535eeb0-45c2-4c63-8cb9-4814562bb875","references":["COL/M2RKVH"],"amount":69000,"amount_in_base_unit":69000,"base_unit":"sheet","description":"MAGNO
+        GLOSS – PS1 - Premium Coated, 520 × 720 mm, 115 g/㎡, long – 1 sheet, 43.056
+        g","order_number":"MAGGLO|115|52.0|72.0|0500|000000||L|SH|MAGGLO11552720|v1","tax_rate":null,"taxes":null,"total_gross_price":null,"total_net_price":"1931.31","unit":"sheet","created_at":"2021-01-26T10:37:00.201Z","updated_at":"2021-01-26T10:38:07.500Z","catalog_price":"0.02799","confirmed_price":null,"order":{"id":"86b4a0c5-6d54-4702-a059-da258643f260","references":["CO/PSQGDS"],"links":[{"rel":"self","href":"/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260"}]},"sku":{"id":"6535eeb0-45c2-4c63-8cb9-4814562bb875","order_number":"MAGGLO|115|52.0|72.0|0500|000000||L|SH||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/6535eeb0-45c2-4c63-8cb9-4814562bb875"}]}},{"id":"2f5a99c2-9734-4aac-9cee-911b061d3a5a","order_id":"86b4a0c5-6d54-4702-a059-da258643f260","sku_id":"a3bc9145-1994-4011-9651-6233d733f4b0","references":["COL/EUEWEG"],"amount":1,"amount_in_base_unit":4000,"base_unit":"sheet","description":"MAGNO
+        GLOSS – PS1 - Premium Coated, 640 × 900 mm, 300 g/㎡, long – 1 pallet, 691.2
+        kg","order_number":"MAGGLO|300|64.0|90.0|0250|004000||L|PL|MAGGLO30064904000|v1","tax_rate":null,"taxes":null,"total_gross_price":null,"total_net_price":"466.56","unit":"pallet","created_at":"2021-01-26T10:37:42.859Z","updated_at":"2021-01-26T10:37:42.859Z","catalog_price":"466.56","confirmed_price":null,"order":{"id":"86b4a0c5-6d54-4702-a059-da258643f260","references":["CO/PSQGDS"],"links":[{"rel":"self","href":"/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260"}]},"sku":{"id":"a3bc9145-1994-4011-9651-6233d733f4b0","order_number":"MAGGLO|300|64.0|90.0|0250|004000||L|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/a3bc9145-1994-4011-9651-6233d733f4b0"}]}}]'
+  recorded_at: Tue, 26 Jan 2021 10:38:20 GMT
+- request:
+    method: delete
+    uri: https://procurement.zaikio.test/consumers/api/v1/order_line_items/2f5a99c2-9734-4aac-9cee-911b061d3a5a
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 26 Jan 2021 10:38:20 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9281e01f-a508-4188-92cd-69d5009c534d
+      X-Runtime:
+      - '0.037400'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 26 Jan 2021 10:38:20 GMT
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260/order_line_items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 26 Jan 2021 10:38:20 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260/order_line_items?page=1>;
+        rel="first", <https://procurement.zaikio.test/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260/order_line_items?page=1>;
+        rel="last"
+      X-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"27ebd57a1bdaf214c15c229ba37486cd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 45ebcde5-d261-455a-92a9-fc434bfd8945
+      X-Runtime:
+      - '0.027267'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"058a5513-925e-4d0c-923d-fa1ed4bfb3ce","order_id":"86b4a0c5-6d54-4702-a059-da258643f260","sku_id":"6535eeb0-45c2-4c63-8cb9-4814562bb875","references":["COL/M2RKVH"],"amount":69000,"amount_in_base_unit":69000,"base_unit":"sheet","description":"MAGNO
+        GLOSS – PS1 - Premium Coated, 520 × 720 mm, 115 g/㎡, long – 1 sheet, 43.056
+        g","order_number":"MAGGLO|115|52.0|72.0|0500|000000||L|SH|MAGGLO11552720|v1","tax_rate":null,"taxes":null,"total_gross_price":null,"total_net_price":"1931.31","unit":"sheet","created_at":"2021-01-26T10:37:00.201Z","updated_at":"2021-01-26T10:38:07.500Z","catalog_price":"0.02799","confirmed_price":null,"order":{"id":"86b4a0c5-6d54-4702-a059-da258643f260","references":["CO/PSQGDS"],"links":[{"rel":"self","href":"/consumers/api/v1/orders/86b4a0c5-6d54-4702-a059-da258643f260"}]},"sku":{"id":"6535eeb0-45c2-4c63-8cb9-4814562bb875","order_number":"MAGGLO|115|52.0|72.0|0500|000000||L|SH||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/6535eeb0-45c2-4c63-8cb9-4814562bb875"}]}}]'
+  recorded_at: Tue, 26 Jan 2021 10:38:20 GMT
+recorded_with: VCR 6.0.0

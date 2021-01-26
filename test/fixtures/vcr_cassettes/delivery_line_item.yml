@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/contracts/fd677fc7-abd9-460c-b086-34de1a8349e8
+    uri: https://procurement.zaikio.test/consumers/api/v1/delivery_line_items/75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 26 Jan 2021 10:37:02 GMT
+      - Tue, 26 Jan 2021 10:37:06 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -41,13 +41,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"74e186e753f6632b70661e8aa7ebc0d3"
+      - W/"f3fa041e2a292d32fdcd3e85b693af7f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d42deab9-13a4-4dcd-98e4-c45475a9e692
+      - c3108826-84c2-4222-9600-5c7ebe347ef0
       X-Runtime:
-      - '0.020808'
+      - '0.020767'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Vary:
@@ -58,7 +58,6 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"fd677fc7-abd9-460c-b086-34de1a8349e8","currency":"EUR","customer_number":null,"references":["C/GN9Z2W"],"consumer_id":"5e48383d-b276-4d70-b690-9e2032e3cd3a","consumer":{"id":"5e48383d-b276-4d70-b690-9e2032e3cd3a","display_name":"Joey’s
-        Print Ltd","links":[{"rel":"self","href":null}]},"supplier_id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"created_at":"2020-04-29T10:24:10.183Z","updated_at":"2020-04-30T09:52:37.520Z"}'
-  recorded_at: Tue, 26 Jan 2021 10:37:02 GMT
+      string: '{"id":"75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0","references":["DE/W8EK9D"],"amount":2,"created_at":"2020-11-05T16:24:26.702Z","updated_at":"2020-11-05T16:24:26.702Z","delivery":{"id":"46a67d80-ff21-403a-9cb3-5b3a9464ae0f","references":["CD/KW9DRF","2332"],"links":[{"rel":"self","href":"/consumers/api/v1/deliveries/46a67d80-ff21-403a-9cb3-5b3a9464ae0f"}]},"order_line_item":{"id":"42e5b736-a015-4b9f-a8e0-218e98e2c15f","references":["OR/CAPDHH"],"amount":2,"links":[{"rel":"self","href":"/consumers/api/v1/order_line_items/42e5b736-a015-4b9f-a8e0-218e98e2c15f"}]}}'
+  recorded_at: Tue, 26 Jan 2021 10:37:06 GMT
 recorded_with: VCR 6.0.0

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/consumers/api/v1/orders/a29f3c77-5e53-4658-a741-afd1824f4829
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIwOWRkMjFmMy05OTJlLTQ1ZjEtYjE4Ni1kZDEwZmE1NjI1N2IiLCJuYmYiOjE2MTE2NTU2OTQsImV4cCI6MTYxMTY1OTI5NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciXX0.pXlb8-BgI5OK3JGfH6zrFcCTWTnZloWwrpdhBHbzODn9ejdbJ9fLgUpFrA1K0K7C8xu-6T8XkQr_9Lm2_QbH2eXC9gSsOt-PGQqO_-naVfLhbVwJt23gXn-7jK-UTpOw_Qtq1SEJXsEM2V2M_UYrqdC1JocPZ_LQ5Cu0ce1HWjtBpNeTFnqvfDGSE_VxYPStzDJagIlwoDA_rkH0qO_E5Gs-_-3zYE2f_EwFQX-xHErrobmgtjm8Mgt1Gq_c6GacAmg4NWcWfs67Ee5ocrXMPtcN7-E6VacdKonE0vpmllBwHJ3dH0AwgA0FzNt06EkGDkI_7UwoAPBZrH-ijuOz_vKyHIhAfe6xgBKdk-yEOU86WecaQ8HpFeOLsw8LDVBKoZem1uN1uKvsObhI2ROnHfwva4hQ_cUi4pXRxn3aaPsTUPVCfHnVLdSvoENkYncYYj7C6-B5LWFtFo9h-s-sF1dLiK9ahvKGhrf4gAPvKZ0w_HnKu9joeKzk-6XgJanS4Gqk__MZF8uzuTmZDqzXI7lnNxkTmoFBoR9bl1gaknf8VNNJmFv4vChixc9UX-SbkkUiBB7xZEdsXo-SxIXrnOYznAv8eSMG6mcy3ARppiBnfckvD6QOGyaKCud5nsd31hMdvH2z0OhKXEx61AoS9dQpaAgN3lnQ7mpfVeYPtdI
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 26 Jan 2021 10:37:13 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e05b20f1545cc5f04b475575bfdd69af"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1018dce6-98ce-4daa-9754-ce2005fdb076
+      X-Runtime:
+      - '0.039910'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"a29f3c77-5e53-4658-a741-afd1824f4829","canceled_by_consumer_at":null,"canceled_by_supplier_at":null,"cancelation_requested_at":null,"confirmed_at":null,"currency":"EUR","delivery_mode":"complete","gross_total":"0.0","net_handling_fee":null,"net_shipping_fee":null,"net_total":"932.88","partially_shipped_at":null,"partially_shipped_remainder_canceled_at":null,"placed_at":null,"producing_at":null,"references":["CO/7H38HB"],"shipped_at":null,"state":"draft","state_reason":null,"taxes":"0.0","taxes_on_fees":null,"transfer_failed_at":null,"transferred_at":null,"contract_id":"fd677fc7-abd9-460c-b086-34de1a8349e8","contract":{"id":"fd677fc7-abd9-460c-b086-34de1a8349e8","customer_number":null,"references":["C/GN9Z2W"],"links":[{"rel":"self","href":"/consumers/api/v1/contracts/fd677fc7-abd9-460c-b086-34de1a8349e8"}]},"exclusive_sales_group_id":"2688312d-bca6-4851-8cc8-310bad084eb6","exclusive_sales_group":{"id":"2688312d-bca6-4851-8cc8-310bad084eb6","name":"Meinders
+        \u0026 Elstermann GmbH \u0026 Co. KG | 0001052231 | 0001052231","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/2688312d-bca6-4851-8cc8-310bad084eb6"}]},"person_id":null,"person":{"id":null,"display_name":null,"links":[{"rel":"self","href":null}]},"created_at":"2020-11-05T16:24:26.670Z","updated_at":"2020-11-05T16:24:26.670Z","order_line_items":[{"id":"42e5b736-a015-4b9f-a8e0-218e98e2c15f","order_id":"a29f3c77-5e53-4658-a741-afd1824f4829","sku_id":"6ab32765-8ce3-4a09-b528-fd39baf48a7f","references":["OR/CAPDHH"],"amount":2,"amount_in_base_unit":24000,"base_unit":"sheet","description":"MAGNO
+        GLOSS – PS1 - Premium Coated, 920 × 650 mm, 100 g/㎡, short – PEFC 100%, 1
+        pallet, 717.6 kg","order_number":"MAGGLO|100|92.0|65.0|0250|012000|PEFC|S|PL|MAGGLO100926512000PEFC|v1","tax_rate":null,"taxes":null,"total_gross_price":null,"total_net_price":"932.88","unit":"pallet","created_at":"2020-11-05T16:24:26.673Z","updated_at":"2021-01-20T09:39:47.916Z","catalog_price":"466.44","confirmed_price":null,"order":{"id":"a29f3c77-5e53-4658-a741-afd1824f4829","references":["CO/7H38HB"],"links":[{"rel":"self","href":"/consumers/api/v1/orders/a29f3c77-5e53-4658-a741-afd1824f4829"}]},"sku":{"id":"6ab32765-8ce3-4a09-b528-fd39baf48a7f","order_number":"MAGGLO|100|92.0|65.0|0250|012000|PEFC|S|PL||v1","links":[{"rel":"self","href":"/consumers/api/v1/skus/6ab32765-8ce3-4a09-b528-fd39baf48a7f"}]}}]}'
+  recorded_at: Tue, 26 Jan 2021 10:37:13 GMT
+recorded_with: VCR 6.0.0
