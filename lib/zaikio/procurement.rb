@@ -16,6 +16,10 @@ require "zaikio/procurement/supplier"
 require "zaikio/procurement/contract"
 require "zaikio/procurement/contract_request"
 require "zaikio/procurement/sales_group"
+require "zaikio/procurement/order"
+require "zaikio/procurement/order_line_item"
+require "zaikio/procurement/delivery"
+require "zaikio/procurement/delivery_line_item"
 module Zaikio
   module Procurement
     class << self
