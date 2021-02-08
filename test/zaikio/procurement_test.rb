@@ -245,6 +245,35 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
     end
   end
 
+  test "fetching a line item suggestions for multiple variant from a specifi supplier" do
+    VCR.use_cassette("supplier_line_item_suggestions") do
+      Zaikio::Procurement.with_token(token) do
+        supplier = Zaikio::Procurement::Supplier.find("a8b99fd3-a790-4366-85b0-2df4af0ca000")
+        suggestion = supplier.line_item_suggestions(
+          variants: [
+            {
+              id: "0001b94e-4e87-4ee9-8b14-6ff9910b4f26",
+              amount: 2000,
+              exact_amount: false,
+              environmental_certification: "FSC Mix Credit",
+              unit: "sheet"
+            },
+            {
+              id: "10236394-ecd4-465b-ab72-0fbd79296e6a",
+              amount: 10,
+              exact_amount: false,
+              environmental_certification: "PEFC 100%",
+              unit: "sheet"
+            }
+          ]
+        )
+
+        assert_includes suggestion[:line_item_suggestions].flat_map { |h| h[:variant_id] },
+                        "0001b94e-4e87-4ee9-8b14-6ff9910b4f26"
+      end
+    end
+  end
+
   test "fetching orders" do
     VCR.use_cassette("orders") do
       Zaikio::Procurement.with_token(token) do
