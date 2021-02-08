@@ -66,7 +66,29 @@ Zaikio::Procurement.with_token(token) do
 
   # https://docs.zaikio.com/api/procurement_consumers/procurement.html#/LineItemSuggestions/post_variants__variant_id__line_item_suggestions
   variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
-  variant.line_item_suggestion(amount: 10, unit: "sheet") # Returns a line item suggestion
+  variant.line_item_suggestion(amount: 10, unit: "sheet") # Returns a line item suggestion for a specifc variant
+
+  # https://docs.zaikio.com/api/procurement_consumers/procurement.html#/LineItemSuggestions/post_suppliers__supplier_id__line_item_suggestions
+  supplier = Zaikio::Procurement::Supplier.find("a8b99fd3-a790-4366-85b0-2df4af0ca000")
+  supplier.line_item_suggestions(
+    variants: [
+      {
+        id: "0001b94e-4e87-4ee9-8b14-6ff9910b4f26",
+        amount: 2000,
+        exact_amount: false,
+        environmental_certification: "FSC Mix Credit",
+        unit: "sheet"
+      },
+      {
+        id: "10236394-ecd4-465b-ab72-0fbd79296e6a",
+        amount: 10,
+        exact_amount: false,
+        environmental_certification: "PEFC 100%",
+        unit: "sheet"
+      }
+    ]
+  ) # Returns line item suggestions for multiple variants of a supplier
+
 
   # Create new resources
   Zaikio::Procurement::Order.create(
