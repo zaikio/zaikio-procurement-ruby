@@ -3,6 +3,10 @@ module Zaikio
     class Article < Base
       uri "articles(/:id)"
 
+      # Attributes
+      attributes :name, :base_unit, :coated, :description, :finish,
+                 :kind, :supplier_id, :created_at, :updated_at
+
       # Class methods
       class << self
         def list_by_article_type_or_supplier_slug(type_or_slug)

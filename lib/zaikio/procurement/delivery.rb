@@ -4,6 +4,10 @@ module Zaikio
       uri "deliveries(/:id)"
       include_root_in_json :delivery
 
+      # Attributes
+      attributes :confirmed_delivery_date, :desired_delivery_date, :references,
+                 :address, :order_id, :created_at, :updated_at
+
       # Associations
       belongs_to :order,             class_name: "Zaikio::Procurement::Order",
                                      uri: nil

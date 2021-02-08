@@ -4,6 +4,9 @@ module Zaikio
       uri "delivery_line_items(/:id)"
       include_root_in_json :delivery_line_item
 
+      # Attributes
+      attributes :amount, :created_at, :updated_at
+
       # Associations
       belongs_to :delivery,     class_name: "Zaikio::Procurement::Delivery",
                                 uri: nil

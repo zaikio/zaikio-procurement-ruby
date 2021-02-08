@@ -3,6 +3,11 @@ module Zaikio
     class Variant < Base
       uri "variants(/:id)"
 
+      # Attributes
+      attributes :brightness, :category, :color, :dimensions_unit, :form, :grain, :height, :paper_weight,
+                 :paper_weight_unit, :roughness, :thickness, :transparency, :unit_system, :whiteness,
+                 :width, :article_id, :created_at, :updated_at
+
       # Associations
       has_one :article, class_name: "Zaikio::Procurement::Article",
                         uri: nil
