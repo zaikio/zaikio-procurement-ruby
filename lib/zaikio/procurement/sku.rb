@@ -12,7 +12,7 @@ module Zaikio
       has_one :variant, class_name: "Zaikio::Procurement::Variant",
                         uri: nil
       has_many :prices, class_name: "Zaikio::Procurement::Price",
-                        uri: "skus/:sku_id/prices"
+                        uri: nil
     end
   end
 end

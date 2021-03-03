@@ -135,7 +135,6 @@ class Zaikio::ProcurementTest < ActiveSupport::TestCase
         prices = sku.prices
 
         assert prices.any?
-        assert_equal sku.id, prices.first.sku.id
       end
     end
   end
