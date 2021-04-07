@@ -2,6 +2,7 @@ module Zaikio
   module Procurement
     class Contract < Base
       uri "contracts(/:id)"
+      include_root_in_json :contract
 
       # Attributes
       attributes :currency, :customer_number, :references, :consumer_id,

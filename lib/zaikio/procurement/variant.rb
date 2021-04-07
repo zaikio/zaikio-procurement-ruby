@@ -1,7 +1,12 @@
 module Zaikio
   module Procurement
     class Variant < Base
-      uri "variants(/:id)"
+      include_root_in_json :substrate_variant
+
+      # Spyke URI override
+      def self.uri
+        Zaikio::Procurement.configuration.flavor == :supplier ? "substrate/variants(/:id)" : "variants(/:id)"
+      end
 
       # Attributes
       attributes :brightness, :category, :color, :dimensions_unit, :form, :grain, :height, :paper_weight,

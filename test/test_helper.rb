@@ -20,4 +20,10 @@ VCR.configure do |config|
 end
 
 class ActiveSupport::TestCase
+  setup do
+    Zaikio::Procurement.configure do |config|
+      config.environment = :test
+      config.flavor      = class_name.underscore.include?("consumer") ? :consumer : :supplier
+    end
+  end
 end

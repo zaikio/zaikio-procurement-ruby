@@ -8,6 +8,7 @@ require 'zaikio/procurement'
 
 Zaikio::Procurement.configure do |config|
   config.environment = :development
+  config.flavor      = :consumer
 end
 
 require 'pry'

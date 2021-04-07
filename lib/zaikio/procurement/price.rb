@@ -2,6 +2,7 @@ module Zaikio
   module Procurement
     class Price < Base
       uri "prices(/:id)"
+      include_root_in_json :price
 
       # Attributes
       attributes :kind, :minimum_order_quantity, :order_number, :price, :valid_from,

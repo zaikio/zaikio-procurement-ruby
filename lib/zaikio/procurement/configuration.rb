@@ -11,12 +11,15 @@ module Zaikio
         production: "https://procurement.zaikio.com"
       }.freeze
 
+      FLAVORS = %i[consumer supplier].freeze
+
       attr_accessor :host
-      attr_reader :environment
+      attr_reader :environment, :flavor
       attr_writer :logger
 
       def initialize
         @environment = :sandbox
+        @flavor      = :consumer
       end
 
       def logger
@@ -26,6 +29,12 @@ module Zaikio
       def environment=(env)
         @environment = env.to_sym
         @host = host_for(environment)
+      end
+
+      def flavor=(flavor)
+        raise StandardError.new, "Invalid Zaikio::Procurement flavor '#{flavor}'" unless FLAVORS.include?(flavor)
+
+        @flavor = flavor
       end
 
       private

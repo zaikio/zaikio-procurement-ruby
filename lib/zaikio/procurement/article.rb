@@ -1,14 +1,15 @@
 module Zaikio
   module Procurement
     class Article < Base
-      uri "articles(/:id)"
-
-      # Attributes
-      attributes :name, :base_unit, :coated, :description, :finish,
-                 :kind, :supplier_id, :created_at, :updated_at
+      include_root_in_json :substrate_article
 
       # Class methods
       class << self
+        # Spyke URI override
+        def uri
+          Zaikio::Procurement.configuration.flavor == :supplier ? "substrate/articles(/:id)" : "articles(/:id)"
+        end
+
         def list_by_article_type_or_supplier_slug(type_or_slug)
           with("#{type_or_slug}/articles").get
         end
@@ -18,11 +19,17 @@ module Zaikio
         end
       end
 
+      # Attributes
+      attributes :name, :base_unit, :coated, :description, :finish,
+                 :kind, :supplier_id, :created_at, :updated_at
+
       # Associations
       has_one :supplier,  class_name: "Zaikio::Procurement::Supplier",
                           uri: nil
-      has_many :variants, class_name: "Zaikio::Procurement::Variant",
-                          uri: "articles/:article_id/variants"
+      # Manually build variants association to work for consumers and suppliers
+      def variants
+        self.class.request(:get, "#{uri}/variants").data.collect { |v| Zaikio::Procurement::Variant.new(v) }
+      end
     end
   end
 end

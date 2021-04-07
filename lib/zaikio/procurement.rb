@@ -20,6 +20,7 @@ require "zaikio/procurement/order"
 require "zaikio/procurement/order_line_item"
 require "zaikio/procurement/delivery"
 require "zaikio/procurement/delivery_line_item"
+require "zaikio/procurement/current_supplier"
 module Zaikio
   module Procurement
     class << self
@@ -42,8 +43,12 @@ module Zaikio
         AuthorizationMiddleware.reset_token
       end
 
+      def connection_path
+        "#{configuration.host}/#{configuration.flavor.to_s.pluralize}/api/v1/"
+      end
+
       def create_connection
-        self.connection = Faraday.new(url: "#{configuration.host}/consumers/api/v1/",
+        self.connection = Faraday.new(url: connection_path,
                                       ssl: { verify: configuration.environment != :test }) do |c|
           c.request     :json
           c.response    :logger, configuration&.logger, headers: false

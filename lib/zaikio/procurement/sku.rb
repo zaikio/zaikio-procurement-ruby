@@ -2,6 +2,7 @@ module Zaikio
   module Procurement
     class Sku < Base
       uri "skus(/:id)"
+      include_root_in_json :sku
 
       # Attributes
       attributes :amount, :amount_in_base_unit, :availability_in_days, :dimension_unit,
@@ -12,7 +13,7 @@ module Zaikio
       has_one :variant, class_name: "Zaikio::Procurement::Variant",
                         uri: nil
       has_many :prices, class_name: "Zaikio::Procurement::Price",
-                        uri: nil
+                        uri: "skus/:sku_id/prices"
     end
   end
 end
