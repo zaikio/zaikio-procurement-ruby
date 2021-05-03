@@ -12,6 +12,11 @@ Gem::Specification.new do |spec|
   spec.description   = "Ruby API Client for Zaikio's Procurement Platform"
   spec.license       = "MIT"
 
+  if spec.respond_to?(:metadata)
+    spec.metadata["changelog_uri"] = "https://github.com/zaikio/zaikio-procurement-ruby/blob/master/CHANGELOG.md"
+    spec.metadata["source_code_uri"] = "https://github.com/zaikio/zaikio-procurement-ruby"
+  end
+
   spec.files = Dir[
     "{app,config,db,lib}/**/*", "MIT-LICENSE",
     "Rakefile", "README.md"

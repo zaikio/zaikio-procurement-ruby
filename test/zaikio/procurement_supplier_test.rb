@@ -34,7 +34,7 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
           finish: "\"matte\", \"painted\", \"glossy\", \"elephant skin\"",
           kind: "paper",
           name: "Magno Matt",
-          substrate_variants_attributes: [
+          variants_attributes: [
             {
               brightness: 0,
               category: "PS1 - Premium Coated",

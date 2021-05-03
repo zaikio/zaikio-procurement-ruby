@@ -1,7 +1,7 @@
 module Zaikio
   module Procurement
     class Article < Base
-      include_root_in_json :substrate_article
+      include_root_in_json :article
 
       # Class methods
       class << self

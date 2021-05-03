@@ -1,7 +1,7 @@
 module Zaikio
   module Procurement
     class Variant < Base
-      include_root_in_json :substrate_variant
+      include_root_in_json :variant
 
       # Spyke URI override
       def self.uri
