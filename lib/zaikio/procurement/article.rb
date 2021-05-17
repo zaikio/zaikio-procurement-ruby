@@ -26,8 +26,10 @@ module Zaikio
       # Associations
       has_one :supplier,  class_name: "Zaikio::Procurement::Supplier",
                           uri: nil
-
-      has_many :variants
+      # Manually build variants association to work for consumers and suppliers
+      def variants
+        self.class.request(:get, "#{uri}/variants").data.collect { |v| Zaikio::Procurement::Variant.new(v) }
+      end
     end
   end
 end
