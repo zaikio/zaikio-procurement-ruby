@@ -81,18 +81,6 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
     end
   end
 
-  test "fetching the variants of an article" do
-    VCR.use_cassette("supplier_article_variants") do
-      Zaikio::Procurement.with_token(token) do
-        article = Zaikio::Procurement::Article.find("ee8de074-bedf-403d-b1f0-d4edc2a675a9")
-        variants = article.variants
-
-        assert variants.any?
-        assert_equal article.id, variants.first.article.id
-      end
-    end
-  end
-
   test "create a price for a specific sku" do
     VCR.use_cassette("create_supplier_sku_price") do
       Zaikio::Procurement.with_token(token) do
