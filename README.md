@@ -59,7 +59,7 @@ Zaikio::Procurement.with_token(token) do
   search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80)
 
   # or by providing a supplier_id to search for all variants of a substrate of from a specific supplier
-  search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80, supplier_id: "a8b99fd3-a790-4366-85b0-2df4af0ca000")
+  search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80, supplier_id: "b5b14aa0-ae84-452b-9719-a38545365902")
 
   search.results # Returns a list of matching variants
   search.facets # Returns a list of search facets that can be used to further narrow down the results
@@ -69,7 +69,7 @@ Zaikio::Procurement.with_token(token) do
   variant.line_item_suggestion(amount: 10, unit: "sheet") # Returns a line item suggestion for a specifc variant
 
   # https://docs.zaikio.com/api/procurement_consumers/procurement.html#/LineItemSuggestions/post_suppliers__supplier_id__line_item_suggestions
-  supplier = Zaikio::Procurement::Supplier.find("a8b99fd3-a790-4366-85b0-2df4af0ca000")
+  supplier = Zaikio::Procurement::Supplier.find("b5b14aa0-ae84-452b-9719-a38545365902")
   supplier.line_item_suggestions(
     variants: [
       {
