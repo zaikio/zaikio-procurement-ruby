@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/suppliers/api/v1/sales_group_memberships
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkzODcsImV4cCI6MTY1Mjc4NTM4NywiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uL2JjY2IzY2NhLTcyZmItNDllNy04ZWFjLTllMDFhOGFmZjJkZSJ9.lIcRlY2NCZFIpIGkQsJxNhYI_9FC2WAq4-O7aCR5BT0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 07 Apr 2021 17:20:12 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/suppliers/api/v1/sales_group_memberships?page=1>;
+        rel="first", <https://procurement.zaikio.test/suppliers/api/v1/sales_group_memberships?page=1>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"773dc924f6e3db9eae28ee685f9af704"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 36ab7bdb-016f-4445-8a02-01aa0469b9a4
+      X-Runtime:
+      - '0.056845'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"f71836ca-7e15-40bd-a5fe-a5e982cc639a","contract_id":"47222887-04d0-43a2-87af-95435a82773c","contract":{"id":"47222887-04d0-43a2-87af-95435a82773c","customer_number":"424217","references":["CC/3C2T92"],"links":[{"rel":"self","href":"/suppliers/api/v1/contracts/47222887-04d0-43a2-87af-95435a82773c"}]},"sales_group_id":"5bade956-2e53-4012-a31b-8573cf1b966e","sales_group":{"id":"5bade956-2e53-4012-a31b-8573cf1b966e","name":"47222887-04d0-43a2-87af-95435a82773c/Doe
+        Print Services","links":[{"rel":"self","href":"/suppliers/api/v1/sales_groups/5bade956-2e53-4012-a31b-8573cf1b966e"}]},"created_at":"2021-05-21T09:02:58.424Z","updated_at":"2021-05-21T09:02:58.424Z"}]'
+  recorded_at: Fri, 21 May 2021 10:20:12 GMT
+recorded_with: VCR 6.0.0

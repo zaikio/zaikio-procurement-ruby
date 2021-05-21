@@ -103,4 +103,13 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
       end
     end
   end
+
+  test "fetching sales group memberships" do
+    VCR.use_cassette("supplier_sales_group_memberships") do
+      Zaikio::Procurement.with_token(token) do
+        sales_group_memberships = Zaikio::Procurement::SalesGroupMembership.all
+        assert sales_group_memberships.any?
+      end
+    end
+  end
 end
