@@ -13,6 +13,7 @@ module Zaikio
       # Associations
       belongs_to :supplier, class_name: "Zaikio::Procurement::Supplier",
                             uri: nil
+      has_one :contract, uri: nil
     end
   end
 end
