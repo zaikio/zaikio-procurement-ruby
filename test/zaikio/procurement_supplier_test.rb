@@ -14,6 +14,15 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
     end
   end
 
+  test "fetching articles with pagination" do
+    VCR.use_cassette("supplier_articles_multiple_pages") do
+      Zaikio::Procurement.with_token(token) do
+        articles = Zaikio::Procurement::Article.all.per_page(1).to_a
+        assert_equal 3, articles.size
+      end
+    end
+  end
+
   test "fetching a specific article" do
     VCR.use_cassette("supplier_article") do
       Zaikio::Procurement.with_token(token) do

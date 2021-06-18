@@ -1,6 +1,8 @@
+require "zaikio/client/model"
+
 module Zaikio
   module Procurement
-    class Base < Spyke::Base
+    class Base < Zaikio::Client::Model
       self.callback_methods = { create: :post, update: :patch }.freeze
     end
   end
