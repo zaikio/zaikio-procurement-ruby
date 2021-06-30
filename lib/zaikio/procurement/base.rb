@@ -1,5 +1,3 @@
-require "zaikio/client/model"
-
 module Zaikio
   module Procurement
     class Base < Zaikio::Client::Model
