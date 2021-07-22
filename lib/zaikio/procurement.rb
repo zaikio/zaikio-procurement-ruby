@@ -5,7 +5,6 @@ require "zaikio/procurement/configuration"
 require "zaikio/procurement/authorization_middleware"
 
 # Models
-require "zaikio/error"
 require "zaikio/procurement/base"
 require "zaikio/procurement/article"
 require "zaikio/procurement/variant"
