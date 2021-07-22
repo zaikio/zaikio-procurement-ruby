@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "multi_json"
   spec.add_dependency "oj"
   spec.add_dependency "spyke"
-  spec.add_dependency "zaikio-client-helpers", ">= 0.1.1", "< 0.3.0"
+  spec.add_dependency "zaikio-client-helpers", "~> 0.2"
 
   spec.required_ruby_version = ">= 2.7.1"
 end
