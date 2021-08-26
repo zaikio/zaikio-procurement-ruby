@@ -21,6 +21,7 @@ require "zaikio/procurement/order_line_item"
 require "zaikio/procurement/delivery"
 require "zaikio/procurement/delivery_line_item"
 require "zaikio/procurement/current_supplier"
+require "zaikio/procurement/material_requirement"
 module Zaikio
   module Procurement
     class << self

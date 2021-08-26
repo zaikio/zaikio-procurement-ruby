@@ -83,7 +83,7 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   test "fetching variants form a specific article" do
     VCR.use_cassette("variants") do
       Zaikio::Procurement.with_token(token) do
-        article  = Zaikio::Procurement::Article.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
+        article = Zaikio::Procurement::Article.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
         variants = article.variants
 
         assert variants.any?
@@ -104,8 +104,8 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   test "fetching skus form a specific variant" do
     VCR.use_cassette("skus") do
       Zaikio::Procurement.with_token(token) do
-        variant  = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
-        skus     = variant.skus
+        variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
+        skus = variant.skus
 
         assert skus.any?
         assert_equal variant.id, skus.first.variant.id
@@ -125,7 +125,7 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   test "fetching prices form a specific sku" do
     VCR.use_cassette("prices") do
       Zaikio::Procurement.with_token(token) do
-        sku    = Zaikio::Procurement::Sku.find("08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5")
+        sku = Zaikio::Procurement::Sku.find("08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5")
         prices = sku.prices
 
         assert prices.any?
@@ -399,6 +399,64 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
       Zaikio::Procurement.with_token(token) do
         delivery_line_item = Zaikio::Procurement::DeliveryLineItem.find("75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0")
         assert_equal "75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0", delivery_line_item.id
+      end
+    end
+  end
+
+  test "fetching material requirements" do
+    VCR.use_cassette("material_requirements") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirements = Zaikio::Procurement::MaterialRequirement.all
+        assert material_requirements.any?
+      end
+    end
+  end
+
+  test "fetching a specific material requirement" do
+    VCR.use_cassette("material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("4f23019a-b856-4330-9feb-962d10f53125")
+        assert_equal "4f23019a-b856-4330-9feb-962d10f53125", material_requirement.id
+      end
+    end
+  end
+
+  test "creating a material requirement" do
+    VCR.use_cassette("create_material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirement_data = {
+          amount: 100,
+          unit: "sheet",
+          description: "Custom Material Requirement"
+        }
+
+        assert_difference "Zaikio::Procurement::MaterialRequirement.all.count" do
+          Zaikio::Procurement::MaterialRequirement.create(material_requirement_data)
+        end
+      end
+    end
+  end
+
+  test "updating a specific material requirement" do
+    VCR.use_cassette("update_material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("4f23019a-b856-4330-9feb-962d10f53125")
+        material_requirement.update(amount: 1)
+
+        assert_equal 1, material_requirement.amount
+      end
+    end
+  end
+
+  test "deleting a specific material requirement" do
+    VCR.use_cassette("delete_material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("9f22a39c-6d86-4077-94d4-58b528ce6f07")
+        material_requirement.delete
+
+        assert_raises Zaikio::ResourceNotFound do
+          Zaikio::Procurement::MaterialRequirement.find("9f22a39c-6d86-4077-94d4-58b528ce6f07")
+        end
       end
     end
   end
