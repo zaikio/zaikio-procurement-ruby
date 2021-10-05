@@ -7,4 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+* Added support for material requirements
+
 [Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/d9035200...HEAD
