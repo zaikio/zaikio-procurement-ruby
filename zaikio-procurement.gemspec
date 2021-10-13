@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   if spec.respond_to?(:metadata)
-    spec.metadata["changelog_uri"] = "https://github.com/zaikio/zaikio-procurement-ruby/blob/master/CHANGELOG.md"
+    spec.metadata["changelog_uri"] = "https://github.com/zaikio/zaikio-procurement-ruby/blob/main/CHANGELOG.md"
     spec.metadata["source_code_uri"] = "https://github.com/zaikio/zaikio-procurement-ruby"
   end
 
