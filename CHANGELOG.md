@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2021-10-13
+
 ### Added
 - Added MaterialAvailabilityCheck for suppliers
 
@@ -19,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added support for material requirements
 
-[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.1.1..HEAD
+[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.2.0..HEAD
+[0.2.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.1.1..v0.2.0
 [0.1.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.1.0..v0.1.1
 [0.1.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/3e84659a2eee172280a7e4f0434fd8ce0e373844..8c9a509b308290ba18c17ef68701fd451cb05d18
