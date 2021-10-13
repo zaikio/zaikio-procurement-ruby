@@ -5,6 +5,10 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
     "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkzODcsImV4cCI6MTY1Mjc4NTM4NywiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uL2JjY2IzY2NhLTcyZmItNDllNy04ZWFjLTllMDFhOGFmZjJkZSJ9.lIcRlY2NCZFIpIGkQsJxNhYI_9FC2WAq4-O7aCR5BT0" # rubocop:disable Layout/LineLength
   end
 
+  def valid_token
+    "eyJraWQiOiJhNmE1MzFjMGZhZTVlNWE1MDAzZDI2ZTRhMTIwMmIwNjg2ZDFkNTRjNGZhYTViZDlkZTBjMzdkY2JkY2RkYzdlIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYmNjYjNjY2EtNzJmYi00OWU3LThlYWMtOWUwMWE4YWZmMmRlIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI0MThjZGJkYy03M2ViLTQzZDEtOGQzZi05YmI5ZTMxODE3MmIiLCJuYmYiOjE2MzQxMjkyODUsImV4cCI6MjI2NTI4MTI4NSwiamt1IjoiaHR0cHM6Ly9odWIuemFpa2lvLnRlc3QvYXBpL3YxL2p3dF9wdWJsaWNfa2V5cyIsInNjb3BlIjpbInByb2N1cmVtZW50X3N1cHBsaWVyLmNhdGFsb2cucnciLCJwcm9jdXJlbWVudF9zdXBwbGllci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9zdXBwbGllci5vcmRlcnMucnciXX0.BBDwzCjdJ7J78f8zzjKiCOXQXpSdAOn5NmLc6Qtq0L-hR_K1Ei5ru5mPzwwX9WJIX_mmBZomMySJxe8t_7gYrjTidJsYaJVAMSuhzBtXLlXDQ-GddNUwMx62rxcMv0TpbYDS8ZH-WA0vTE3zqi7BQs4vif7-ejBTjKQL_wWIshZW9wLa4zzT0TDyMiAJG6wsuv0wv3ZoOPzIKVLR4POF0fpxYtXF6VhBkxsl5Jf4dmBFmSmuZuVNu86df4cSvwfmE-01HWPYjme1W8rz8aw9JOB74RUnM2z6eT-9ku_Sd--DI8iZHxNqeaKWWJqh2YIGLcmHncrWhJyTaXqGutasfg" # rubocop:disable Layout/LineLength
+  end
+
   test "fetching articles" do
     VCR.use_cassette("supplier_articles") do
       Zaikio::Procurement.with_token(token) do
@@ -118,6 +122,30 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
       Zaikio::Procurement.with_token(token) do
         sales_group_memberships = Zaikio::Procurement::SalesGroupMembership.all
         assert sales_group_memberships.any?
+      end
+    end
+  end
+
+  test "fetching and updating availability checks" do
+    VCR.use_cassette("supplier_material_availabilitc_checks") do
+      Zaikio::Procurement.with_token(valid_token) do
+        availability_check = Zaikio::Procurement::MaterialAvailabilityCheck
+                             .find("40009396-d4e8-48eb-801e-c43f868748e1")
+        assert_equal 500, availability_check.amount
+        assert_equal "pallet", availability_check.unit
+        assert_nil availability_check.responded_at
+
+        availability_check.update(
+          earliest_delivery_date: 20.days.from_now,
+          stock_availability_amount: 1_000,
+          confirmed_price: "89000.40",
+          expires_at: 1.hour.from_now
+        )
+
+        availability_check = Zaikio::Procurement::MaterialAvailabilityCheck
+                             .find("40009396-d4e8-48eb-801e-c43f868748e1")
+        assert_equal 1_000, availability_check.stock_availability_amount
+        assert_not_nil availability_check.responded_at
       end
     end
   end
