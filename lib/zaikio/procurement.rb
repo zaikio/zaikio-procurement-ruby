@@ -40,10 +40,11 @@ module Zaikio
       end
 
       def with_token(token)
+        original_token = AuthorizationMiddleware.token
         AuthorizationMiddleware.token = token
         yield
       ensure
-        AuthorizationMiddleware.reset_token
+        AuthorizationMiddleware.token = original_token
       end
 
       def connection_path
