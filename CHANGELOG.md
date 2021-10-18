@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- `with_token` keeps the preceding token instead of resetting
+
 ## [0.2.0] - 2021-10-13
 
 ### Added

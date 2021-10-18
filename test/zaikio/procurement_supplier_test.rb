@@ -135,18 +135,22 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
         assert_equal "pallet", availability_check.unit
         assert_nil availability_check.responded_at
 
-        availability_check.update(
-          earliest_delivery_date: 20.days.from_now,
-          stock_availability_amount: 1_000,
-          confirmed_price: "89000.40",
-          expires_at: 1.hour.from_now
-        )
+        Zaikio::Procurement.with_token(valid_token) do
+          availability_check.update(
+            earliest_delivery_date: 20.days.from_now,
+            stock_availability_amount: 1_000,
+            confirmed_price: "89000.40",
+            expires_at: 1.hour.from_now
+          )
+        end
 
         availability_check = Zaikio::Procurement::MaterialAvailabilityCheck
                              .find("40009396-d4e8-48eb-801e-c43f868748e1")
         assert_equal 1_000, availability_check.stock_availability_amount
         assert_not_nil availability_check.responded_at
       end
+
+      assert_nil Zaikio::Procurement::AuthorizationMiddleware.token
     end
   end
 end
