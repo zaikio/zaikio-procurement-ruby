@@ -460,4 +460,18 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
       end
     end
   end
+
+  test "order a specific material requirement" do
+    VCR.use_cassette("order_material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("55ffe17b-427f-4797-ac9c-5e28718d0e04")
+        material_requirement.order(purchaser_id: "383663bc-149a-5b76-b50d-ee039046c12e")
+
+        material_requirement.reload
+
+        assert_equal "ordered", material_requirement.state
+        assert material_requirement.order_line_items.any?
+      end
+    end
+  end
 end
