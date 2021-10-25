@@ -15,6 +15,13 @@ module Zaikio
       has_one :supplier, class_name: "Zaikio::Procurement::Supplier", uri: nil
       has_one :variant, class_name: "Zaikio::Procurement::Variant", uri: nil
       has_many :order_line_items, class_name: "Zaikio::Procurement::OrderLineItem", uri: nil
+
+      def order(purchaser_id:)
+        result = self.class.request(:post, "material_requirements/#{id}/order",
+                                    order: { purchaser_id: purchaser_id })
+
+        Zaikio::Procurement::MaterialRequirement.new(result.data)
+      end
     end
   end
 end
