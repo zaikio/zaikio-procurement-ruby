@@ -153,4 +153,11 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
       assert_nil Zaikio::Procurement::AuthorizationMiddleware.token
     end
   end
+  test "trying to fetch a Variant from supplier side fails if type is not provided" do
+    Zaikio::Procurement.with_token(valid_token) do
+      assert_raises ArgumentError do
+        Zaikio::Procurement::Variant.find("40009396-d4e8-48eb-801e-c43f868748e1")
+      end
+    end
+  end
 end

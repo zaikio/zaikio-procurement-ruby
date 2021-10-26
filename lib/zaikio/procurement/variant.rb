@@ -3,9 +3,19 @@ module Zaikio
     class Variant < Base
       include_root_in_json :variant
 
+      def self.find(id, type: nil)
+        return super(id) if Zaikio::Procurement.configuration.flavor == :consumer
+
+        raise ArgumentError, "id and type are required for Variant in Supplier API" if id.blank? || type.blank?
+
+        where(primary_key => id)
+          .where("type" => type)
+          .find_one || raise(ResourceNotFound)
+      end
+
       # Spyke URI override
       def self.uri
-        Zaikio::Procurement.configuration.flavor == :supplier ? "substrate/variants(/:id)" : "variants(/:id)"
+        Zaikio::Procurement.configuration.flavor == :supplier ? ":type/variants(/:id)" : "variants(/:id)"
       end
 
       # Attributes
