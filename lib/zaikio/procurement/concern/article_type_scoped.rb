@@ -1,6 +1,6 @@
 module Zaikio
   module Procurement
-    module SupplierScoped
+    module ArticleTypeScoped
       extend ActiveSupport::Concern
       included do
         scope :substrate, -> { where(type: :substrate) }

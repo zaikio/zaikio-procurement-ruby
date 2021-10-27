@@ -1,8 +1,9 @@
-require_relative "concern/supplier_scoped"
+require_relative "concern/article_type_scoped"
+
 module Zaikio
   module Procurement
     class Variant < Base
-      include Zaikio::Procurement::SupplierScoped
+      include ArticleTypeScoped
       include_root_in_json :variant
 
       # Spyke URI override

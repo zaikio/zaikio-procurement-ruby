@@ -1,8 +1,9 @@
-require_relative "concern/supplier_scoped"
+require_relative "concern/article_type_scoped"
+
 module Zaikio
   module Procurement
     class Article < Base
-      include Zaikio::Procurement::SupplierScoped
+      include ArticleTypeScoped
       include_root_in_json :article
 
       # Class methods
