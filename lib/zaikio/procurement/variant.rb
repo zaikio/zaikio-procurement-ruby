@@ -8,8 +8,7 @@ module Zaikio
 
         raise ArgumentError, "id and type are required for Variant in Supplier API" if id.blank? || type.blank?
 
-        where(primary_key => id)
-          .where("type" => type)
+        where(primary_key => id, "type" => type)
           .find_one || raise(ResourceNotFound)
       end
 
