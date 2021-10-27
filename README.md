@@ -2,10 +2,6 @@
 
 Ruby API Client for Zaikio's Procurement Platform.
 
-> **WARNING**: **Breaking cahnge for Supplier API** - 
-> One must provide article `type` in addition to `id` for `Variant.find`.
-> See example below.
-
 ## Installation
 
 ### 1. Add this line to your application's Gemfile:
@@ -72,9 +68,9 @@ Zaikio::Procurement.with_token(token) do
   variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
   variant.line_item_suggestion(amount: 10, unit: "sheet") # Returns a line item suggestion for a specifc variant
 
-  # in Supplier API one must provide article type when calling `find` on variant:
+  # in Supplier API one must provide a valid scope when using `Variant` or `Article`:
   # https://docs.zaikio.com/api/procurement_suppliers/procurement.html#/Variants/get__article_type__variants__variant_id_
-  variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393", type: "substrate")
+  variant = Zaikio::Procurement::Variant.substrate.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
   variant.skus
   
   # https://docs.zaikio.com/api/procurement_consumers/procurement.html#/LineItemSuggestions/post_suppliers__supplier_id__line_item_suggestions

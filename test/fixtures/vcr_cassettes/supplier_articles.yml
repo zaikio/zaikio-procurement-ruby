@@ -68,7 +68,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":"ee8de074-bedf-403d-b1f0-d4edc2a675a9","base_unit":"sheet","coated":"none","description":"EXTRAROUGH","external_identifier":"54792d0b-9aa7-42a0-9957-89cd8605151c","finish":"EXTRAROUGH","kind":"paper","name":"EXTRAROUGH","supplier_id":"3779462f-97b0-42ad-a618-e8f68c5f7542","supplier":{"id":"3779462f-97b0-42ad-a618-e8f68c5f7542","display_name":"Metapaper
+      string: '[{"id":"ee8de074-bedf-403d-b1f0-d4edc2a675a9","type": "substrate","base_unit":"sheet","coated":"none","description":"EXTRAROUGH","external_identifier":"54792d0b-9aa7-42a0-9957-89cd8605151c","finish":"EXTRAROUGH","kind":"paper","name":"EXTRAROUGH","supplier_id":"3779462f-97b0-42ad-a618-e8f68c5f7542","supplier":{"id":"3779462f-97b0-42ad-a618-e8f68c5f7542","display_name":"Metapaper
         GmbH \u0026 Co. KG","brand_color":"#63AD34","logo_url":"https://hub.sandbox.zaikio.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswTlRVeVpHSXpPQzAyWkdReExUUmhZV010WWpVMU1TMW1ZV0l4WXpNeE5tVXlaV01HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--7f67c94236efa41e79579b2e89035eb81bef430b/MP_Logo_CMYK.jpg","links":[{"rel":"self","href":"/suppliers/api/v1/supplier"}]},"created_at":"2021-03-14T10:43:27.986Z","updated_at":"2021-04-07T12:30:28.805Z"},{"id":"80f3d295-5fc4-4ac0-905d-3c1c05bfbb69","base_unit":"sheet","coated":"none","description":"PURE
         COTTON","external_identifier":"a5502d2c-7290-4a4c-b2f3-bfb0c194e960","finish":"PURE
         COTTON","kind":"paper","name":"PURE COTTON","supplier_id":"3779462f-97b0-42ad-a618-e8f68c5f7542","supplier":{"id":"3779462f-97b0-42ad-a618-e8f68c5f7542","display_name":"Metapaper

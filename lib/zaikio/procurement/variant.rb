@@ -1,16 +1,9 @@
+require_relative "concern/supplier_scoped"
 module Zaikio
   module Procurement
     class Variant < Base
+      include Zaikio::Procurement::SupplierScoped
       include_root_in_json :variant
-
-      def self.find(id, type: nil)
-        return super(id) if Zaikio::Procurement.configuration.flavor == :consumer
-
-        raise ArgumentError, "id and type are required for Variant in Supplier API" if id.blank? || type.blank?
-
-        where(primary_key => id, "type" => type)
-          .find_one || raise(ResourceNotFound)
-      end
 
       # Spyke URI override
       def self.uri
@@ -25,8 +18,8 @@ module Zaikio
       # Associations
       has_one :article, class_name: "Zaikio::Procurement::Article",
                         uri: nil
-      has_many :skus,   class_name: "Zaikio::Procurement::Sku",
-                        uri: "variants/:variant_id/skus"
+      has_many :skus, class_name: "Zaikio::Procurement::Sku",
+                      uri: "variants/:variant_id/skus"
 
       def line_item_suggestion(**attributes)
         self.class.request(
