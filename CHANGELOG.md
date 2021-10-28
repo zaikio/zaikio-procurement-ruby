@@ -6,7 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-
+- **Breaking change for Supplier API**: When operating on `Article` or `Variant` one must provide scope 
+  of `substrate` or `plate`. Calling `all` or `find` without scope will raise an `ArgumentError` 
 ## [0.2.2] - 2021-10-25
 
  ### Added

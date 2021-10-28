@@ -15,13 +15,9 @@ module Zaikio
 
       # Manually build variant association to work for consumers and suppliers
       def variant
-        path = if Zaikio::Procurement.configuration.flavor == :supplier
-                 "substrate/variants/#{variant_id}"
-               else
-                 "variants/#{variant_id}"
-               end
-
-        Zaikio::Procurement::Variant.new(self.class.request(:get, path).data)
+        Zaikio::Procurement::Variant.new(
+          self.class.request(:get, attributes.dig("variant", "links", 0, "href")).data
+        )
       end
     end
   end

@@ -1,11 +1,14 @@
+require_relative "concern/article_type_scoped"
+
 module Zaikio
   module Procurement
     class Variant < Base
+      include ArticleTypeScoped
       include_root_in_json :variant
 
       # Spyke URI override
       def self.uri
-        Zaikio::Procurement.configuration.flavor == :supplier ? "substrate/variants(/:id)" : "variants(/:id)"
+        Zaikio::Procurement.configuration.flavor == :supplier ? ":type/variants(/:id)" : "variants(/:id)"
       end
 
       # Attributes
@@ -16,8 +19,8 @@ module Zaikio
       # Associations
       has_one :article, class_name: "Zaikio::Procurement::Article",
                         uri: nil
-      has_many :skus,   class_name: "Zaikio::Procurement::Sku",
-                        uri: "variants/:variant_id/skus"
+      has_many :skus, class_name: "Zaikio::Procurement::Sku",
+                      uri: "variants/:variant_id/skus"
 
       def line_item_suggestion(**attributes)
         self.class.request(

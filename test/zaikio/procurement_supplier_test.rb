@@ -12,7 +12,7 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
   test "fetching articles" do
     VCR.use_cassette("supplier_articles") do
       Zaikio::Procurement.with_token(token) do
-        articles = Zaikio::Procurement::Article.all
+        articles = Zaikio::Procurement::Article.substrate.all
         assert articles.any?
       end
     end
@@ -21,7 +21,7 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
   test "fetching articles with pagination" do
     VCR.use_cassette("supplier_articles_multiple_pages") do
       Zaikio::Procurement.with_token(token) do
-        articles = Zaikio::Procurement::Article.all.per_page(1).to_a
+        articles = Zaikio::Procurement::Article.substrate.per_page(1).to_a
         assert_equal 3, articles.size
       end
     end
@@ -30,7 +30,7 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
   test "fetching a specific article" do
     VCR.use_cassette("supplier_article") do
       Zaikio::Procurement.with_token(token) do
-        article = Zaikio::Procurement::Article.find("ee8de074-bedf-403d-b1f0-d4edc2a675a9")
+        article = Zaikio::Procurement::Article.substrate.find("ee8de074-bedf-403d-b1f0-d4edc2a675a9")
         assert_equal "ee8de074-bedf-403d-b1f0-d4edc2a675a9", article.id
       end
     end
@@ -87,8 +87,8 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
           ]
         }
 
-        assert_difference "Zaikio::Procurement::Article.all.count" do
-          Zaikio::Procurement::Article.create(article_data)
+        assert_difference "Zaikio::Procurement::Article.substrate.count" do
+          Zaikio::Procurement::Article.substrate.create(article_data)
         end
       end
     end
@@ -151,6 +151,14 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
       end
 
       assert_nil Zaikio::Procurement::AuthorizationMiddleware.token
+    end
+  end
+  test "trying to fetch a Variant from supplier side fails if type is not provided" do
+    Zaikio::Procurement.with_token(valid_token) do
+      ex = assert_raises ArgumentError do
+        Zaikio::Procurement::Variant.find("40009396-d4e8-48eb-801e-c43f868748e1")
+      end
+      assert_match(/id and type are required for Variant in Supplier API/, ex.message)
     end
   end
 end

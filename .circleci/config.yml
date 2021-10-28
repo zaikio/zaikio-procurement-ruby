@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/ruby:2.7.2
+      - image: circleci/ruby:3.0.2
       - image: circleci/redis:3.2-alpine
 
     working_directory: ~/repo
@@ -33,7 +33,7 @@ jobs:
 
   publish:
     docker:
-      - image: circleci/ruby:2.7.2
+      - image: circleci/ruby:3.0.2
     working_directory: ~/repo
     steps:
       - checkout
