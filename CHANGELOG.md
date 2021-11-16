@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.2]
+
 - Turn `Delivery#address` into a separate `Zaikio::Procurement::Address` object. This
   change is breaking if you previously depended on this property being a Hash.
 
@@ -39,9 +41,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added support for material requirements
 
-[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.3.1..HEAD
-[0.3.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.2.2s..v0.3.1
-[0.2.2]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.2.1s..v0.2.2
+[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.3.2..HEAD
+[0.3.2]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.3.1..v0.3.2
+[0.3.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.2.2..v0.3.1
+[0.2.2]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.2.1..v0.2.2
 [0.2.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.2.0..v0.2.1
 [0.2.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.1.1..v0.2.0
 [0.1.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.1.0..v0.1.1
