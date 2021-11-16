@@ -376,11 +376,12 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
     end
   end
 
-  test "fetching a specific delivery" do
+  test "fetching a specific delivery and address" do
     VCR.use_cassette("delivery") do
       Zaikio::Procurement.with_token(token) do
         delivery = Zaikio::Procurement::Delivery.find("46a67d80-ff21-403a-9cb3-5b3a9464ae0f")
         assert_equal "46a67d80-ff21-403a-9cb3-5b3a9464ae0f", delivery.id
+        assert_equal "John Doe", delivery.address.addressee
       end
     end
   end
