@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Turn `Delivery#address` into a separate `Zaikio::Procurement::Address` object. This
+  change is breaking if you previously depended on this property being a Hash.
+
 ## [0.3.1] - 2021-10-28
-- **Breaking change for Supplier API**: When operating on `Article` or `Variant` one must provide scope 
-  of `substrate` or `plate`. Calling `all` or `find` without scope will raise an `ArgumentError` 
+- **Breaking change for Supplier API**: When operating on `Article` or `Variant` one must provide scope
+  of `substrate` or `plate`. Calling `all` or `find` without scope will raise an `ArgumentError`
 
 ## [0.2.2] - 2021-10-25
 

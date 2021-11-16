@@ -6,6 +6,7 @@ require "zaikio/procurement/authorization_middleware"
 
 # Models
 require "zaikio/procurement/base"
+require "zaikio/procurement/address"
 require "zaikio/procurement/article"
 require "zaikio/procurement/variant"
 require "zaikio/procurement/substrate_search"
