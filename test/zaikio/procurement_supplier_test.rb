@@ -153,6 +153,40 @@ class Zaikio::ProcurementSupplierTest < ActiveSupport::TestCase
       assert_nil Zaikio::Procurement::AuthorizationMiddleware.token
     end
   end
+
+  test "fetching and updating order conditions inquiries" do
+    VCR.use_cassette("supplier_order_conditions_inquiries") do
+      id = "1cb57cfb-4119-4904-a000-3c390c976cd8"
+      Zaikio::Procurement.with_token(valid_token) do
+        inquiry = Zaikio::Procurement::OrderConditionsInquiry.find(id)
+        assert_equal "EUR", inquiry.currency
+        assert_equal "fd677fc7-abd9-460c-b086-34de1a8349e8", inquiry.contract_id
+        assert_equal 1, inquiry.order_line_items.first["amount"]
+        assert_equal "00e64523-212a-4fcc-8aab-48f3daa26db8", inquiry.order_line_items.first["sku_id"]
+        assert_equal "MAGVOL80886312500FSC/PL/12500", inquiry.order_line_items.first["order_number"]
+        assert_nil inquiry.verified_at
+
+        Zaikio::Procurement.with_token(valid_token) do
+          inquiry.update(
+            delivery_date: 20.days.from_now,
+            net_handling_fee: "44.12",
+            expires_at: 1.hour.from_now,
+            line_items_attributes: [{
+              sku_id: inquiry.order_line_items.first["sku_id"],
+              amount: 1,
+              net_price: "5999.0"
+            }]
+          )
+        end
+
+        inquiry = Zaikio::Procurement::OrderConditionsInquiry.find(id)
+        assert_not_nil inquiry.verified_at
+        assert_equal (44.12 + 1 * 5999).to_s, inquiry.verified_net_total
+        assert_equal 1, inquiry.verified_order_line_items.first["amount"]
+      end
+    end
+  end
+
   test "trying to fetch a Variant from supplier side fails if type is not provided" do
     Zaikio::Procurement.with_token(valid_token) do
       ex = assert_raises ArgumentError do

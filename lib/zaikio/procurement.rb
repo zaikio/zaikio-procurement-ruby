@@ -24,6 +24,7 @@ require "zaikio/procurement/delivery_line_item"
 require "zaikio/procurement/current_supplier"
 require "zaikio/procurement/material_requirement"
 require "zaikio/procurement/material_availability_check"
+require "zaikio/procurement/order_conditions_inquiry"
 
 module Zaikio
   module Procurement
