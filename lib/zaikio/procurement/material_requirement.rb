@@ -8,7 +8,7 @@ module Zaikio
       attributes :amount, :anticipated_costs, :archived_at, :archived_by, :article_category, :canceled_at, :currency,
                  :description, :environmental_certification, :expected_at, :fulfilled_at, :material_required_at,
                  :job_client, :job_description, :job_link, :job_reference, :ordered_at, :order_number, :person,
-                 :price, :purchaser, :price_based_on_quantity, :processed_at, :references, :site, :state, :unit,
+                 :price, :purchaser, :price_based_on_quantity, :references, :site, :state, :unit,
                  :created_at, :updated_at
 
       # Associations
