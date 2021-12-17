@@ -53,7 +53,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"id":"4f23019a-b856-4330-9feb-962d10f53125","amount":100,"anticipated_costs":null,"archived_at":null,"article_category":"substrate","canceled_at":null,"currency":"EUR","description":"MAGNO
-        MATT – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"478.12","price_based_on_quantity":"620.928","processed_at":null,"references":["MR/TAUB72"],"state":"draft","unit":"kg","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
+        MATT – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"478.12","price_based_on_quantity":"620.928","references":["MR/TAUB72"],"state":"draft","unit":"kg","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
         Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"purchaser":null,"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","kind":"Supplier","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"order_line_items":[],"created_at":"2021-08-26T11:06:28.326Z","updated_at":"2021-08-26T11:06:41.453Z"}'
   recorded_at: Thu, 26 Aug 2021 11:07:43 GMT
 recorded_with: VCR 6.0.0

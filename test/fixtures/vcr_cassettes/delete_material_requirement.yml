@@ -53,7 +53,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"id":"9f22a39c-6d86-4077-94d4-58b528ce6f07","amount":10000,"anticipated_costs":null,"archived_at":null,"article_category":"substrate","canceled_at":null,"currency":"EUR","description":"Another
-        Paper","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"122.0","price_based_on_quantity":null,"processed_at":null,"references":["MR/WWZX4P"],"state":"draft","unit":"piece","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
+        Paper","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"122.0","price_based_on_quantity":null,"references":["MR/WWZX4P"],"state":"draft","unit":"piece","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
         Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"purchaser":null,"supplier":{"id":"afb25977-4184-412a-889f-4d722cf9ce30","display_name":"Another
         Supplier","kind":"CustomSupplier","links":[{"rel":"self","href":"/consumers/api/v1/custom_suppliers/afb25977-4184-412a-889f-4d722cf9ce30"}]},"variant":null,"order_line_items":[],"created_at":"2021-08-26T11:06:45.608Z","updated_at":"2021-08-26T11:07:08.679Z"}'
   recorded_at: Thu, 26 Aug 2021 11:07:43 GMT
