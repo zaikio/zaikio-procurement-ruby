@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+ - Added distributors to suppliers
+
 ### Removed
 - **Breaking change for Consumer API**: Removed `processed_at` timestamp for material requirements
 - **Breaking change for Supplier API**: Removed MaterialAvailabilityCheck for suppliers

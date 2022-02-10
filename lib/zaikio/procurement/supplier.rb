@@ -11,6 +11,8 @@ module Zaikio
       has_many :contract_requests, class_name: "Zaikio::Procurement::ContractRequest",
                                    uri: "suppliers/:supplier_id/contract_requests(/:id)"
 
+      has_many :distributors, class_name: "Zaikio::Procurement::Supplier", uri: nil
+
       def line_item_suggestions(**attributes)
         variants = attributes.delete(:variants)
 
