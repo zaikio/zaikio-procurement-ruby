@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2022-08-04
 ### Added
 - `Zaikio::Procurement::Supplier#create_contract_request(...)` which is closer to the actual API specification
 ### Removed
@@ -62,7 +63,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added support for material requirements
 
-[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.0..HEAD
+[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.1..HEAD
+[2.0.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.0..v2.0.1
 [2.0.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.4.1..v2.0.0
 [0.4.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.4.0..v0.4.1
 [0.4.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.3.2..v0.4.0
