@@ -5,22 +5,35 @@ module Zaikio
       include_root_in_json :material_requirement
 
       # Attributes
-      attributes :amount, :anticipated_costs, :archived_at, :archived_by, :article_category, :canceled_at, :currency,
-                 :description, :environmental_certification, :expected_at, :fulfilled_at, :material_required_at,
-                 :job_client, :job_description, :job_link, :job_reference, :ordered_at, :order_number, :person,
-                 :price, :purchaser, :price_based_on_quantity, :references, :site, :state, :unit,
-                 :created_at, :updated_at
+      attributes :state, :references, :visible_in_web, :ordered_at, :fulfilled_at, :canceled_at, :created_at,
+                 :updated_at
 
       # Associations
-      has_one :supplier, class_name: "Zaikio::Procurement::Supplier", uri: nil
-      has_one :variant, class_name: "Zaikio::Procurement::Variant", uri: nil
-      has_many :order_line_items, class_name: "Zaikio::Procurement::OrderLineItem", uri: nil
+      has_one :required_material, class_name: "Zaikio::Procurement::Material", uri: nil
+      has_one :delivery, class_name: "Zaikio::Procurement::Delivery", uri: nil
+      has_one :order, class_name: "Zaikio::Procurement::Order", uri: nil
+      has_one :pricing, class_name: "Zaikio::Procurement::Pricing", uri: nil
+      has_one :availability, class_name: "Zaikio::Procurement::Availability", uri: nil
+      has_one :quantity, class_name: "Zaikio::Procurement::Quantity", uri: nil
+      has_one :job, class_name: "Zaikio::Procurement::Job", uri: nil
+      has_one :creator, class_name: "Zaikio::Procurement::Person", uri: nil
 
-      def order(purchaser_id:)
-        result = self.class.request(:post, "material_requirements/#{id}/order",
-                                    order: { purchaser_id: purchaser_id })
+      def archive
+        Zaikio::Procurement::MaterialRequirement.new(
+          self.class.request(:patch, "#{collection_name}/#{id}/archive").data
+        )
+      end
 
-        Zaikio::Procurement::MaterialRequirement.new(result.data)
+      def refresh
+        Zaikio::Procurement::MaterialRequirement.new(
+          self.class.request(:patch, "#{collection_name}/#{id}/refresh").data
+        )
+      end
+
+      private
+
+      def collection_name
+        self.class.name.demodulize.underscore.pluralize
       end
     end
   end
