@@ -2,7 +2,7 @@ require "test_helper"
 
 class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   def token
-    "eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg" # rubocop:disable Layout/LineLength
+    "eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI1MWYzMWRmOC0zYzM0LTQ2MjAtOWM0Yy0zZmNiMDRmMWE5NGMiLCJuYmYiOjE2NTk2MjU2NzgsImV4cCI6MTY1OTYyOTI3OCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.fqAoi9dZMqJdUtzX4EXcujv1RR4h03i3HHqXn6uJrequdz5VTb8O1tTttvrSF7w2eufJ2DNRmWT-d-hxlSdJYjxLgvAYQq8cMkFmrMeLS3cXr9egTDxHk6ZLOvIospuMcH_G0AZL9yBVn3uDXZwPZkWvTNW_GpYBbdxVoN88klmE84OxrGPfX0H8sqTC12bQgDka8NZpilDrtTw-DBglBQM6CPdF1E4DiU3Ad4n_titgpYZ5zzy_DgeKFp8gxkvEMKgEF-jIVA2GLpQYA99lWI3IGeEZPL9gjxnPBiGUzOxFCOaHkknzet7tvbKHckqrMDC9XScbWcnYQCdWh4ycZA" # rubocop:disable Layout/LineLength
   end
 
   test "is a module" do
@@ -153,16 +153,18 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   test "creating a contract request" do
     VCR.use_cassette("create_contract_request") do
       Zaikio::Procurement.with_token(token) do
+        supplier = Zaikio::Procurement::Supplier.find("3779462f-97b0-42ad-a618-e8f68c5f7542")
+        contract_request_data = {
+          customer_number: "1968353479",
+          contact_first_name: "Frank",
+          contact_last_name: "Gallikanokus",
+          contact_email: "fgalli@example.com",
+          contact_phone: "+3333333333333",
+          references: ["my reference"]
+        }
+
         assert_difference "Zaikio::Procurement::ContractRequest.all.count" do
-          Zaikio::Procurement::ContractRequest.create(
-            supplier_id: "061c2b43-ae94-459d-8739-35b20684e47a",
-            customer_number: "1968353479",
-            contact_first_name: "Frank",
-            contact_last_name: "Gallikanokus",
-            contact_email: "fgalli@example.com",
-            contact_phone: "+3333333333333",
-            references: ["my reference"]
-          )
+          supplier.create_contract_request(contract_request_data)
         end
       end
     end

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `Zaikio::Procurement::Supplier#create_contract_request(...)` which is closer to the actual API specification
+### Removed
+- `Zaikio::Procurement::ContractRequest.create(supplier_id: ...)`
+
 ## [2.0.0] - 2022-08-04
   * **BREAKING CHANGE:** Support for Consumer API v1(legacy) and Supplier API has been completely removed.
   For the the supplier API, you have to stick with **[v0.4.1](  https://github.com/zaikio/zaikio-procurement-ruby/tree/v0.4.1)**

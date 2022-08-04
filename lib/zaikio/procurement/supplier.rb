@@ -15,6 +15,10 @@ module Zaikio
                  :additional_pricing_agreements, :article_types, :automatically_accept_contract_requests,
                  :brand_color, :cancelation_policy, :logo_url, :maximum_days_until_delivery,
                  :minimum_days_before_delivery, :supports_split_delivery, :maximum_order_size, :created_at, :updated_at
+
+      def create_contract_request(attributes = {})
+        self.class.request(:post, "#{uri}/contract_requests", contract_request: attributes)&.body&.dig("data")
+      end
     end
   end
 end

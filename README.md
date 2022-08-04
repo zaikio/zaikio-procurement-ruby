@@ -69,8 +69,8 @@ Zaikio::Procurement.with_token(token) do
   ### Create new resources
 
   # Create a ContractRequest
-  Zaikio::Procurement::ContractRequest.create(
-    supplier_id: "061c2b43-ae94-459d-8739-35b20684e47a",
+  supplier = Zaikio::Procurement::Supplier.find("5fd82941-ba2f-4d0b-971a-7050fbbafcef")
+  supplier.create_contract_request(
     customer_number: "1968353479",
     contact_first_name: "Frank",
     contact_last_name: "Gallikanokus",
