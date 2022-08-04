@@ -66,7 +66,19 @@ Zaikio::Procurement.with_token(token) do
   # Available filters can be found here:  https://docs.zaikio.com/api/procurement_consumers/consumers_v2.html#/MaterialRequirements/get_material_requirements
   Zaikio::Procurement::MaterialRequirement.where(query: "Sappi", filters: { article_category: "sheet_substrate", status: "ordered" })
 
-  # Create new resources
+  ### Create new resources
+
+  # Create a ContractRequest
+  Zaikio::Procurement::ContractRequest.create(
+    supplier_id: "061c2b43-ae94-459d-8739-35b20684e47a",
+    customer_number: "1968353479",
+    contact_first_name: "Frank",
+    contact_last_name: "Gallikanokus",
+    contact_email: "fgalli@example.com",
+    contact_phone: "+3333333333333",
+    references: ["my reference"])
+
+  # Create a MaterialRequirement
   Zaikio::Procurement::MaterialRequirement.create(
     amount: 200,
     job_client: "Awesome Client",
@@ -77,28 +89,23 @@ Zaikio::Procurement.with_token(token) do
     supplier_id: "b2a0f1ab-7610-451e-acc7-633284300521",
     variant_id: "31924842-b38b-47b2-90b0-68f8f42f37d6",
     references: ["my requirement reference"],
-    visible_in_web: true
-    )
+    visible_in_web: true)
 
-   Zaikio::Procurement::ContractRequest.create(
-    supplier_id: "061c2b43-ae94-459d-8739-35b20684e47a",
-    customer_number: "1968353479",
-    contact_first_name: "Frank",
-    contact_last_name: "Gallikanokus",
-    contact_email: "fgalli@example.com",
-    contact_phone: "+3333333333333",
-    references: ["my reference"]
-    )
+  # Create an Order
+  Zaikio::Procurement::Order.create(
+    material_requirement_ids: ["9f98e841-1502-4d7b-9b8a-0cf9b8072875"],
+    references: ["my order reference"],
+    copy_material_requirement_references_to_line_items: true)
 
-  # Update resources
+  ### Update resources
   material_requirement = Zaikio::Procurement::MaterialRequirement.find("058a5513-925e-4d0c-923d-fa1ed4bfb3ce")
   material_requirement.update(amount: 1000)
 
-  # Deleting resources
+  ### Deleting resources
   material_requirement = Zaikio::Procurement::MaterialRequirement.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
   material_requirement.destroy
 
-  # Custom methods
+  ### Custom methods
 
   # Placing an order and submitting it to the supplier
   order = Zaikio::Procurement::Order.find("8eaeb37a-d7aa-424a-aac1-1ade4b4030e2")
