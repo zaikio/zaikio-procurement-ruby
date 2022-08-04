@@ -1,6 +1,6 @@
 # Zaikio::Procurement
 
-Ruby API Client for Zaikio's Procurement Platform.
+Ruby API Client for Zaikio's Procurement Consumer Platform.
 
 ## Installation
 
@@ -30,14 +30,13 @@ Zaikio::Procurement.configure do |config|
 end
 ```
 
-
 ## Usage
 
 The Procurement Client has an ORM like design.
 
 For the requests to work, a valid JSON Web token with the correct OAuth Scopes must always be provided. Please refer to [zakio-oauth_client](https://github.com/zaikio/zaikio-oauth_client).
 
-If you want to know which actions are available and which scopes are required, please refer to the [Procurement Consumer API Reference](https://docs.zaikio.com/api/procurement_consumers/procurement.html).
+If you want to know which actions are available and which scopes are required, please refer to the [Procurement Consumer API V2 Reference](https://docs.zaikio.com/api/procurement_consumers/consumers_v2.html).
 
 ### As an organization
 
@@ -46,88 +45,76 @@ token = "..." # Your valid JWT for an organization
 Zaikio::Procurement.with_token(token) do
 
   # Fetch Data
-  Zaikio::Procurement::Article.all
-  Zaikio::Procurement::Article.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
-  Zaikio::Procurement::Article.list_by_article_type_or_supplier_slug("great_paper_company")
+  Zaikio::Procurement::MaterialRequirement.all
+  Zaikio::Procurement::MaterialRequirement.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
 
   # Associations
-  article = Zaikio::Procurement::Article.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
-  article.supplier
-  article.variants
+  material_requirement = Zaikio::Procurement::MaterialRequirement.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
+  material_requirement.availability
+  material_requirement.pricing
+  material_requirement.order
 
-  # Search for all variants of a substrate
-  search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80)
-
-  # or by providing a supplier_id to search for all variants of a substrate of from a specific supplier
-  search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80, supplier_id: "b5b14aa0-ae84-452b-9719-a38545365902")
+  # Search for a variant
+  search = Zaikio::Procurement::VariantSearch.new(type: "sheet_substrate", query: "Soap", grain: "short", paper_weight: 80)
+  # You can either pass a single value or a comma separated list of types, e.g. type: "sheet_substrate,plate"
+  # Use all to include all available Variant types in the response
 
   search.results # Returns a list of matching variants
-  search.facets # Returns a list of search facets that can be used to further narrow down the results
+  search.available_filters # Returns a list of available filters that can be used to further narrow down the results
 
-  # https://docs.zaikio.com/api/procurement_consumers/procurement.html#/LineItemSuggestions/post_variants__variant_id__line_item_suggestions
-  variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
-  variant.line_item_suggestion(amount: 10, unit: "sheet") # Returns a line item suggestion for a specifc variant
-
-  # in Supplier API one must provide a valid scope when using `Variant` or `Article`:
-  # https://docs.zaikio.com/api/procurement_suppliers/procurement.html#/Variants/get__article_type__variants__variant_id_
-  variant = Zaikio::Procurement::Variant.substrate.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
-  variant.skus
-  
-  # https://docs.zaikio.com/api/procurement_consumers/procurement.html#/LineItemSuggestions/post_suppliers__supplier_id__line_item_suggestions
-  supplier = Zaikio::Procurement::Supplier.find("b5b14aa0-ae84-452b-9719-a38545365902")
-  supplier.line_item_suggestions(
-    variants: [
-      {
-        id: "0001b94e-4e87-4ee9-8b14-6ff9910b4f26",
-        amount: 2000,
-        exact_amount: false,
-        environmental_certification: "FSC Mix Credit",
-        unit: "sheet"
-      },
-      {
-        id: "10236394-ecd4-465b-ab72-0fbd79296e6a",
-        amount: 10,
-        exact_amount: false,
-        environmental_certification: "PEFC 100%",
-        unit: "sheet"
-      }
-    ]
-  ) # Returns line item suggestions for multiple variants of a supplier
-
+  # Filter and search material requirements
+  # Available filters can be found here:  https://docs.zaikio.com/api/procurement_consumers/consumers_v2.html#/MaterialRequirements/get_material_requirements
+  Zaikio::Procurement::MaterialRequirement.where(query: "Sappi", filters: { article_category: "sheet_substrate", status: "ordered" })
 
   # Create new resources
-  Zaikio::Procurement::Order.create(
-    contract_id: "fd677fc7-abd9-460c-b086-34de1a8349e8",
-    delivery_mode: "complete",
-    exclusive_sales_group_id: "42dcbaf6-e557-4423-96bc-707ebbc223c0",
-    references: ["CO/XXXXXX"],
-    state_event: "place",
-    deliveries_attributes: [
-      {
-        address_addressee: "Joey’s Print Ltd",
-        address_text: "Emmerich-Josef-Straße 1A, 55116 Mainz",
-        desired_delivery_date: "2021-01-29",
-        references: ["D/XXXXXX"]
-      }
-    ],
-    order_line_items_attributes: [
-      {
-        sku_id: "26b3aadc-928f-4d1a-ba2d-13ac3c8f523d",
-        amount: 108000
-      }
-    ]
-  )
+  Zaikio::Procurement::MaterialRequirement.create(
+    amount: 200,
+    job_client: "Awesome Client",
+    job_description: "Awesome print product",
+    job_link: "https://www.example.com",
+    job_reference: "my job reference",
+    material_required_at: "2022-08-03",
+    supplier_id: "b2a0f1ab-7610-451e-acc7-633284300521",
+    variant_id: "31924842-b38b-47b2-90b0-68f8f42f37d6",
+    references: ["my requirement reference"],
+    visible_in_web: true
+    )
 
-  order = Zaikio::Procurement::Order.find("86b4a0c5-6d54-4702-a059-da258643f260")
-  order.order_line_items.create(sku_id: "6535eeb0-45c2-4c63-8cb9-4814562bb875", amount: 68000)
+   Zaikio::Procurement::ContractRequest.create(
+    supplier_id: "061c2b43-ae94-459d-8739-35b20684e47a",
+    customer_number: "1968353479",
+    contact_first_name: "Frank",
+    contact_last_name: "Gallikanokus",
+    contact_email: "fgalli@example.com",
+    contact_phone: "+3333333333333",
+    references: ["my reference"]
+    )
 
   # Update resources
-  line_item = Zaikio::Procurement::OrderLineItem.find("058a5513-925e-4d0c-923d-fa1ed4bfb3ce")
-  line_item.update(amount: 69000)
+  material_requirement = Zaikio::Procurement::MaterialRequirement.find("058a5513-925e-4d0c-923d-fa1ed4bfb3ce")
+  material_requirement.update(amount: 1000)
 
   # Deleting resources
-  line_item = Zaikio::Procurement::OrderLineItem.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
-  line_item.destroy
+  material_requirement = Zaikio::Procurement::MaterialRequirement.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
+  material_requirement.destroy
+
+  # Custom methods
+
+  # Placing an order and submitting it to the supplier
+  order = Zaikio::Procurement::Order.find("8eaeb37a-d7aa-424a-aac1-1ade4b4030e2")
+  order.place
+
+  # Cancel a placed order
+  order = Zaikio::Procurement::Order.find("3d36c6c5-b979-4073-8fcc-78a6cf1bc8bd")
+  order.cancel
+
+  # Archive a canceled or completed material requirement
+  material_requirement = Zaikio::Procurement::MaterialRequirement.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
+  material_requirement.archive
+
+  # Refreshing the order conditions (price, stock and delivery date) of the material requirement
+  material_requirement = Zaikio::Procurement::MaterialRequirement.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
+  material_requirement.refresh
 end
 ```
 
@@ -139,7 +126,7 @@ This can be easily caught using the `with_fallback` method. We recommend to alwa
 
 ```rb
 Zaikio::Directory.with_token(token) do
-  Zaikio::Procurement::Article.with_fallback.find("7cbf51bd-35a8-47a1-84a2-57aa63140234") # => nil
-  Zaikio::Procurement::Article.with_fallback.all # Automatically uses empty array as fallback
+  Zaikio::Procurement::MaterialRequirement.with_fallback.find("7cbf51bd-35a8-47a1-84a2-57aa63140234") # => nil
+  Zaikio::Procurement::MaterialRequirement.with_fallback.all # Automatically uses empty array as fallback
 end
 ```
