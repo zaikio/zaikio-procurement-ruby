@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/api/v2/contract_requests/8fcb6074-63cb-4ea6-aacd-b64a0a75df4a
+    uri: https://procurement.zaikio.test/api/v2/sites
     body:
       encoding: US-ASCII
       string: ''
@@ -38,16 +38,26 @@ http_interactions:
       - none
       Referrer-Policy:
       - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/sites?page=1&per_page=100>;
+        rel="first", <https://procurement.zaikio.test/api/v2/sites?page=1&per_page=100>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '4'
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"241021367b84767d49076adce20800d4"
+      - W/"be86036f9a2afb812fed03b2e793ee6d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14aacae0-af82-4480-9054-acc548fc507b
+      - 8f7919ef-0772-4f6a-abbe-09b6177bf138
       X-Runtime:
-      - '0.014927'
+      - '0.015522'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Transfer-Encoding:
@@ -56,7 +66,15 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"8fcb6074-63cb-4ea6-aacd-b64a0a75df4a","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"12345","declined_at":null,"declined_reason":null,"references":["CR/3UA9M7"],"state":"accepted","supplier":{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
-        Soap Inc.","links":[{"rel":"self","href":"/api/v2/suppliers/bounty_soap_inc"}]},"created_at":"2020-11-23T13:07:51.841Z","updated_at":"2022-05-17T14:28:16.872Z"}'
+      string: '[{"id":"1adc1bad-fcf1-4b4c-826a-fa9fa425d93e","name":"Warenlager Ulm","headquarter":false,"address":{"addition":null,"addressee":"Joey’s
+        Print Ltd","country_code":"DE","county":null,"location":[48.3655068,9.9415068],"number":"17","state":"Baden-Württemberg","street":"Benzstraße","town":"Ulm","zip_code":"89079"},"created_at":"2020-11-26T13:43:37.025Z","updated_at":"2020-11-26T13:43:49.834Z"},{"id":"808b425a-ba0d-44f5-a856-52657d958ef1","name":"Lucifer''s
+        Lair","headquarter":false,"address":{"addition":null,"addressee":"Joey’s Print
+        Ltd","country_code":"DE","county":null,"location":[null,null],"number":null,"state":null,"street":"Rua
+        do demónio 666","town":"Inferno","zip_code":"66666"},"created_at":"2021-08-19T14:19:46.212Z","updated_at":"2021-08-19T14:19:46.212Z"},{"id":"1742980b-6543-4a2f-acc4-0014e9219883","name":"Joey''s
+        Print Ltd @ Zaikio","headquarter":false,"address":{"addition":null,"addressee":"Joey’s
+        Print Ltd @ Zaikio","country_code":"DE","county":null,"location":[49.9971723,8.2649662],"number":null,"state":"Rheinland-Pfalz","street":"Emmerich-Josef-Straße
+        1A","town":"Mainz","zip_code":"55116"},"created_at":"2020-11-19T16:27:28.347Z","updated_at":"2020-11-19T16:27:28.347Z"},{"id":"f3973173-aba9-4e55-802a-3f724fe458a9","name":"Joey’s
+        Print Ltd","headquarter":true,"address":{"addition":null,"addressee":"Joey’s
+        Print Ltd","country_code":"DE","county":null,"location":[49.99714,8.26519],"number":"1A","state":"Rheinland-Pfalz","street":"Emmerich-Josef-Straße","town":"Mainz","zip_code":"55116"},"created_at":"2020-04-28T11:11:31.368Z","updated_at":"2020-04-28T11:11:31.368Z"}]'
   recorded_at: Tue, 02 Aug 2022 11:34:59 GMT
 recorded_with: VCR 6.0.0

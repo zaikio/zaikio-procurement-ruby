@@ -1,0 +1,188 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/material_requirements/848e864a-d883-4195-9cbb-22f4161969e1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI2MWJmZDM4ZS00YzA0LTRlMDQtOTljNi1lZDYyNWZkM2JkNmMiLCJuYmYiOjE2NTk1MjcxMDUsImV4cCI6MTY1OTUzMDcwNSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.glAS-PsfDelxg0p5JCv2gHgyXHdnSjswGJ2I23zqZjxqP3WPZTKptl8qMK61KjxvHhK1DrnZn5JPVkPBM2xmivKKPD_mfE66AGcvmuXX7wdemJc83cKNL0rj_XjW-HunG93UNTA3pcjs14YtFyUhM7Oc5xjgYWqLDfYRAvH9x0fkgVIVtA6tggaiTROxOQpMMLimxnUdzBwl6hwYPW3P6RedXzStpMJxQLDWfQ2M9_RThyo9bNz1FD9h-6qiVKYaZs5RSyN-3yYzEG15HUwL80V5iC5jiliQZWDgCUwQWbecKLeNvuYvCagsBBYVr6z8YfIZKmNhB5srxuxOa_r9gA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 12:42:37 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0ff0c3495960686d12cc9977aa483ec5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - abd2c060-f1bf-43ba-ab79-5c8bc257b323
+      X-Runtime:
+      - '0.042452'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"848e864a-d883-4195-9cbb-22f4161969e1","references":["MR/2S762S"],"state":"draft","required_material":{"amount":2000,"description":"Magno
+        Matt – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short – PEFC 100%","environmental_certification":"PEFC
+        100%","unit":"sheet","variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"sheet_substrate","links":[{"rel":"self","href":"/api/v2/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","name":"Sappi","links":[{"rel":"self","href":"/api/v2/suppliers/sappi"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-25","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":null,"pricing":{"currency":"EUR","price":"515.37","fees":"0.0","accuracy":"in_verification","verified_at":null},"availability":{"delivery_date":null,"in_stock":false,"accuracy":"in_verification","verified_at":null},"quantity":{"order_quantity_in_requested_unit":16000,"order_quantity_in_base_unit":16000},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T12:36:27.038Z","updated_at":"2022-08-03T12:38:35.818Z"}'
+  recorded_at: Wed, 03 Aug 2022 12:42:38 GMT
+- request:
+    method: patch
+    uri: https://procurement.zaikio.test/api/v2/material_requirements/848e864a-d883-4195-9cbb-22f4161969e1/refresh
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI2MWJmZDM4ZS00YzA0LTRlMDQtOTljNi1lZDYyNWZkM2JkNmMiLCJuYmYiOjE2NTk1MjcxMDUsImV4cCI6MTY1OTUzMDcwNSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.glAS-PsfDelxg0p5JCv2gHgyXHdnSjswGJ2I23zqZjxqP3WPZTKptl8qMK61KjxvHhK1DrnZn5JPVkPBM2xmivKKPD_mfE66AGcvmuXX7wdemJc83cKNL0rj_XjW-HunG93UNTA3pcjs14YtFyUhM7Oc5xjgYWqLDfYRAvH9x0fkgVIVtA6tggaiTROxOQpMMLimxnUdzBwl6hwYPW3P6RedXzStpMJxQLDWfQ2M9_RThyo9bNz1FD9h-6qiVKYaZs5RSyN-3yYzEG15HUwL80V5iC5jiliQZWDgCUwQWbecKLeNvuYvCagsBBYVr6z8YfIZKmNhB5srxuxOa_r9gA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 12:42:37 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0ff0c3495960686d12cc9977aa483ec5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6f9aa85b-6941-45fc-9b87-f3f6c1a5a489
+      X-Runtime:
+      - '0.087300'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"848e864a-d883-4195-9cbb-22f4161969e1","references":["MR/2S762S"],"state":"draft","required_material":{"amount":2000,"description":"Magno
+        Matt – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short – PEFC 100%","environmental_certification":"PEFC
+        100%","unit":"sheet","variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"sheet_substrate","links":[{"rel":"self","href":"/api/v2/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","name":"Sappi","links":[{"rel":"self","href":"/api/v2/suppliers/sappi"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-25","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":null,"pricing":{"currency":"EUR","price":"515.37","fees":"0.0","accuracy":"in_verification","verified_at":null},"availability":{"delivery_date":null,"in_stock":false,"accuracy":"in_verification","verified_at":null},"quantity":{"order_quantity_in_requested_unit":16000,"order_quantity_in_base_unit":16000},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T12:36:27.038Z","updated_at":"2022-08-03T12:38:35.818Z"}'
+  recorded_at: Wed, 03 Aug 2022 12:42:38 GMT
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/material_requirements/848e864a-d883-4195-9cbb-22f4161969e1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI2MWJmZDM4ZS00YzA0LTRlMDQtOTljNi1lZDYyNWZkM2JkNmMiLCJuYmYiOjE2NTk1MjcxMDUsImV4cCI6MTY1OTUzMDcwNSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.glAS-PsfDelxg0p5JCv2gHgyXHdnSjswGJ2I23zqZjxqP3WPZTKptl8qMK61KjxvHhK1DrnZn5JPVkPBM2xmivKKPD_mfE66AGcvmuXX7wdemJc83cKNL0rj_XjW-HunG93UNTA3pcjs14YtFyUhM7Oc5xjgYWqLDfYRAvH9x0fkgVIVtA6tggaiTROxOQpMMLimxnUdzBwl6hwYPW3P6RedXzStpMJxQLDWfQ2M9_RThyo9bNz1FD9h-6qiVKYaZs5RSyN-3yYzEG15HUwL80V5iC5jiliQZWDgCUwQWbecKLeNvuYvCagsBBYVr6z8YfIZKmNhB5srxuxOa_r9gA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 12:42:38 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0ff0c3495960686d12cc9977aa483ec5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e2d661bc-5e26-4630-9bea-7a4017acdaa0
+      X-Runtime:
+      - '0.028642'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"848e864a-d883-4195-9cbb-22f4161969e1","references":["MR/2S762S"],"state":"draft","required_material":{"amount":2000,"description":"Magno
+        Matt – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short – PEFC 100%","environmental_certification":"PEFC
+        100%","unit":"sheet","variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"sheet_substrate","links":[{"rel":"self","href":"/api/v2/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","name":"Sappi","links":[{"rel":"self","href":"/api/v2/suppliers/sappi"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-25","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":null,"pricing":{"currency":"EUR","price":"515.37","fees":"0.0","accuracy":"in_verification","verified_at":null},"availability":{"delivery_date":null,"in_stock":false,"accuracy":"in_verification","verified_at":null},"quantity":{"order_quantity_in_requested_unit":16000,"order_quantity_in_base_unit":16000},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T12:36:27.038Z","updated_at":"2022-08-03T12:38:35.818Z"}'
+  recorded_at: Wed, 03 Aug 2022 12:42:38 GMT
+recorded_with: VCR 6.0.0

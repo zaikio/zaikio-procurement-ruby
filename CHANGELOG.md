@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+  * **BREAKING CHANGE:** Support for Consumer API v1(legacy) and Supplier API has been completely removed.
+  For the the supplier API, you have to stick with **[v0.4.1](  https://github.com/zaikio/zaikio-procurement-ruby/tree/v0.4.1)**
 
 ## [0.4.1] - 2022-02-10
 ### Added

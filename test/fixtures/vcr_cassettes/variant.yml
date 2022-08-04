@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393
+    uri: https://procurement.zaikio.test/api/v2/variants/bbc0a889-4d54-481e-a3dd-0ad7a52d0243
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.10.0
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkxMDksImV4cCI6MTY1Mjc4NTEwOSwiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uLzMwMTYwZGZhLTc0YjYtNGVhMS1iNTA0LWQyZDA2MzVhMGMwMiJ9.X_pVWyj_UNALc83CdH1wGabz_A96b9hhhrucoIg143Q
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkODM1YzkxNy04ZTA0LTQyMmUtYTVmOC0yMGUxOTAwNzMwZDIiLCJuYmYiOjE2NTk0NDAwNDEsImV4cCI6MTY1OTQ0MzY0MSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.ouLARtIqZ6DUTaSEBW0IwXeXh6FTWi8GNbr91w7hA4wAB569d0xrVHppEC_2wzXCz6l2R1ZdntJQ-1wp6-UIDJLEM9oBMbq0KLoByHblqu_clKZ3yNM3gbEBa6V7927d-7nGGq6nudTXw08XKX-8_v_QKKSblwRRWikIYx8x_-JG1jehrujX5Wv295ZSaYZDAeZuEt9ZFuk0kFsWZryCEgZ0OQYJ6-4BkxyTjncXu15321SFPcWkejMilFSg-CQje1TJ28e1is7qs2YvYyT3OhCh3nmReAbflB575wuU0uMLyLzQCzv60YIbMHy6Qi-yVuEIgFESfDfDeVUa8Rt-gw
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,13 +23,13 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 26 Jan 2021 10:37:12 GMT
+      - Tue, 02 Aug 2022 11:34:59 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
-      - 1; mode=block
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -41,25 +41,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"27405f997664ad560cf1d4f75f1209ee"
+      - W/"37a6c7ac906d9b95df56dcd4097ffe6a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9fae9a49-8ad9-4af8-af47-92e52b385fec
+      - 6c8c1fde-952a-4dd7-9777-320890260fbd
       X-Runtime:
-      - '0.032214'
+      - '0.021873'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","brightness":null,"category":"PS1
-        - Premium Coated","color":null,"form":"sheet","grain":"long","height":1000,"paper_weight":250,"paper_weight_unit":"grammage","roughness":null,"thickness":190,"transparency":null,"unit_system":"metric","whiteness":null,"width":700,"article_id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","article":{"id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","name":"MAGNO
-        GLOSS","links":[{"rel":"self","href":"/consumers/api/v1/articles/7cbf51bd-35a8-47a1-84a2-57aa63140234"}]},"created_at":"2020-10-13T10:37:09.245Z","updated_at":"2020-10-13T10:37:10.772Z"}'
-  recorded_at: Tue, 26 Jan 2021 10:37:13 GMT
+      string: '{"id":"bbc0a889-4d54-481e-a3dd-0ad7a52d0243","type":"sheet_substrate","summary":"PS1
+        - Premium Coated, 880 × 630 mm, 80 g/㎡, short","global_trade_item_number":null,"brightness":null,"category":"PS1
+        - Premium Coated","color":null,"dimensions_unit":"mm","form":"sheet","grain":"short","height":630,"optical_brightness_agent_amount":null,"optical_brightness_agent":null,"paper_weight_unit":"gsm","paper_weight":80,"roughness":null,"thickness":86,"transparency":null,"white_point_m0":null,"white_point_m1":null,"whiteness":null,"width":880,"article":{"base_unit":"sheet","description":null,"manufacturer":null,"name":"Bounty
+        Soap Volume Paper","summary":"Bounty Soap Volume Paper","classification_reports":[],"certifications":[],"coated":"both
+        sides","finish":"MATT COATED","kind":"paper"},"skus":[{"id":"6840da22-a8f5-4cd6-9685-9e79c5d02692","amount":1,"amount_in_base_unit":12500,"environmental_certification":"FSC
+        Mix Credit","order_number":"BSOAP-0001","palletized":false,"unit":"pallet","suppliers":[{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
+        Soap Inc."}]}],"created_at":"2021-01-19T11:37:01.773Z","updated_at":"2022-02-17T10:03:09.303Z"}'
+  recorded_at: Tue, 02 Aug 2022 11:35:00 GMT
 recorded_with: VCR 6.0.0

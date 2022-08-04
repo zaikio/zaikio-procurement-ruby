@@ -1,0 +1,218 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/contract_requests
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIyMjYwMDQ1Zi0xNzhmLTQ3MjEtOGMyMC1lNTVjODZiNzdmYzIiLCJuYmYiOjE2NTk1MjM4NDQsImV4cCI6MTY1OTUyNzQ0NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciLCJ3YXJlaG91c2UuZmluaXNoZWRfZ29vZHNfY2FsbF9vZmZzLnIiLCJ3YXJlaG91c2Uuc2t1cy5yIl19.oIuqiJ5pHKGB_V8Gve8lQI39-W4EwUdbCEY-7RH0wo_7DY3RsQ4H7O4uHsanUVDa3US_3ajHaF31RglldHP4UTCMWEmjh8oY1XbGqETuhV39OAQeP2jQEMItA8I49Q0ngRGYM7T1BPKfvnwdUYahJg-U4O78T5jJwMOX159UDguvrv_xkcTZMypAsnD4H3eTd-hceFkjzXCGjX18GtqkKLtPToPWpoGvBJHh7_cxi2foLY4BOakROq0EWka9ve9rO-BVhQW-h6cbM3mylN9JbNubBr4DAm0rGXemut99NCf1JvPiJAcsnxhRSljFDI_pr_niY6L3sb1VCKFiKaozzA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 10:51:00 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/contract_requests?page=1&per_page=100>;
+        rel="first", <https://procurement.zaikio.test/api/v2/contract_requests?page=1&per_page=100>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '8'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9bb9c97710a3a2f344aac403c174c5b5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1de1ed3e-8aa1-472d-a7d9-a2bbe92886ea
+      X-Runtime:
+      - '0.046182'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"8fcb6074-63cb-4ea6-aacd-b64a0a75df4a","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"12345","declined_at":null,"declined_reason":null,"references":["CR/3UA9M7"],"state":"accepted","supplier":{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
+        Soap Inc.","links":[{"rel":"self","href":"/api/v2/suppliers/bounty_soap_inc"}]},"created_at":"2020-11-23T13:07:51.841Z","updated_at":"2022-05-17T14:28:16.872Z"},{"id":"f612a714-7376-4c7c-84df-91f956ad7f26","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"CN1234567890","declined_at":null,"declined_reason":null,"references":["CR/7R28CS"],"state":"accepted","supplier":{"id":"3bacd032-930c-484e-a157-0e1c51669b5b","name":"Heidelberger
+        Druckmaschinen Vertrieb Deutschland GmbH","links":[{"rel":"self","href":"/api/v2/suppliers/heidelberger-druckmaschinen-vertrieb-deutschland-gmbh"}]},"created_at":"2021-08-20T09:15:56.390Z","updated_at":"2022-03-03T07:42:16.152Z"},{"id":"790fae6b-2124-45d7-bc75-daa538c32e4c","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":null,"declined_at":"2022-01-13T11:34:18.267Z","declined_reason":null,"references":["CR/6V4MVH"],"state":"declined","supplier":{"id":"2ba2e3db-7672-44bd-ba9c-e8aadc687274","name":"Antalis
+        GmbH (Deutschland)","links":[{"rel":"self","href":"/api/v2/suppliers/antalis-deutschland"}]},"created_at":"2021-11-10T12:17:26.839Z","updated_at":"2022-01-13T11:34:18.270Z"},{"id":"a455956e-ddf5-49b5-906c-c650585f3762","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"1709396528","customer_number":"","declined_at":null,"declined_reason":null,"references":["CR/GU9MC7"],"state":"accepted","supplier":{"id":"3779462f-97b0-42ad-a618-e8f68c5f7542","name":"Metapaper
+        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/api/v2/suppliers/metapaper-gmbh-co-kg"}]},"created_at":"2021-04-08T10:03:31.222Z","updated_at":"2021-04-08T10:03:32.690Z"},{"id":"36ddc162-9d39-46cd-b293-170430243977","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"1286q309402347ß92347","declined_at":null,"declined_reason":null,"references":["CR/4ZDAB6"],"state":"accepted","supplier":{"id":"cc5d6b1a-ef02-4125-8ef0-3fa680737f71","name":"Unreal
+        Paper","links":[{"rel":"self","href":"/api/v2/suppliers/sandbox-test-supplier"}]},"created_at":"2021-09-21T11:34:36.623Z","updated_at":"2021-09-21T13:21:16.165Z"},{"id":"08878f64-b30a-4fe7-accc-95405f9fe347","contact_email":"cw@zaikio.com","contact_first_name":"Christian","contact_last_name":"Weyer","contact_phone":"000000+1","customer_number":null,"declined_at":null,"declined_reason":null,"references":["CR/6DVHBS"],"state":"accepted","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","name":"Sappi","links":[{"rel":"self","href":"/api/v2/suppliers/sappi"}]},"created_at":"2021-11-22T17:47:19.171Z","updated_at":"2022-06-20T14:04:33.297Z"},{"id":"d0d7ab95-bf58-49bb-a6bb-000a78dea9ef","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"the
+        meaning of life is 42","declined_at":null,"declined_reason":null,"references":["CR/A8CX6E"],"state":"accepted","supplier":{"id":"019601a4-e5f6-4eef-9b20-85d4a8ea124a","name":"Campbell
+        Paperz","links":[{"rel":"self","href":"/api/v2/suppliers/campbell-paperz"}]},"created_at":"2021-12-08T14:39:09.039Z","updated_at":"2021-12-08T14:39:35.831Z"},{"id":"19c97cbf-f2cc-46b3-ba5b-789a918e2238","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+3333333333333","customer_number":"1968353479","declined_at":null,"declined_reason":null,"references":["CR/C8WETP"],"state":"accepted","supplier":{"id":"b2a0f1ab-7610-451e-acc7-633284300521","name":"Awesome
+        Supplier","links":[{"rel":"self","href":"/api/v2/suppliers/awesome-supplier"}]},"created_at":"2022-08-02T11:05:22.952Z","updated_at":"2022-08-02T11:28:48.954Z"}]'
+  recorded_at: Wed, 03 Aug 2022 10:51:01 GMT
+- request:
+    method: post
+    uri: https://procurement.zaikio.test/api/v2/suppliers/061c2b43-ae94-459d-8739-35b20684e47a/contract_requests
+    body:
+      encoding: UTF-8
+      string: '{"contract_request":{"customer_number":"1968353479","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_email":"fgalli@example.com","contact_phone":"+3333333333333","references":["my
+        reference"]}}'
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIyMjYwMDQ1Zi0xNzhmLTQ3MjEtOGMyMC1lNTVjODZiNzdmYzIiLCJuYmYiOjE2NTk1MjM4NDQsImV4cCI6MTY1OTUyNzQ0NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciLCJ3YXJlaG91c2UuZmluaXNoZWRfZ29vZHNfY2FsbF9vZmZzLnIiLCJ3YXJlaG91c2Uuc2t1cy5yIl19.oIuqiJ5pHKGB_V8Gve8lQI39-W4EwUdbCEY-7RH0wo_7DY3RsQ4H7O4uHsanUVDa3US_3ajHaF31RglldHP4UTCMWEmjh8oY1XbGqETuhV39OAQeP2jQEMItA8I49Q0ngRGYM7T1BPKfvnwdUYahJg-U4O78T5jJwMOX159UDguvrv_xkcTZMypAsnD4H3eTd-hceFkjzXCGjX18GtqkKLtPToPWpoGvBJHh7_cxi2foLY4BOakROq0EWka9ve9rO-BVhQW-h6cbM3mylN9JbNubBr4DAm0rGXemut99NCf1JvPiJAcsnxhRSljFDI_pr_niY6L3sb1VCKFiKaozzA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 10:51:01 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"06dd9f716c69cea67871b3aa1e7b8336"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1d985d2c-0801-4d27-945b-43bf5755b761
+      X-Runtime:
+      - '0.053142'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"b7fb3801-c67b-4237-9de9-b24694e2047c","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+3333333333333","customer_number":"1968353479","declined_at":null,"declined_reason":null,"references":["CR/M3C318"],"state":"pending","supplier":{"id":"061c2b43-ae94-459d-8739-35b20684e47a","name":"Heinrich
+        Steuber GmbH + Co.","links":[{"rel":"self","href":"/api/v2/suppliers/heinrich-steuber-gmbh-co"}]},"created_at":"2022-08-03T10:51:01.549Z","updated_at":"2022-08-03T10:51:01.549Z"}'
+  recorded_at: Wed, 03 Aug 2022 10:51:01 GMT
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/contract_requests
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIyMjYwMDQ1Zi0xNzhmLTQ3MjEtOGMyMC1lNTVjODZiNzdmYzIiLCJuYmYiOjE2NTk1MjM4NDQsImV4cCI6MTY1OTUyNzQ0NCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciLCJ3YXJlaG91c2UuZmluaXNoZWRfZ29vZHNfY2FsbF9vZmZzLnIiLCJ3YXJlaG91c2Uuc2t1cy5yIl19.oIuqiJ5pHKGB_V8Gve8lQI39-W4EwUdbCEY-7RH0wo_7DY3RsQ4H7O4uHsanUVDa3US_3ajHaF31RglldHP4UTCMWEmjh8oY1XbGqETuhV39OAQeP2jQEMItA8I49Q0ngRGYM7T1BPKfvnwdUYahJg-U4O78T5jJwMOX159UDguvrv_xkcTZMypAsnD4H3eTd-hceFkjzXCGjX18GtqkKLtPToPWpoGvBJHh7_cxi2foLY4BOakROq0EWka9ve9rO-BVhQW-h6cbM3mylN9JbNubBr4DAm0rGXemut99NCf1JvPiJAcsnxhRSljFDI_pr_niY6L3sb1VCKFiKaozzA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 10:51:01 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/contract_requests?page=1&per_page=100>;
+        rel="first", <https://procurement.zaikio.test/api/v2/contract_requests?page=1&per_page=100>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '9'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a1550740312d5cabae04a390cc68c8c8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9d3d6c4e-08c5-44c0-90fa-e417df25c2e1
+      X-Runtime:
+      - '0.049980'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"8fcb6074-63cb-4ea6-aacd-b64a0a75df4a","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"12345","declined_at":null,"declined_reason":null,"references":["CR/3UA9M7"],"state":"accepted","supplier":{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
+        Soap Inc.","links":[{"rel":"self","href":"/api/v2/suppliers/bounty_soap_inc"}]},"created_at":"2020-11-23T13:07:51.841Z","updated_at":"2022-05-17T14:28:16.872Z"},{"id":"f612a714-7376-4c7c-84df-91f956ad7f26","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"CN1234567890","declined_at":null,"declined_reason":null,"references":["CR/7R28CS"],"state":"accepted","supplier":{"id":"3bacd032-930c-484e-a157-0e1c51669b5b","name":"Heidelberger
+        Druckmaschinen Vertrieb Deutschland GmbH","links":[{"rel":"self","href":"/api/v2/suppliers/heidelberger-druckmaschinen-vertrieb-deutschland-gmbh"}]},"created_at":"2021-08-20T09:15:56.390Z","updated_at":"2022-03-03T07:42:16.152Z"},{"id":"790fae6b-2124-45d7-bc75-daa538c32e4c","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":null,"declined_at":"2022-01-13T11:34:18.267Z","declined_reason":null,"references":["CR/6V4MVH"],"state":"declined","supplier":{"id":"2ba2e3db-7672-44bd-ba9c-e8aadc687274","name":"Antalis
+        GmbH (Deutschland)","links":[{"rel":"self","href":"/api/v2/suppliers/antalis-deutschland"}]},"created_at":"2021-11-10T12:17:26.839Z","updated_at":"2022-01-13T11:34:18.270Z"},{"id":"a455956e-ddf5-49b5-906c-c650585f3762","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"1709396528","customer_number":"","declined_at":null,"declined_reason":null,"references":["CR/GU9MC7"],"state":"accepted","supplier":{"id":"3779462f-97b0-42ad-a618-e8f68c5f7542","name":"Metapaper
+        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/api/v2/suppliers/metapaper-gmbh-co-kg"}]},"created_at":"2021-04-08T10:03:31.222Z","updated_at":"2021-04-08T10:03:32.690Z"},{"id":"36ddc162-9d39-46cd-b293-170430243977","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"1286q309402347ß92347","declined_at":null,"declined_reason":null,"references":["CR/4ZDAB6"],"state":"accepted","supplier":{"id":"cc5d6b1a-ef02-4125-8ef0-3fa680737f71","name":"Unreal
+        Paper","links":[{"rel":"self","href":"/api/v2/suppliers/sandbox-test-supplier"}]},"created_at":"2021-09-21T11:34:36.623Z","updated_at":"2021-09-21T13:21:16.165Z"},{"id":"08878f64-b30a-4fe7-accc-95405f9fe347","contact_email":"cw@zaikio.com","contact_first_name":"Christian","contact_last_name":"Weyer","contact_phone":"000000+1","customer_number":null,"declined_at":null,"declined_reason":null,"references":["CR/6DVHBS"],"state":"accepted","supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","name":"Sappi","links":[{"rel":"self","href":"/api/v2/suppliers/sappi"}]},"created_at":"2021-11-22T17:47:19.171Z","updated_at":"2022-06-20T14:04:33.297Z"},{"id":"d0d7ab95-bf58-49bb-a6bb-000a78dea9ef","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"the
+        meaning of life is 42","declined_at":null,"declined_reason":null,"references":["CR/A8CX6E"],"state":"accepted","supplier":{"id":"019601a4-e5f6-4eef-9b20-85d4a8ea124a","name":"Campbell
+        Paperz","links":[{"rel":"self","href":"/api/v2/suppliers/campbell-paperz"}]},"created_at":"2021-12-08T14:39:09.039Z","updated_at":"2021-12-08T14:39:35.831Z"},{"id":"19c97cbf-f2cc-46b3-ba5b-789a918e2238","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+3333333333333","customer_number":"1968353479","declined_at":null,"declined_reason":null,"references":["CR/C8WETP"],"state":"accepted","supplier":{"id":"b2a0f1ab-7610-451e-acc7-633284300521","name":"Awesome
+        Supplier","links":[{"rel":"self","href":"/api/v2/suppliers/awesome-supplier"}]},"created_at":"2022-08-02T11:05:22.952Z","updated_at":"2022-08-02T11:28:48.954Z"},{"id":"b7fb3801-c67b-4237-9de9-b24694e2047c","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+3333333333333","customer_number":"1968353479","declined_at":null,"declined_reason":null,"references":["CR/M3C318"],"state":"pending","supplier":{"id":"061c2b43-ae94-459d-8739-35b20684e47a","name":"Heinrich
+        Steuber GmbH + Co.","links":[{"rel":"self","href":"/api/v2/suppliers/heinrich-steuber-gmbh-co"}]},"created_at":"2022-08-03T10:51:01.549Z","updated_at":"2022-08-03T10:51:01.549Z"}]'
+  recorded_at: Wed, 03 Aug 2022 10:51:01 GMT
+recorded_with: VCR 6.0.0

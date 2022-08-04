@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/material_requirements
+    uri: https://procurement.zaikio.test/api/v2/material_requirements
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.7.0
+      - Faraday v1.10.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbIk9yZ2FuaXphdGlvbi81ZTQ4MzgzZC1iMjc2LTRkNzAtYjY5MC05ZTIwMzJlM2NkM2EiXSwianRpIjoiMzQ5N2I5MmMtNjI5MC00ZWQwLWFiY2YtODI5ZTEwMGM1NjViIiwibmJmIjoxNjI5OTU5NDAxLCJleHAiOjE2NjE0OTU0MDEsImprdSI6Imh0dHBzOi8vaHViLnNhbmRib3guemFpa2lvLmNvbS9hcGkvdjEvand0X3B1YmxpY19rZXlzIiwic2NvcGUiOlsicHJvY3VyZW1lbnRfY29uc3VtZXIuY2F0YWxvZy5yIiwicHJvY3VyZW1lbnRfY29uc3VtZXIuY29udHJhY3RzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIubWF0ZXJpYWxfcmVxdWlyZW1lbnRzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIub3JkZXJzLnJ3Il19.DmW6zq0BsnQ17F5CbZnAEcn6C3CabnXLXLBwCmqhOc6fj7GPY81-gnbOII3IrPvBSEAsrEiOs6YT9hUCH1RXp61PcUgiZed8eOCwtKrkx37eofqgFOkmDbtUDdmwKfetw3mhdu89-kaR8-wtN-jizGixcMlZqNUUiNkfLIlSiKmWaSSMS8g1618LVtxnCJsNlogLvzS53ZecBYSz1s1mazCm3d9ljWRkrIjWqKAmObio7zj8ajhbARMvGAmPOTwcWN3lOdzG3yHYjc_Bvuxt0oRcylEZZ3642Q-FvEvMj9TbIY4ULy6GI1g4IHLcHOFUs8qdN51emh4ZJoz1v7UYvkSO1_J-Uy-LVm6xFkcXNcoVPqAyCybXVyICiR3etIa6arx-xL5IbYJWMhIL-z60jKFjnHsadnNY1FJpnfAMhoMr8r__16CZMIZvGwb-LFi18rqTMVHxun4REEGl9yFspJ8-Lqe6eGspNj-4GqvjuGY-8NBxWOZeMbbUzwl1SWG2oWNQDze6qgLznb1b7gA-yG8tedLXGi59CQbdKqLSDT6mbE_Lzd2oTWEo8HGEDd-658qz--2INl5nh7SCsPF_HKd2dAyUe8t330njy1LsbF68RdeHZFj2SztoCrYEur5JBA_TvFWoU-MV-V2BXCAGy6zSQHs-_FrGXt7kn6upRv8
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,66 +20,70 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Current-Page:
-      - '1'
-      Etag:
-      - W/"da12d3301889b0cce8fae815088df6a8"
-      Link:
-      - <https://procurement.zaikio.test/consumers/api/v1/material_requirements?page=1&per_page=100>;
-        rel="first", <https://procurement.zaikio.test/consumers/api/v1/material_requirements?page=1&per_page=100>;
-        rel="last"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=63072000; includeSubDomains
-      Total-Count:
-      - '1'
-      Total-Pages:
-      - '1'
-      Vary:
-      - Origin
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 13:20:47 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=100>;
+        rel="first", <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=100>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f53cda18c2baa0c0354bb5f9a3ecbe5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0cb73fb8-ccfa-412e-8e3f-311372c1088c
+      - 0525f48c-ee00-47af-a4b0-a984433fa2c7
       X-Runtime:
-      - '1.849672'
-      X-Xss-Protection:
-      - 1; mode=block
-      Date:
-      - Thu, 26 Aug 2021 12:05:29 GMT
-      Content-Length:
-      - '1212'
+      - '0.956558'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":"4f23019a-b856-4330-9feb-962d10f53125","amount":1,"anticipated_costs":null,"archived_at":null,"article_category":"substrate","canceled_at":null,"currency":"EUR","description":"MAGNO
-        MATT – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"478.12","price_based_on_quantity":"620.928","references":["MR/TAUB72"],"state":"draft","unit":"kg","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
-        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"purchaser":null,"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","kind":"Supplier","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"order_line_items":[],"created_at":"2021-08-26T11:06:28.326Z","updated_at":"2021-08-26T11:11:31.964Z"}]'
-  recorded_at: Thu, 26 Aug 2021 12:05:29 GMT
+      string: "[]"
+  recorded_at: Wed, 03 Aug 2022 13:20:47 GMT
 - request:
     method: post
-    uri: https://procurement.zaikio.test/consumers/api/v1/material_requirements
+    uri: https://procurement.zaikio.test/api/v2/material_requirements
     body:
       encoding: UTF-8
-      string: '{"material_requirement":{"amount":100,"unit":"sheet","description":"Custom
-        Material Requirement"}}'
+      string: '{"material_requirement":{"amount":200,"job_client":"Awesome Client","job_description":"Awesome
+        print product","job_link":"https://www.example.com","job_reference":"my job
+        reference","material_required_at":"2022-08-03","supplier_id":"b2a0f1ab-7610-451e-acc7-633284300521","variant_id":"31924842-b38b-47b2-90b0-68f8f42f37d6","references":["my
+        requirement reference"],"visible_in_web":true}}'
     headers:
       User-Agent:
-      - Faraday v1.7.0
+      - Faraday v1.10.0
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbIk9yZ2FuaXphdGlvbi81ZTQ4MzgzZC1iMjc2LTRkNzAtYjY5MC05ZTIwMzJlM2NkM2EiXSwianRpIjoiMzQ5N2I5MmMtNjI5MC00ZWQwLWFiY2YtODI5ZTEwMGM1NjViIiwibmJmIjoxNjI5OTU5NDAxLCJleHAiOjE2NjE0OTU0MDEsImprdSI6Imh0dHBzOi8vaHViLnNhbmRib3guemFpa2lvLmNvbS9hcGkvdjEvand0X3B1YmxpY19rZXlzIiwic2NvcGUiOlsicHJvY3VyZW1lbnRfY29uc3VtZXIuY2F0YWxvZy5yIiwicHJvY3VyZW1lbnRfY29uc3VtZXIuY29udHJhY3RzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIubWF0ZXJpYWxfcmVxdWlyZW1lbnRzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIub3JkZXJzLnJ3Il19.DmW6zq0BsnQ17F5CbZnAEcn6C3CabnXLXLBwCmqhOc6fj7GPY81-gnbOII3IrPvBSEAsrEiOs6YT9hUCH1RXp61PcUgiZed8eOCwtKrkx37eofqgFOkmDbtUDdmwKfetw3mhdu89-kaR8-wtN-jizGixcMlZqNUUiNkfLIlSiKmWaSSMS8g1618LVtxnCJsNlogLvzS53ZecBYSz1s1mazCm3d9ljWRkrIjWqKAmObio7zj8ajhbARMvGAmPOTwcWN3lOdzG3yHYjc_Bvuxt0oRcylEZZ3642Q-FvEvMj9TbIY4ULy6GI1g4IHLcHOFUs8qdN51emh4ZJoz1v7UYvkSO1_J-Uy-LVm6xFkcXNcoVPqAyCybXVyICiR3etIa6arx-xL5IbYJWMhIL-z60jKFjnHsadnNY1FJpnfAMhoMr8r__16CZMIZvGwb-LFi18rqTMVHxun4REEGl9yFspJ8-Lqe6eGspNj-4GqvjuGY-8NBxWOZeMbbUzwl1SWG2oWNQDze6qgLznb1b7gA-yG8tedLXGi59CQbdKqLSDT6mbE_Lzd2oTWEo8HGEDd-658qz--2INl5nh7SCsPF_HKd2dAyUe8t330njy1LsbF68RdeHZFj2SztoCrYEur5JBA_TvFWoU-MV-V2BXCAGy6zSQHs-_FrGXt7kn6upRv8
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -89,52 +93,60 @@ http_interactions:
       code: 201
       message: Created
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"2f2b66c96733e1787cde44bdd00fe2fd"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 13:20:46 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b500c12c0e94efb831c393f57db0e790"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 94be273d-38ae-4d7a-b73c-442ad67e49e2
+      - 1ee24542-2a4f-4d96-94aa-26069d1c3edb
       X-Runtime:
-      - '0.510593'
-      X-Xss-Protection:
-      - 1; mode=block
-      Date:
-      - Thu, 26 Aug 2021 12:05:29 GMT
-      Content-Length:
-      - '651'
+      - '0.100660'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"9d863ed2-0259-477c-9664-8707eebcd50a","amount":100,"anticipated_costs":null,"archived_at":null,"article_category":null,"canceled_at":null,"currency":"EUR","description":"Custom
-        Material Requirement","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":null,"price_based_on_quantity":null,"references":["MR/VQK99T"],"state":"draft","unit":"sheet","archived_by":null,"person":null,"purchaser":null,"supplier":null,"variant":null,"order_line_items":[],"created_at":"2021-08-26T12:05:29.573Z","updated_at":"2021-08-26T12:05:29.573Z"}'
-  recorded_at: Thu, 26 Aug 2021 12:05:29 GMT
+      string: '{"id":"a606d3b7-88fb-45a0-92bb-8d19ec2d0651","references":["MR/D9TZ61","my
+        requirement reference"],"state":"draft","required_material":{"amount":200,"description":"Kodak
+        GmbH – SONORA XP – 724 × 615 mm","environmental_certification":null,"unit":"piece","variant":{"id":"31924842-b38b-47b2-90b0-68f8f42f37d6","type":"plate","links":[{"rel":"self","href":"/api/v2/variants/31924842-b38b-47b2-90b0-68f8f42f37d6"}]},"supplier":{"id":"b2a0f1ab-7610-451e-acc7-633284300521","name":"Awesome
+        Supplier","links":[{"rel":"self","href":"/api/v2/suppliers/awesome-supplier"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-03","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":null,"pricing":{"currency":"EUR","price":"742.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":200,"order_quantity_in_base_unit":200},"job":{"anticipated_costs":null,"client":"Awesome
+        Client","description":"Awesome print product","link":"https://www.example.com","reference":"my
+        job reference"},"creator":null,"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T13:20:47.442Z","updated_at":"2022-08-03T13:20:47.442Z"}'
+  recorded_at: Wed, 03 Aug 2022 13:20:47 GMT
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/material_requirements
+    uri: https://procurement.zaikio.test/api/v2/material_requirements
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.7.0
+      - Faraday v1.10.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbIk9yZ2FuaXphdGlvbi81ZTQ4MzgzZC1iMjc2LTRkNzAtYjY5MC05ZTIwMzJlM2NkM2EiXSwianRpIjoiMzQ5N2I5MmMtNjI5MC00ZWQwLWFiY2YtODI5ZTEwMGM1NjViIiwibmJmIjoxNjI5OTU5NDAxLCJleHAiOjE2NjE0OTU0MDEsImprdSI6Imh0dHBzOi8vaHViLnNhbmRib3guemFpa2lvLmNvbS9hcGkvdjEvand0X3B1YmxpY19rZXlzIiwic2NvcGUiOlsicHJvY3VyZW1lbnRfY29uc3VtZXIuY2F0YWxvZy5yIiwicHJvY3VyZW1lbnRfY29uc3VtZXIuY29udHJhY3RzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIubWF0ZXJpYWxfcmVxdWlyZW1lbnRzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIub3JkZXJzLnJ3Il19.DmW6zq0BsnQ17F5CbZnAEcn6C3CabnXLXLBwCmqhOc6fj7GPY81-gnbOII3IrPvBSEAsrEiOs6YT9hUCH1RXp61PcUgiZed8eOCwtKrkx37eofqgFOkmDbtUDdmwKfetw3mhdu89-kaR8-wtN-jizGixcMlZqNUUiNkfLIlSiKmWaSSMS8g1618LVtxnCJsNlogLvzS53ZecBYSz1s1mazCm3d9ljWRkrIjWqKAmObio7zj8ajhbARMvGAmPOTwcWN3lOdzG3yHYjc_Bvuxt0oRcylEZZ3642Q-FvEvMj9TbIY4ULy6GI1g4IHLcHOFUs8qdN51emh4ZJoz1v7UYvkSO1_J-Uy-LVm6xFkcXNcoVPqAyCybXVyICiR3etIa6arx-xL5IbYJWMhIL-z60jKFjnHsadnNY1FJpnfAMhoMr8r__16CZMIZvGwb-LFi18rqTMVHxun4REEGl9yFspJ8-Lqe6eGspNj-4GqvjuGY-8NBxWOZeMbbUzwl1SWG2oWNQDze6qgLznb1b7gA-yG8tedLXGi59CQbdKqLSDT6mbE_Lzd2oTWEo8HGEDd-658qz--2INl5nh7SCsPF_HKd2dAyUe8t330njy1LsbF68RdeHZFj2SztoCrYEur5JBA_TvFWoU-MV-V2BXCAGy6zSQHs-_FrGXt7kn6upRv8
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -144,51 +156,57 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Current-Page:
-      - '1'
-      Etag:
-      - W/"a5b34d112581f5097c16b315513aa3b6"
-      Link:
-      - <https://procurement.zaikio.test/consumers/api/v1/material_requirements?page=1&per_page=100>;
-        rel="first", <https://procurement.zaikio.test/consumers/api/v1/material_requirements?page=1&per_page=100>;
-        rel="last"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=63072000; includeSubDomains
-      Total-Count:
-      - '2'
-      Total-Pages:
-      - '1'
-      Vary:
-      - Origin
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 13:20:46 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=25>;
+        rel="first", <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=25>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c63e856f17a0dca655f9bf0db1d65d30"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 987780f4-5d5c-451b-a76a-da2af3b8b00f
+      - fdc8642b-72c9-4605-839b-bd8d0ac1073a
       X-Runtime:
-      - '0.053462'
-      X-Xss-Protection:
-      - 1; mode=block
-      Date:
-      - Thu, 26 Aug 2021 12:05:30 GMT
-      Content-Length:
-      - '1864'
+      - '0.211286'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":"9d863ed2-0259-477c-9664-8707eebcd50a","amount":100,"anticipated_costs":null,"archived_at":null,"article_category":null,"canceled_at":null,"currency":"EUR","description":"Custom
-        Material Requirement","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":null,"price_based_on_quantity":null,"references":["MR/VQK99T"],"state":"draft","unit":"sheet","archived_by":null,"person":null,"purchaser":null,"supplier":null,"variant":null,"order_line_items":[],"created_at":"2021-08-26T12:05:29.573Z","updated_at":"2021-08-26T12:05:29.573Z"},{"id":"4f23019a-b856-4330-9feb-962d10f53125","amount":1,"anticipated_costs":null,"archived_at":null,"article_category":"substrate","canceled_at":null,"currency":"EUR","description":"MAGNO
-        MATT – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"478.12","price_based_on_quantity":"620.928","references":["MR/TAUB72"],"state":"draft","unit":"kg","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
-        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"purchaser":null,"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","kind":"Supplier","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"order_line_items":[],"created_at":"2021-08-26T11:06:28.326Z","updated_at":"2021-08-26T11:11:31.964Z"}]'
-  recorded_at: Thu, 26 Aug 2021 12:05:30 GMT
+      string: '[{"id":"a606d3b7-88fb-45a0-92bb-8d19ec2d0651","references":["MR/D9TZ61","my
+        requirement reference"],"state":"draft","required_material":{"amount":200,"description":"Kodak
+        GmbH – SONORA XP – 724 × 615 mm","environmental_certification":null,"unit":"piece","variant":{"id":"31924842-b38b-47b2-90b0-68f8f42f37d6","type":"plate","links":[{"rel":"self","href":"/api/v2/variants/31924842-b38b-47b2-90b0-68f8f42f37d6"}]},"supplier":{"id":"b2a0f1ab-7610-451e-acc7-633284300521","name":"Awesome
+        Supplier","links":[{"rel":"self","href":"/api/v2/suppliers/awesome-supplier"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-03","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":null,"pricing":{"currency":"EUR","price":"742.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":200,"order_quantity_in_base_unit":200},"job":{"anticipated_costs":null,"client":"Awesome
+        Client","description":"Awesome print product","link":"https://www.example.com","reference":"my
+        job reference"},"creator":null,"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T13:20:47.442Z","updated_at":"2022-08-03T13:20:47.442Z"}]'
+  recorded_at: Wed, 03 Aug 2022 13:20:47 GMT
 recorded_with: VCR 6.0.0

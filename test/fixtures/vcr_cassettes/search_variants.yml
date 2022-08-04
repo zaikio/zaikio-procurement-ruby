@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/api/v2/contract_requests/8fcb6074-63cb-4ea6-aacd-b64a0a75df4a
+    uri: https://procurement.zaikio.test/api/v2/variants?filters%5Bgrain%5D=short&filters%5Bpaper_weight%5D=80&query=Soap&type=sheet_substrate
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 11:34:58 GMT
+      - Tue, 02 Aug 2022 11:35:00 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -38,16 +38,26 @@ http_interactions:
       - none
       Referrer-Policy:
       - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/variants?filters[grain]=short&filters[paper_weight]=80&query=Soap&type=sheet_substrate&page=1&per_page=25>;
+        rel="first", <https://procurement.zaikio.test/api/v2/variants?filters[grain]=short&filters[paper_weight]=80&query=Soap&type=sheet_substrate&page=1&per_page=25>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '1'
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"241021367b84767d49076adce20800d4"
+      - W/"7f61de2aee18dde8de7a03ebfefc2a87"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14aacae0-af82-4480-9054-acc548fc507b
+      - e8bb16d5-0671-484f-b56c-ace791861447
       X-Runtime:
-      - '0.014927'
+      - '0.075530'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Transfer-Encoding:
@@ -56,7 +66,13 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"8fcb6074-63cb-4ea6-aacd-b64a0a75df4a","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"12345","declined_at":null,"declined_reason":null,"references":["CR/3UA9M7"],"state":"accepted","supplier":{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
-        Soap Inc.","links":[{"rel":"self","href":"/api/v2/suppliers/bounty_soap_inc"}]},"created_at":"2020-11-23T13:07:51.841Z","updated_at":"2022-05-17T14:28:16.872Z"}'
-  recorded_at: Tue, 02 Aug 2022 11:34:59 GMT
+      string: '{"results":[{"id":"bbc0a889-4d54-481e-a3dd-0ad7a52d0243","type":"sheet_substrate","summary":"PS1
+        - Premium Coated, 880 × 630 mm, 80 g/㎡, short","global_trade_item_number":null,"brightness":null,"category":"PS1
+        - Premium Coated","color":null,"dimensions_unit":"mm","form":"sheet","grain":"short","height":630,"optical_brightness_agent_amount":null,"optical_brightness_agent":null,"paper_weight_unit":"gsm","paper_weight":80,"roughness":null,"thickness":86,"transparency":null,"white_point_m0":null,"white_point_m1":null,"whiteness":null,"width":880,"article":{"base_unit":"sheet","description":null,"manufacturer":null,"name":"Bounty
+        Soap Volume Paper","summary":"Bounty Soap Volume Paper","classification_reports":[],"certifications":[],"coated":"both
+        sides","finish":"MATT COATED","kind":"paper"},"skus":[{"id":"6840da22-a8f5-4cd6-9685-9e79c5d02692","amount":1,"amount_in_base_unit":12500,"environmental_certification":"FSC
+        Mix Credit","order_number":"BSOAP-0001","palletized":false,"unit":"pallet","suppliers":[{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
+        Soap Inc."}]}],"created_at":"2021-01-19T11:37:01.773Z","updated_at":"2022-02-17T10:03:09.303Z"}],"available_filters":[{"name":"article_type","label":"Type","total_count":1,"options":[{"value":"sheet_substrate","label":"Sheet
+        substrate","count":1}]}]}'
+  recorded_at: Tue, 02 Aug 2022 11:35:00 GMT
 recorded_with: VCR 6.0.0
