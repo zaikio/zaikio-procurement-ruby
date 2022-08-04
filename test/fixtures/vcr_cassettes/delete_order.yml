@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/orders/071c2c7c-a182-42c3-8253-a530585d3266
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIyM2JlOWZiZS1kOTBkLTQ2YWItYTU3MC1lZDMxMjI5Y2U4MDIiLCJuYmYiOjE2NTk1MTA4MDgsImV4cCI6MTY1OTUxNDQwOCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciLCJ3YXJlaG91c2UuZmluaXNoZWRfZ29vZHNfY2FsbF9vZmZzLnIiLCJ3YXJlaG91c2Uuc2t1cy5yIl19.YdM8iMPlkb36xR669XAaFKGgKigdOu-KEy7OCWSa68i3QJu8qL7_A59hNLKLvTtJpsVpjLDzOguIcj3rZCFOjOiMBiykp7bFlcT_hwb_TVmV5U2QNNzTOd77ZafoH6Zd2jqCGNgh4bAYfQqvLQe81DhQ4rcSI0PKS-Fo0kYQfHbQPnECWpSwaQePpdl8Tqx-pctiJLLiqs8dhTaJj51U_o67tAaTeauIJ7DvAQ3_SBLCqf6Ut-nBF987xpt9QkMXFJdzgvTpCspPBrxrVBVJjJ1IwaIbZn9XS1gVm2OjxVeDhC8Mg6g6ylprEVim-H9KHLQSCuqZ9Q7ZE-yPBkjCRQ
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 07:26:38 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"80b890175a37a7766abd8de804dcf968"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cd81bade-0241-4606-ac36-0d244a44ab01
+      X-Runtime:
+      - '0.026074'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"071c2c7c-a182-42c3-8253-a530585d3266","copy_material_requirement_references_to_line_items":true,"currency":"EUR","references":["CO/3KREXR","my
+        order reference"],"state":"draft","pricing":{"accuracy":"estimated","total_net_price":"752.0","total_gross_price":"752.0","net_handling_fee":"0.0","net_shipping_fee":"0.0","taxes":"0.0","taxes_on_fees":"0.0"},"canceled_by_consumer_at":null,"canceled_by_supplier_at":null,"confirmed_at":null,"placed_at":null,"transferred_at":null,"delivery":{"accuracy":"esimated","date":null,"desired_delivery_date":null,"address":{"id":"507c314f-8800-4d32-9550-18a615e68e44","addition":null,"addressee":"Joey’s
+        Print Ltd","country_code":"DE","county":null,"kind":"shipping","location":[49.9971723,8.2649662],"number":"1A","state":"Rheinland-Pfalz","street":"Emmerich-Josef-Straße","text":null,"town":"Mainz","types":["premise"],"zip_code":"55116","addressable":{"id":"5e48383d-b276-4d70-b690-9e2032e3cd3a","type":"Consumer","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/person/organizations"}]},"created_at":"2021-02-23T09:19:26.845Z","updated_at":"2021-02-23T09:19:26.845Z"}},"person":null,"order_line_items":[{"references":["COL/7DFBP2"],"amount":4,"amount_in_base_unit":200,"base_unit":"piece","confirmed_delivery_at":null,"description":"Kodak
+        GmbH – SONORA XP – 745 × 605 mm – 1 pack of 50 pieces, 17578.0 kg","order_number":"55000482/PK50","pricing":{"unit_net_price":"188.0","total_net_price":"752.0","tax_rate":null,"taxes":"0.0","total_gross_price":"752.0"},"sku":{"id":"bd1ec3cd-fb7c-4faf-a54f-67302be9bd6d","amount":1,"amount_in_base_unit":50,"environmental_certification":null,"order_number":"55000482/PK50","palletized":false,"unit":"pack"},"created_at":"2022-08-03T07:24:58.171Z","updated_at":"2022-08-03T07:24:58.171Z"}],"links":[{"rel":"self","href":"/api/v2/orders/071c2c7c-a182-42c3-8253-a530585d3266"}],"created_at":"2022-08-03T07:24:58.165Z","updated_at":"2022-08-03T07:24:58.165Z"}'
+  recorded_at: Wed, 03 Aug 2022 07:26:38 GMT
+- request:
+    method: delete
+    uri: https://procurement.zaikio.test/api/v2/orders/071c2c7c-a182-42c3-8253-a530585d3266
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIyM2JlOWZiZS1kOTBkLTQ2YWItYTU3MC1lZDMxMjI5Y2U4MDIiLCJuYmYiOjE2NTk1MTA4MDgsImV4cCI6MTY1OTUxNDQwOCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciLCJ3YXJlaG91c2UuZmluaXNoZWRfZ29vZHNfY2FsbF9vZmZzLnIiLCJ3YXJlaG91c2Uuc2t1cy5yIl19.YdM8iMPlkb36xR669XAaFKGgKigdOu-KEy7OCWSa68i3QJu8qL7_A59hNLKLvTtJpsVpjLDzOguIcj3rZCFOjOiMBiykp7bFlcT_hwb_TVmV5U2QNNzTOd77ZafoH6Zd2jqCGNgh4bAYfQqvLQe81DhQ4rcSI0PKS-Fo0kYQfHbQPnECWpSwaQePpdl8Tqx-pctiJLLiqs8dhTaJj51U_o67tAaTeauIJ7DvAQ3_SBLCqf6Ut-nBF987xpt9QkMXFJdzgvTpCspPBrxrVBVJjJ1IwaIbZn9XS1gVm2OjxVeDhC8Mg6g6ylprEVim-H9KHLQSCuqZ9Q7ZE-yPBkjCRQ
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 07:26:38 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a49df8fb-3337-4e51-9d67-18c03168ce97
+      X-Runtime:
+      - '0.044561'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 03 Aug 2022 07:26:39 GMT
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/orders/071c2c7c-a182-42c3-8253-a530585d3266
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiIyM2JlOWZiZS1kOTBkLTQ2YWItYTU3MC1lZDMxMjI5Y2U4MDIiLCJuYmYiOjE2NTk1MTA4MDgsImV4cCI6MTY1OTUxNDQwOCwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5jYXRhbG9nLnIiLCJwcm9jdXJlbWVudF9jb25zdW1lci5jb250cmFjdHMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5vcmRlcnMucnciLCJ3YXJlaG91c2UuZmluaXNoZWRfZ29vZHNfY2FsbF9vZmZzLnIiLCJ3YXJlaG91c2Uuc2t1cy5yIl19.YdM8iMPlkb36xR669XAaFKGgKigdOu-KEy7OCWSa68i3QJu8qL7_A59hNLKLvTtJpsVpjLDzOguIcj3rZCFOjOiMBiykp7bFlcT_hwb_TVmV5U2QNNzTOd77ZafoH6Zd2jqCGNgh4bAYfQqvLQe81DhQ4rcSI0PKS-Fo0kYQfHbQPnECWpSwaQePpdl8Tqx-pctiJLLiqs8dhTaJj51U_o67tAaTeauIJ7DvAQ3_SBLCqf6Ut-nBF987xpt9QkMXFJdzgvTpCspPBrxrVBVJjJ1IwaIbZn9XS1gVm2OjxVeDhC8Mg6g6ylprEVim-H9KHLQSCuqZ9Q7ZE-yPBkjCRQ
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 07:26:39 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 50384c1b-bc71-4afe-bcdf-8d6ba186d4db
+      X-Runtime:
+      - '0.010515'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"errors":["not_found"]}'
+  recorded_at: Wed, 03 Aug 2022 07:26:39 GMT
+recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/api/v2/contract_requests/8fcb6074-63cb-4ea6-aacd-b64a0a75df4a
+    uri: https://procurement.zaikio.test/api/v2/upcoming_suppliers
     body:
       encoding: US-ASCII
       string: ''
@@ -41,13 +41,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"241021367b84767d49076adce20800d4"
+      - W/"18951665e9425f31e28ace8b9b8c9185"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14aacae0-af82-4480-9054-acc548fc507b
+      - 142f24d7-05d9-450a-94d5-5759b76892c8
       X-Runtime:
-      - '0.014927'
+      - '0.013119'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Transfer-Encoding:
@@ -56,7 +56,6 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"8fcb6074-63cb-4ea6-aacd-b64a0a75df4a","contact_email":"fgalli@example.com","contact_first_name":"Frank","contact_last_name":"Gallikanokus","contact_phone":"+4901709396528","customer_number":"12345","declined_at":null,"declined_reason":null,"references":["CR/3UA9M7"],"state":"accepted","supplier":{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
-        Soap Inc.","links":[{"rel":"self","href":"/api/v2/suppliers/bounty_soap_inc"}]},"created_at":"2020-11-23T13:07:51.841Z","updated_at":"2022-05-17T14:28:16.872Z"}'
+      string: '[{"id":"0cd61ce7-e4ee-42f8-aa42-bc5f4f15b02a","slug":"awesome-upcoming-supplier","name":"Awesome Upcoming Supplier","article_types":["sheet_substrate"],"brand_color":null,"logo_url":"https://hub.sandbox.zaikio.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxoTVRBMFlqZGtNaTAzWXpZekxUUTJOekF0WWpoaE1DMDJOMlk0TURVek0yWTNPV1VHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--512a7aae3dc8108040c987cc4001e3c78e0efb1c/1603783500722.jpeg","created_at":"2022-07-18T11:51:06.848Z","updated_at":"2022-07-18T11:55:55.733Z"}]'
   recorded_at: Tue, 02 Aug 2022 11:34:59 GMT
 recorded_with: VCR 6.0.0

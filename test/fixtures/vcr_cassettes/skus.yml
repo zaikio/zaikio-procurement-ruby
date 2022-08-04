@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393
+    uri: https://procurement.zaikio.test/api/v2/variants/bbc0a889-4d54-481e-a3dd-0ad7a52d0243
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.10.0
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkxMDksImV4cCI6MTY1Mjc4NTEwOSwiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uLzMwMTYwZGZhLTc0YjYtNGVhMS1iNTA0LWQyZDA2MzVhMGMwMiJ9.X_pVWyj_UNALc83CdH1wGabz_A96b9hhhrucoIg143Q
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkODM1YzkxNy04ZTA0LTQyMmUtYTVmOC0yMGUxOTAwNzMwZDIiLCJuYmYiOjE2NTk0NDAwNDEsImV4cCI6MTY1OTQ0MzY0MSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.ouLARtIqZ6DUTaSEBW0IwXeXh6FTWi8GNbr91w7hA4wAB569d0xrVHppEC_2wzXCz6l2R1ZdntJQ-1wp6-UIDJLEM9oBMbq0KLoByHblqu_clKZ3yNM3gbEBa6V7927d-7nGGq6nudTXw08XKX-8_v_QKKSblwRRWikIYx8x_-JG1jehrujX5Wv295ZSaYZDAeZuEt9ZFuk0kFsWZryCEgZ0OQYJ6-4BkxyTjncXu15321SFPcWkejMilFSg-CQje1TJ28e1is7qs2YvYyT3OhCh3nmReAbflB575wuU0uMLyLzQCzv60YIbMHy6Qi-yVuEIgFESfDfDeVUa8Rt-gw
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,13 +23,13 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 16 Apr 2021 09:10:40 GMT
+      - Tue, 02 Aug 2022 11:34:56 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
-      - 1; mode=block
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -41,179 +41,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3f66e7489371d96441628a4bb0c16851"
+      - W/"37a6c7ac906d9b95df56dcd4097ffe6a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8dd95edf-2f58-4712-8d9d-980ddf653d98
+      - b8efc80b-234a-454a-a28e-1c80b6ea03bf
       X-Runtime:
-      - '0.049476'
+      - '0.026960'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","brightness":null,"category":"PS1
-        - Premium Coated","color":null,"dimensions_unit":"mm","form":"sheet","grain":"long","height":1000,"paper_weight":250,"paper_weight_unit":"gsm","roughness":null,"thickness":190,"transparency":null,"unit_system":"metric","whiteness":null,"width":700,"article_id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","article":{"id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","name":"MAGNO
-        GLOSS","links":[{"rel":"self","href":"/consumers/api/v1/articles/7cbf51bd-35a8-47a1-84a2-57aa63140234"}]},"created_at":"2020-10-13T10:37:09.245Z","updated_at":"2021-03-15T11:29:44.288Z"}'
-  recorded_at: Fri, 16 Apr 2021 09:10:41 GMT
-- request:
-    method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393/skus
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkxMDksImV4cCI6MTY1Mjc4NTEwOSwiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uLzMwMTYwZGZhLTc0YjYtNGVhMS1iNTA0LWQyZDA2MzVhMGMwMiJ9.X_pVWyj_UNALc83CdH1wGabz_A96b9hhhrucoIg143Q
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Fri, 16 Apr 2021 09:10:40 GMT
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Link:
-      - <https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393/skus?page=1>;
-        rel="first", <https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393/skus?page=1>;
-        rel="last"
-      Current-Page:
-      - '1'
-      Total-Pages:
-      - '1'
-      Total-Count:
-      - '6'
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"dacd57fb650686ae44fbb335088da206"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - df8cf60e-5652-48ba-a61f-2844d308a6b1
-      X-Runtime:
-      - '0.366376'
-      Strict-Transport-Security:
-      - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"id":"08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5","amount":1,"amount_in_base_unit":4000,"availability_in_days":null,"dimension_unit":"m","environmental_certification":"PEFC
-        100%","gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"prices":[{"id":"1d996d17-88ef-4b5d-be96-6601061251a4","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2020-11-18T14:55:06.467Z","valid_until":null,"sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
-        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"created_at":"2020-11-18T14:56:40.652Z","updated_at":"2020-11-18T14:56:40.652Z"},{"id":"2b301496-5823-4dcf-88b2-06693d011bb3","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2020-11-18T15:01:50.319Z","valid_until":null,"sales_group_id":"d096992b-9332-4773-924d-c5a864473ecc","sales_group":{"id":"d096992b-9332-4773-924d-c5a864473ecc","name":"WIRmachenDRUCK
-        GmbH","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/d096992b-9332-4773-924d-c5a864473ecc"}]},"created_at":"2020-11-18T15:03:30.161Z","updated_at":"2020-11-18T15:03:30.161Z"},{"id":"952d8b07-7279-424a-bd13-8c9da3994768","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|PEFC|L|PL|MAGGLO250701004000PEFC|v1","price":"472.52","valid_from":"2021-01-11T14:18:37.073Z","valid_until":null,"sales_group_id":"fbf75a09-707a-4c46-94ec-6851146fed81","sales_group":{"id":"fbf75a09-707a-4c46-94ec-6851146fed81","name":"FarbWerk
-        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/fbf75a09-707a-4c46-94ec-6851146fed81"}]},"created_at":"2021-01-11T14:20:30.690Z","updated_at":"2021-01-11T14:20:30.690Z"}],"created_at":"2020-10-13T10:37:10.769Z","updated_at":"2021-03-15T11:29:44.279Z"},{"id":"31cec55b-eff3-4f38-a83a-ea65219416e8","amount":1,"amount_in_base_unit":1,"availability_in_days":null,"dimension_unit":"mm","environmental_certification":"FSC
-        Mix Credit","gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000|FSC|L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"prices":[{"id":"e0e6c12b-a7f6-4214-bbb7-34757e2fc65e","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000|FSC|L|SH|MAGGLO250701000FSC|v1","price":"0.12338","valid_from":"2020-11-18T14:55:06.467Z","valid_until":null,"sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
-        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"created_at":"2020-11-18T14:56:39.845Z","updated_at":"2020-11-18T14:56:39.845Z"},{"id":"32284946-dc0e-46c0-b4c8-10efdc3378ef","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000|FSC|L|SH|MAGGLO250701000FSC|v1","price":"0.12338","valid_from":"2020-11-18T15:01:50.319Z","valid_until":null,"sales_group_id":"d096992b-9332-4773-924d-c5a864473ecc","sales_group":{"id":"d096992b-9332-4773-924d-c5a864473ecc","name":"WIRmachenDRUCK
-        GmbH","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/d096992b-9332-4773-924d-c5a864473ecc"}]},"created_at":"2020-11-18T15:03:29.462Z","updated_at":"2020-11-18T15:03:29.462Z"},{"id":"f731cc4a-4be0-4f1b-958d-77d7bc06e860","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000|FSC|L|SH|MAGGLO250701000FSC|v1","price":"0.12338","valid_from":"2021-01-11T14:18:37.073Z","valid_until":null,"sales_group_id":"fbf75a09-707a-4c46-94ec-6851146fed81","sales_group":{"id":"fbf75a09-707a-4c46-94ec-6851146fed81","name":"FarbWerk
-        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/fbf75a09-707a-4c46-94ec-6851146fed81"}]},"created_at":"2021-01-11T14:20:29.949Z","updated_at":"2021-01-11T14:20:29.949Z"}],"created_at":"2020-10-13T10:37:09.683Z","updated_at":"2021-03-15T11:30:18.772Z"},{"id":"344e01a1-9822-465a-a390-791138ce68fb","amount":1,"amount_in_base_unit":1,"availability_in_days":null,"dimension_unit":"mm","environmental_certification":"PEFC
-        100%","gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000|PEFC|L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"prices":[{"id":"8f2d62bf-a065-4f18-8e7c-c5bc976fb0bd","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000|PEFC|L|SH|MAGGLO250701000PEFC|v1","price":"0.11813","valid_from":"2020-11-18T14:55:06.467Z","valid_until":null,"sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
-        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"created_at":"2020-11-18T14:56:40.027Z","updated_at":"2020-11-18T14:56:40.027Z"},{"id":"958363ac-976c-453f-830e-2796dd284c13","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000|PEFC|L|SH|MAGGLO250701000PEFC|v1","price":"0.11813","valid_from":"2020-11-18T15:01:50.319Z","valid_until":null,"sales_group_id":"d096992b-9332-4773-924d-c5a864473ecc","sales_group":{"id":"d096992b-9332-4773-924d-c5a864473ecc","name":"WIRmachenDRUCK
-        GmbH","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/d096992b-9332-4773-924d-c5a864473ecc"}]},"created_at":"2020-11-18T15:03:29.633Z","updated_at":"2020-11-18T15:03:29.633Z"},{"id":"fb411b55-9d68-4673-98a8-9527fd7b9264","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000|PEFC|L|SH|MAGGLO250701000PEFC|v1","price":"0.11813","valid_from":"2021-01-11T14:18:37.073Z","valid_until":null,"sales_group_id":"fbf75a09-707a-4c46-94ec-6851146fed81","sales_group":{"id":"fbf75a09-707a-4c46-94ec-6851146fed81","name":"FarbWerk
-        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/fbf75a09-707a-4c46-94ec-6851146fed81"}]},"created_at":"2021-01-11T14:20:30.133Z","updated_at":"2021-01-11T14:20:30.133Z"}],"created_at":"2020-10-13T10:37:09.976Z","updated_at":"2021-03-15T11:30:22.722Z"},{"id":"52a0967c-fa30-4e0d-9870-e4e615540f76","amount":1,"amount_in_base_unit":4000,"availability_in_days":null,"dimension_unit":"m","environmental_certification":"FSC
-        Mix Credit","gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000|FSC|L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"prices":[{"id":"23b1cf68-2759-4000-ad22-234cfc1185b7","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|FSC|L|PL|MAGGLO250701004000FSC|v1","price":"493.52","valid_from":"2020-11-18T14:55:06.467Z","valid_until":null,"sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
-        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"created_at":"2020-11-18T14:56:40.477Z","updated_at":"2020-11-18T14:56:40.477Z"},{"id":"ce9721a7-b319-49ec-9dce-be4bd1bef65c","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|FSC|L|PL|MAGGLO250701004000FSC|v1","price":"493.52","valid_from":"2020-11-18T15:01:50.319Z","valid_until":null,"sales_group_id":"d096992b-9332-4773-924d-c5a864473ecc","sales_group":{"id":"d096992b-9332-4773-924d-c5a864473ecc","name":"WIRmachenDRUCK
-        GmbH","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/d096992b-9332-4773-924d-c5a864473ecc"}]},"created_at":"2020-11-18T15:03:29.983Z","updated_at":"2020-11-18T15:03:29.983Z"},{"id":"f648dccc-6fe7-477e-b9ec-453f22b29b06","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000|FSC|L|PL|MAGGLO250701004000FSC|v1","price":"493.52","valid_from":"2021-01-11T14:18:37.073Z","valid_until":null,"sales_group_id":"fbf75a09-707a-4c46-94ec-6851146fed81","sales_group":{"id":"fbf75a09-707a-4c46-94ec-6851146fed81","name":"FarbWerk
-        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/fbf75a09-707a-4c46-94ec-6851146fed81"}]},"created_at":"2021-01-11T14:20:30.505Z","updated_at":"2021-01-11T14:20:30.505Z"}],"created_at":"2020-10-13T10:37:10.498Z","updated_at":"2021-03-15T11:30:47.985Z"},{"id":"6c63c227-8196-4acb-8670-817a8f09eae1","amount":1,"amount_in_base_unit":1,"availability_in_days":null,"dimension_unit":"mm","environmental_certification":null,"gross_weight":"175.0","height":"0.19","length":"1000.0","net_weight":"175.0","order_number":"MAGGLO|250|70.0|100.0|0100|000000||L|SH||v1","unit":"sheet","weight_unit":"g","width":"700.0","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"prices":[{"id":"9562977c-12d7-460a-8a7f-dfd85a341738","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000||L|SH|MAGGLO250701000|v1","price":"0.11813","valid_from":"2020-11-18T14:55:06.467Z","valid_until":null,"sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
-        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"created_at":"2020-11-18T14:56:39.674Z","updated_at":"2020-11-18T14:56:39.674Z"},{"id":"a7399a39-1c56-4351-9918-0d444f186203","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000||L|SH|MAGGLO250701000|v1","price":"0.11813","valid_from":"2020-11-18T15:01:50.319Z","valid_until":null,"sales_group_id":"d096992b-9332-4773-924d-c5a864473ecc","sales_group":{"id":"d096992b-9332-4773-924d-c5a864473ecc","name":"WIRmachenDRUCK
-        GmbH","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/d096992b-9332-4773-924d-c5a864473ecc"}]},"created_at":"2020-11-18T15:03:29.303Z","updated_at":"2020-11-18T15:03:29.303Z"},{"id":"55e11808-ea2e-4bad-bc3e-aa1bbd910355","kind":"static","minimum_order_quantity":16000,"order_number":"MAGGLO|250|70.0|100.0|0100|000000||L|SH|MAGGLO250701000|v1","price":"0.11813","valid_from":"2021-01-11T14:18:37.073Z","valid_until":null,"sales_group_id":"fbf75a09-707a-4c46-94ec-6851146fed81","sales_group":{"id":"fbf75a09-707a-4c46-94ec-6851146fed81","name":"FarbWerk
-        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/fbf75a09-707a-4c46-94ec-6851146fed81"}]},"created_at":"2021-01-11T14:20:29.772Z","updated_at":"2021-01-11T14:20:29.772Z"}],"created_at":"2020-10-13T10:37:09.418Z","updated_at":"2021-03-15T11:31:11.218Z"},{"id":"8c48e356-37ae-475a-af0e-5d8c67a3d507","amount":1,"amount_in_base_unit":4000,"availability_in_days":null,"dimension_unit":"m","environmental_certification":null,"gross_weight":"715.0","height":"1.8","length":"1.04","net_weight":"700.0","order_number":"MAGGLO|250|70.0|100.0|0100|004000||L|PL||v1","unit":"pallet","weight_unit":"kg","width":"0.74","variant_id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","variant":{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393"}]},"prices":[{"id":"7049d595-efb5-4ddc-8f49-6131e330fec1","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000||L|PL|MAGGLO250701004000|v1","price":"472.52","valid_from":"2020-11-18T14:55:06.467Z","valid_until":null,"sales_group_id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","sales_group":{"id":"42dcbaf6-e557-4423-96bc-707ebbc223c0","name":"Meinders
-        \u0026 Elstermann GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/42dcbaf6-e557-4423-96bc-707ebbc223c0"}]},"created_at":"2020-11-18T14:56:40.236Z","updated_at":"2020-11-18T14:56:40.236Z"},{"id":"9c6a917c-f090-4af0-af34-ffaf157988a3","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000||L|PL|MAGGLO250701004000|v1","price":"472.52","valid_from":"2020-11-18T15:01:50.319Z","valid_until":null,"sales_group_id":"d096992b-9332-4773-924d-c5a864473ecc","sales_group":{"id":"d096992b-9332-4773-924d-c5a864473ecc","name":"WIRmachenDRUCK
-        GmbH","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/d096992b-9332-4773-924d-c5a864473ecc"}]},"created_at":"2020-11-18T15:03:29.800Z","updated_at":"2020-11-18T15:03:29.800Z"},{"id":"3ee976d1-582b-4325-a7a0-dda5348d39de","kind":"static","minimum_order_quantity":1,"order_number":"MAGGLO|250|70.0|100.0|0100|004000||L|PL|MAGGLO250701004000|v1","price":"472.52","valid_from":"2021-01-11T14:18:37.073Z","valid_until":null,"sales_group_id":"fbf75a09-707a-4c46-94ec-6851146fed81","sales_group":{"id":"fbf75a09-707a-4c46-94ec-6851146fed81","name":"FarbWerk
-        GmbH \u0026 Co. KG","links":[{"rel":"self","href":"/consumers/api/v1/sales_groups/fbf75a09-707a-4c46-94ec-6851146fed81"}]},"created_at":"2021-01-11T14:20:30.316Z","updated_at":"2021-01-11T14:20:30.316Z"}],"created_at":"2020-10-13T10:37:10.241Z","updated_at":"2021-03-15T11:31:33.093Z"}]'
-  recorded_at: Fri, 16 Apr 2021 09:10:41 GMT
-- request:
-    method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/variants/845a4d7e-db5a-46a6-9d30-bf2e884cb393
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkxMDksImV4cCI6MTY1Mjc4NTEwOSwiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uLzMwMTYwZGZhLTc0YjYtNGVhMS1iNTA0LWQyZDA2MzVhMGMwMiJ9.X_pVWyj_UNALc83CdH1wGabz_A96b9hhhrucoIg143Q
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Fri, 16 Apr 2021 09:10:41 GMT
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"3f66e7489371d96441628a4bb0c16851"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - b4b7b5fb-3eff-44f0-b160-1ff62b50c29b
-      X-Runtime:
-      - '0.055214'
-      Strict-Transport-Security:
-      - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"id":"845a4d7e-db5a-46a6-9d30-bf2e884cb393","brightness":null,"category":"PS1
-        - Premium Coated","color":null,"dimensions_unit":"mm","form":"sheet","grain":"long","height":1000,"paper_weight":250,"paper_weight_unit":"gsm","roughness":null,"thickness":190,"transparency":null,"unit_system":"metric","whiteness":null,"width":700,"article_id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","article":{"id":"7cbf51bd-35a8-47a1-84a2-57aa63140234","name":"MAGNO
-        GLOSS","links":[{"rel":"self","href":"/consumers/api/v1/articles/7cbf51bd-35a8-47a1-84a2-57aa63140234"}]},"created_at":"2020-10-13T10:37:09.245Z","updated_at":"2021-03-15T11:29:44.288Z"}'
-  recorded_at: Fri, 16 Apr 2021 09:10:41 GMT
+      string: '{"id":"bbc0a889-4d54-481e-a3dd-0ad7a52d0243","type":"sheet_substrate","summary":"PS1
+        - Premium Coated, 880 × 630 mm, 80 g/㎡, short","global_trade_item_number":null,"brightness":null,"category":"PS1
+        - Premium Coated","color":null,"dimensions_unit":"mm","form":"sheet","grain":"short","height":630,"optical_brightness_agent_amount":null,"optical_brightness_agent":null,"paper_weight_unit":"gsm","paper_weight":80,"roughness":null,"thickness":86,"transparency":null,"white_point_m0":null,"white_point_m1":null,"whiteness":null,"width":880,"article":{"base_unit":"sheet","description":null,"manufacturer":null,"name":"Bounty
+        Soap Volume Paper","summary":"Bounty Soap Volume Paper","classification_reports":[],"certifications":[],"coated":"both
+        sides","finish":"MATT COATED","kind":"paper"},"skus":[{"id":"6840da22-a8f5-4cd6-9685-9e79c5d02692","amount":1,"amount_in_base_unit":12500,"environmental_certification":"FSC
+        Mix Credit","order_number":"BSOAP-0001","palletized":false,"unit":"pallet","suppliers":[{"id":"b1475f65-236c-58b8-96e1-e1778b43beb7","name":"Bounty
+        Soap Inc."}]}],"created_at":"2021-01-19T11:37:01.773Z","updated_at":"2022-02-17T10:03:09.303Z"}'
+  recorded_at: Tue, 02 Aug 2022 11:34:57 GMT
 recorded_with: VCR 6.0.0

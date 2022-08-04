@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/material_requirements/4f23019a-b856-4330-9feb-962d10f53125
+    uri: https://procurement.zaikio.test/api/v2/material_requirements/dbbeb282-1dca-4cf6-bbd6-0c176190c8b6
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.7.0
+      - Faraday v1.10.0
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbIk9yZ2FuaXphdGlvbi81ZTQ4MzgzZC1iMjc2LTRkNzAtYjY5MC05ZTIwMzJlM2NkM2EiXSwianRpIjoiMzQ5N2I5MmMtNjI5MC00ZWQwLWFiY2YtODI5ZTEwMGM1NjViIiwibmJmIjoxNjI5OTU5NDAxLCJleHAiOjE2NjE0OTU0MDEsImprdSI6Imh0dHBzOi8vaHViLnNhbmRib3guemFpa2lvLmNvbS9hcGkvdjEvand0X3B1YmxpY19rZXlzIiwic2NvcGUiOlsicHJvY3VyZW1lbnRfY29uc3VtZXIuY2F0YWxvZy5yIiwicHJvY3VyZW1lbnRfY29uc3VtZXIuY29udHJhY3RzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIubWF0ZXJpYWxfcmVxdWlyZW1lbnRzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIub3JkZXJzLnJ3Il19.DmW6zq0BsnQ17F5CbZnAEcn6C3CabnXLXLBwCmqhOc6fj7GPY81-gnbOII3IrPvBSEAsrEiOs6YT9hUCH1RXp61PcUgiZed8eOCwtKrkx37eofqgFOkmDbtUDdmwKfetw3mhdu89-kaR8-wtN-jizGixcMlZqNUUiNkfLIlSiKmWaSSMS8g1618LVtxnCJsNlogLvzS53ZecBYSz1s1mazCm3d9ljWRkrIjWqKAmObio7zj8ajhbARMvGAmPOTwcWN3lOdzG3yHYjc_Bvuxt0oRcylEZZ3642Q-FvEvMj9TbIY4ULy6GI1g4IHLcHOFUs8qdN51emh4ZJoz1v7UYvkSO1_J-Uy-LVm6xFkcXNcoVPqAyCybXVyICiR3etIa6arx-xL5IbYJWMhIL-z60jKFjnHsadnNY1FJpnfAMhoMr8r__16CZMIZvGwb-LFi18rqTMVHxun4REEGl9yFspJ8-Lqe6eGspNj-4GqvjuGY-8NBxWOZeMbbUzwl1SWG2oWNQDze6qgLznb1b7gA-yG8tedLXGi59CQbdKqLSDT6mbE_Lzd2oTWEo8HGEDd-658qz--2INl5nh7SCsPF_HKd2dAyUe8t330njy1LsbF68RdeHZFj2SztoCrYEur5JBA_TvFWoU-MV-V2BXCAGy6zSQHs-_FrGXt7kn6upRv8
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI4MTU2M2MyZC04MDU4LTRmYmYtYmFlMC00NzViYTEwY2U5YWIiLCJuYmYiOjE2NTk1MjQ0NTEsImV4cCI6MTY1OTUyODA1MSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.cbCf-zlFmDJldA4fJMNVJPm4940zPfgSbhOnMPjey5wNf-CAi6eLtt7MlaiFhoNorAkzCRJGuWbY_d1EtkM-5SsroMZBZyMKDe_prB-PpPiOGTLapRYB8U6hEiQB-V5EfSvwhoir-ZhXK6FFU3lNNvcUhMYDs4LN2vkpgIyJbMBSN76DNJzZsS-j3m0Ydfwh1SbKUXX2JJJ_wLrnIVJLHFuv9raLOpgiz5fByWBn5w5Y844P2Ntg48Am4jEbcILXYtpGjy85obTggOt88m7rBLz7lsPyOQZQ_KSR1wtWKBZg01haOgEKiFCZSMUYojb13tECuB7CgeLXAO6epJRjig
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,57 +20,65 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"e49eba022a5e81741821d0c5317d1f30"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 11:07:30 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"77d4f5178cbb07dec73e7f9f6b53a0f9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2d4ab212-b17a-4873-820f-823f7e4ce64f
+      - af81db29-65d5-4c23-ba09-f4c20d880324
       X-Runtime:
-      - '0.037129'
-      X-Xss-Protection:
-      - 1; mode=block
-      Date:
-      - Thu, 26 Aug 2021 11:11:47 GMT
-      Content-Length:
-      - '1210'
+      - '0.044538'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"4f23019a-b856-4330-9feb-962d10f53125","amount":1,"anticipated_costs":null,"archived_at":null,"article_category":"substrate","canceled_at":null,"currency":"EUR","description":"MAGNO
-        MATT – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"478.12","price_based_on_quantity":"620.928","references":["MR/TAUB72"],"state":"draft","unit":"kg","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
-        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"purchaser":null,"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","kind":"Supplier","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"order_line_items":[],"created_at":"2021-08-26T11:06:28.326Z","updated_at":"2021-08-26T11:11:31.964Z"}'
-  recorded_at: Thu, 26 Aug 2021 11:11:47 GMT
+      string: '{"id":"dbbeb282-1dca-4cf6-bbd6-0c176190c8b6","references":["MR/U1PQ8R"],"state":"draft","required_material":{"amount":20,"description":"Kodak
+        GmbH – SONORA XP – 745 × 605 mm","environmental_certification":null,"unit":"piece","variant":{"id":"42ba776f-7d24-4dcb-9ccb-3f6e5270c5e3","type":"plate","links":[{"rel":"self","href":"/api/v2/variants/42ba776f-7d24-4dcb-9ccb-3f6e5270c5e3"}]},"supplier":{"id":"b2a0f1ab-7610-451e-acc7-633284300521","name":"Awesome
+        Supplier","links":[{"rel":"self","href":"/api/v2/suppliers/awesome-supplier"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":null,"site":{"id":"f3973173-aba9-4e55-802a-3f724fe458a9","name":"Joey’s
+        Print Ltd","headquarter":true,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/f3973173-aba9-4e55-802a-3f724fe458a9"}]}},"order":null,"pricing":{"currency":"EUR","price":"188.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":50,"order_quantity_in_base_unit":50},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T11:05:36.717Z","updated_at":"2022-08-03T11:05:42.472Z"}'
+  recorded_at: Wed, 03 Aug 2022 11:07:31 GMT
 - request:
     method: patch
-    uri: https://procurement.zaikio.test/consumers/api/v1/material_requirements/4f23019a-b856-4330-9feb-962d10f53125
+    uri: https://procurement.zaikio.test/api/v2/material_requirements/dbbeb282-1dca-4cf6-bbd6-0c176190c8b6
     body:
       encoding: UTF-8
-      string: '{"material_requirement":{"amount":1,"anticipated_costs":null,"archived_at":null,"article_category":"substrate","canceled_at":null,"currency":"EUR","description":"MAGNO
-        MATT – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"478.12","price_based_on_quantity":"620.928","references":["MR/TAUB72"],"state":"draft","unit":"kg","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
-        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"purchaser":null,"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","kind":"Supplier","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"order_line_items":[],"created_at":"2021-08-26T11:06:28.326Z","updated_at":"2021-08-26T11:11:31.964Z"}}'
+      string: '{"material_requirement":{"references":["MR/U1PQ8R"],"state":"draft","required_material":{"amount":20,"description":"Kodak
+        GmbH – SONORA XP – 745 × 605 mm","environmental_certification":null,"unit":"piece","variant":{"id":"42ba776f-7d24-4dcb-9ccb-3f6e5270c5e3","type":"plate","links":[{"rel":"self","href":"/api/v2/variants/42ba776f-7d24-4dcb-9ccb-3f6e5270c5e3"}]},"supplier":{"id":"b2a0f1ab-7610-451e-acc7-633284300521","name":"Awesome
+        Supplier","links":[{"rel":"self","href":"/api/v2/suppliers/awesome-supplier"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":null,"site":{"id":"f3973173-aba9-4e55-802a-3f724fe458a9","name":"Joey’s
+        Print Ltd","headquarter":true,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/f3973173-aba9-4e55-802a-3f724fe458a9"}]}},"order":null,"pricing":{"currency":"EUR","price":"188.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":50,"order_quantity_in_base_unit":50},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T11:05:36.717Z","updated_at":"2022-08-03T11:05:42.472Z","amount":200}}'
     headers:
       User-Agent:
-      - Faraday v1.7.0
+      - Faraday v1.10.0
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJraWQiOiIwYTlhNmZkMjRlMjIyZmU5NjgwMTNkOWQyOWY2N2U0ZGJlYTE2NzIzNTk3NzY3M2FiNDZhZmYxNjE2NjI3NzliIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbIk9yZ2FuaXphdGlvbi81ZTQ4MzgzZC1iMjc2LTRkNzAtYjY5MC05ZTIwMzJlM2NkM2EiXSwianRpIjoiMzQ5N2I5MmMtNjI5MC00ZWQwLWFiY2YtODI5ZTEwMGM1NjViIiwibmJmIjoxNjI5OTU5NDAxLCJleHAiOjE2NjE0OTU0MDEsImprdSI6Imh0dHBzOi8vaHViLnNhbmRib3guemFpa2lvLmNvbS9hcGkvdjEvand0X3B1YmxpY19rZXlzIiwic2NvcGUiOlsicHJvY3VyZW1lbnRfY29uc3VtZXIuY2F0YWxvZy5yIiwicHJvY3VyZW1lbnRfY29uc3VtZXIuY29udHJhY3RzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIubWF0ZXJpYWxfcmVxdWlyZW1lbnRzLnJ3IiwicHJvY3VyZW1lbnRfY29uc3VtZXIub3JkZXJzLnJ3Il19.DmW6zq0BsnQ17F5CbZnAEcn6C3CabnXLXLBwCmqhOc6fj7GPY81-gnbOII3IrPvBSEAsrEiOs6YT9hUCH1RXp61PcUgiZed8eOCwtKrkx37eofqgFOkmDbtUDdmwKfetw3mhdu89-kaR8-wtN-jizGixcMlZqNUUiNkfLIlSiKmWaSSMS8g1618LVtxnCJsNlogLvzS53ZecBYSz1s1mazCm3d9ljWRkrIjWqKAmObio7zj8ajhbARMvGAmPOTwcWN3lOdzG3yHYjc_Bvuxt0oRcylEZZ3642Q-FvEvMj9TbIY4ULy6GI1g4IHLcHOFUs8qdN51emh4ZJoz1v7UYvkSO1_J-Uy-LVm6xFkcXNcoVPqAyCybXVyICiR3etIa6arx-xL5IbYJWMhIL-z60jKFjnHsadnNY1FJpnfAMhoMr8r__16CZMIZvGwb-LFi18rqTMVHxun4REEGl9yFspJ8-Lqe6eGspNj-4GqvjuGY-8NBxWOZeMbbUzwl1SWG2oWNQDze6qgLznb1b7gA-yG8tedLXGi59CQbdKqLSDT6mbE_Lzd2oTWEo8HGEDd-658qz--2INl5nh7SCsPF_HKd2dAyUe8t330njy1LsbF68RdeHZFj2SztoCrYEur5JBA_TvFWoU-MV-V2BXCAGy6zSQHs-_FrGXt7kn6upRv8
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiI4MTU2M2MyZC04MDU4LTRmYmYtYmFlMC00NzViYTEwY2U5YWIiLCJuYmYiOjE2NTk1MjQ0NTEsImV4cCI6MTY1OTUyODA1MSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.cbCf-zlFmDJldA4fJMNVJPm4940zPfgSbhOnMPjey5wNf-CAi6eLtt7MlaiFhoNorAkzCRJGuWbY_d1EtkM-5SsroMZBZyMKDe_prB-PpPiOGTLapRYB8U6hEiQB-V5EfSvwhoir-ZhXK6FFU3lNNvcUhMYDs4LN2vkpgIyJbMBSN76DNJzZsS-j3m0Ydfwh1SbKUXX2JJJ_wLrnIVJLHFuv9raLOpgiz5fByWBn5w5Y844P2Ntg48Am4jEbcILXYtpGjy85obTggOt88m7rBLz7lsPyOQZQ_KSR1wtWKBZg01haOgEKiFCZSMUYojb13tECuB7CgeLXAO6epJRjig
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -80,40 +88,46 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"e49eba022a5e81741821d0c5317d1f30"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 11:07:30 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d0e85f74fa915124e0c232a7a4caec2f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dbb6d8bb-851e-4e3c-b778-76adf34bbb49
+      - a5c18552-f092-40f2-83f9-d400fa60e17e
       X-Runtime:
-      - '0.144667'
-      X-Xss-Protection:
-      - 1; mode=block
-      Date:
-      - Thu, 26 Aug 2021 11:11:47 GMT
-      Content-Length:
-      - '1210'
+      - '0.100492'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"4f23019a-b856-4330-9feb-962d10f53125","amount":1,"anticipated_costs":null,"archived_at":null,"article_category":"substrate","canceled_at":null,"currency":"EUR","description":"MAGNO
-        MATT – PS1 - Premium Coated, 880 × 630 mm, 70 g/㎡, short","environmental_certification":null,"expected_at":null,"fulfilled_at":null,"material_required_at":null,"ordered_at":null,"order_number":null,"price":"478.12","price_based_on_quantity":"620.928","references":["MR/TAUB72"],"state":"draft","unit":"kg","archived_by":null,"person":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","display_name":"Frank
-        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"purchaser":null,"supplier":{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","display_name":"Sappi","kind":"Supplier","links":[{"rel":"self","href":"/consumers/api/v1/suppliers/sappi"}]},"variant":{"id":"1fee713e-6e37-4cb9-bae9-17fb844ac1c4","type":"SubstrateVariant","links":[{"rel":"self","href":"/consumers/api/v1/variants/1fee713e-6e37-4cb9-bae9-17fb844ac1c4"}]},"order_line_items":[],"created_at":"2021-08-26T11:06:28.326Z","updated_at":"2021-08-26T11:11:31.964Z"}'
-  recorded_at: Thu, 26 Aug 2021 11:11:47 GMT
+      string: '{"id":"dbbeb282-1dca-4cf6-bbd6-0c176190c8b6","references":["MR/U1PQ8R"],"state":"draft","required_material":{"amount":200,"description":"Kodak
+        GmbH – SONORA XP – 745 × 605 mm","environmental_certification":null,"unit":"piece","variant":{"id":"42ba776f-7d24-4dcb-9ccb-3f6e5270c5e3","type":"plate","links":[{"rel":"self","href":"/api/v2/variants/42ba776f-7d24-4dcb-9ccb-3f6e5270c5e3"}]},"supplier":{"id":"b2a0f1ab-7610-451e-acc7-633284300521","name":"Awesome
+        Supplier","links":[{"rel":"self","href":"/api/v2/suppliers/awesome-supplier"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":null,"site":{"id":"f3973173-aba9-4e55-802a-3f724fe458a9","name":"Joey’s
+        Print Ltd","headquarter":true,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/f3973173-aba9-4e55-802a-3f724fe458a9"}]}},"order":null,"pricing":{"currency":"EUR","price":"752.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":200,"order_quantity_in_base_unit":200},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":null,"fulfilled_at":null,"canceled_at":null,"created_at":"2022-08-03T11:05:36.717Z","updated_at":"2022-08-03T11:07:31.798Z"}'
+  recorded_at: Wed, 03 Aug 2022 11:07:31 GMT
 recorded_with: VCR 6.0.0

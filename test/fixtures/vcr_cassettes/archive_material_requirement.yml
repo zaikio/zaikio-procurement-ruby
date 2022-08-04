@@ -1,0 +1,269 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/material_requirements
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 13:01:46 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=25>;
+        rel="first", <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=25>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3ac0c6bdcd4f2c7279a51a870c1caf6a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3c213ab4-2a91-4b71-af72-5ebbeb562ae0
+      X-Runtime:
+      - '0.037823'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"9c8e55c7-3aa3-4168-9f8a-ef89f8b16acf","references":["MR/EM2ZZ1"],"state":"canceled","required_material":{"amount":200,"description":"Performance
+        – NBR – medium rough – blue – Sheetfed Commercial/Sheetfed Packaging – 536
+        × 460 mm","environmental_certification":null,"unit":"piece","variant":{"id":"29d5e880-2a11-447f-80f4-ec3e35bbc7e5","type":"offset_printing_blanket","links":[{"rel":"self","href":"/api/v2/variants/29d5e880-2a11-447f-80f4-ec3e35bbc7e5"}]},"supplier":{"id":"929353fc-066c-42e9-bd7b-36b2eb2561f1","name":"Streb
+        AG","links":[{"rel":"self","href":"/api/v2/suppliers/streb"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-04","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":{"id":"29d787cf-ae07-4d89-bba8-1c02aa3a5cac","links":[{"rel":"self","href":"/api/v2/orders/29d787cf-ae07-4d89-bba8-1c02aa3a5cac"}]},"pricing":{"currency":"EUR","price":"2072.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":200,"order_quantity_in_base_unit":200},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":"2022-08-03T12:48:53.365Z","fulfilled_at":null,"canceled_at":"2022-08-03T12:58:04.209Z","created_at":"2022-08-03T12:48:38.095Z","updated_at":"2022-08-03T12:58:04.228Z"}]'
+  recorded_at: Wed, 03 Aug 2022 13:01:46 GMT
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/material_requirements/9c8e55c7-3aa3-4168-9f8a-ef89f8b16acf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 13:01:46 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c4f19b977af108759886975cad4b6d35"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d087d554-96d0-4e12-8439-c38e3abf5408
+      X-Runtime:
+      - '0.036866'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"9c8e55c7-3aa3-4168-9f8a-ef89f8b16acf","references":["MR/EM2ZZ1"],"state":"canceled","required_material":{"amount":200,"description":"Performance
+        – NBR – medium rough – blue – Sheetfed Commercial/Sheetfed Packaging – 536
+        × 460 mm","environmental_certification":null,"unit":"piece","variant":{"id":"29d5e880-2a11-447f-80f4-ec3e35bbc7e5","type":"offset_printing_blanket","links":[{"rel":"self","href":"/api/v2/variants/29d5e880-2a11-447f-80f4-ec3e35bbc7e5"}]},"supplier":{"id":"929353fc-066c-42e9-bd7b-36b2eb2561f1","name":"Streb
+        AG","links":[{"rel":"self","href":"/api/v2/suppliers/streb"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-04","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":{"id":"29d787cf-ae07-4d89-bba8-1c02aa3a5cac","links":[{"rel":"self","href":"/api/v2/orders/29d787cf-ae07-4d89-bba8-1c02aa3a5cac"}]},"pricing":{"currency":"EUR","price":"2072.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":200,"order_quantity_in_base_unit":200},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":"2022-08-03T12:48:53.365Z","fulfilled_at":null,"canceled_at":"2022-08-03T12:58:04.209Z","created_at":"2022-08-03T12:48:38.095Z","updated_at":"2022-08-03T12:58:04.228Z"}'
+  recorded_at: Wed, 03 Aug 2022 13:01:47 GMT
+- request:
+    method: patch
+    uri: https://procurement.zaikio.test/api/v2/material_requirements/9c8e55c7-3aa3-4168-9f8a-ef89f8b16acf/archive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 13:01:46 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2e57379b497114236794cfbf2020847a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 542879a0-66fd-4ef0-b23d-1038e993e453
+      X-Runtime:
+      - '0.069279'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":"9c8e55c7-3aa3-4168-9f8a-ef89f8b16acf","references":["MR/EM2ZZ1"],"state":"canceled","required_material":{"amount":200,"description":"Performance
+        – NBR – medium rough – blue – Sheetfed Commercial/Sheetfed Packaging – 536
+        × 460 mm","environmental_certification":null,"unit":"piece","variant":{"id":"29d5e880-2a11-447f-80f4-ec3e35bbc7e5","type":"offset_printing_blanket","links":[{"rel":"self","href":"/api/v2/variants/29d5e880-2a11-447f-80f4-ec3e35bbc7e5"}]},"supplier":{"id":"929353fc-066c-42e9-bd7b-36b2eb2561f1","name":"Streb
+        AG","links":[{"rel":"self","href":"/api/v2/suppliers/streb"}]},"sku_preference_ids":[]},"delivery":{"material_required_at":"2022-08-04","site":{"id":"97c0e43b-4750-47d4-9f0f-388652579d8c","name":"Jenni","headquarter":false,"links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/sites/97c0e43b-4750-47d4-9f0f-388652579d8c"}]}},"order":{"id":"29d787cf-ae07-4d89-bba8-1c02aa3a5cac","links":[{"rel":"self","href":"/api/v2/orders/29d787cf-ae07-4d89-bba8-1c02aa3a5cac"}]},"pricing":{"currency":"EUR","price":"2072.0","fees":"0.0","accuracy":"estimated","verified_at":null},"availability":{"delivery_date":null,"in_stock":null,"accuracy":"estimated","verified_at":null},"quantity":{"order_quantity_in_requested_unit":200,"order_quantity_in_base_unit":200},"job":{"anticipated_costs":null,"client":null,"description":null,"link":null,"reference":null},"creator":{"id":"383663bc-149a-5b76-b50d-ee039046c12e","full_name":"Frank
+        Gallikanokus","links":[{"rel":"self","href":"https://hub.sandbox.zaikio.com/api/v1/people/383663bc-149a-5b76-b50d-ee039046c12e"}]},"visible_in_web":true,"ordered_at":"2022-08-03T12:48:53.365Z","fulfilled_at":null,"canceled_at":"2022-08-03T12:58:04.209Z","created_at":"2022-08-03T12:48:38.095Z","updated_at":"2022-08-03T13:01:47.195Z"}'
+  recorded_at: Wed, 03 Aug 2022 13:01:47 GMT
+- request:
+    method: get
+    uri: https://procurement.zaikio.test/api/v2/material_requirements
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 13:01:46 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Link:
+      - <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=25>;
+        rel="first", <https://procurement.zaikio.test/api/v2/material_requirements?page=1&per_page=25>;
+        rel="last"
+      Current-Page:
+      - '1'
+      Total-Pages:
+      - '1'
+      Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e00ac683496567ddb2837f254b090394"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - de260c48-be37-41db-a7e2-f0dd9bda5a34
+      X-Runtime:
+      - '0.061658'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[]'
+  recorded_at: Wed, 03 Aug 2022 13:01:47 GMT
+recorded_with: VCR 6.0.0

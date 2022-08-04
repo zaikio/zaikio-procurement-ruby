@@ -2,7 +2,7 @@ require "test_helper"
 
 class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   def token
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkxMDksImV4cCI6MTY1Mjc4NTEwOSwiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uLzMwMTYwZGZhLTc0YjYtNGVhMS1iNTA0LWQyZDA2MzVhMGMwMiJ9.X_pVWyj_UNALc83CdH1wGabz_A96b9hhhrucoIg143Q" # rubocop:disable Layout/LineLength
+    "eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vYjE0NzVmNjUtMjM2Yy01OGI4LTk2ZTEtZTE3NzhiNDNiZWI3IiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkNzQ0MGZhZC1mMzhkLTRlNjEtOWFhZS1lMDMyOTY4MzM2NmQiLCJuYmYiOjE2NTk1MzA3MjksImV4cCI6MTY1OTUzNDMyOSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.PJn3bSr9TWfLfEAfOaNCll3zFJOM7uUnbwFRZQF3wcYUv4mctQRDIRLqqNVooAr3T2NeJWDgLotVQ1CyjxkxbNSlyBiy4Vl7CAqYp9jxpz7MvnabYqICclb0Og1hSytR7yTU8gfKec8tAcf7DfvCZd-aob6EyENUEsBqbHyac57W-q3tUSWGFGZAyeXRAR1QUGSSv66OSoXraPqHalfHqpqoC0zcc7Lz4nDAU2UFNBDpxpVBdMvlaDCU4PHcr3yCiYbzXyy1-SMiKW5U2rCWOi1n-s3jX-wLrUr4E6_o6DXHqPVhr_WRfhi80mwWZhgMZjG9qVMiRDkVo1Y1NaRDMg" # rubocop:disable Layout/LineLength
   end
 
   test "is a module" do
@@ -21,13 +21,24 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
     assert_equal :test, Zaikio::Procurement.configuration.environment
   end
 
+  test "fetching upcoming suppliers" do
+    VCR.use_cassette("upcoming_suppliers") do
+      Zaikio::Procurement.with_token(token) do
+        upcoming_suppliers = Zaikio::Procurement::Supplier.upcoming
+
+        upcoming_supplier = upcoming_suppliers.first
+        assert_equal "Awesome Upcoming Supplier", upcoming_supplier.name
+      end
+    end
+  end
+
   test "fetching suppliers" do
     VCR.use_cassette("suppliers") do
       Zaikio::Procurement.with_token(token) do
         suppliers = Zaikio::Procurement::Supplier.all
 
         supplier = suppliers.first
-        assert_equal "Bounty Soap Inc.", supplier.display_name
+        assert_equal "Awesome Supplier", supplier.name
       end
     end
   end
@@ -35,158 +46,88 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   test "fetch a specific supplier" do
     VCR.use_cassette("supplier") do
       Zaikio::Procurement.with_token(token) do
-        supplier = Zaikio::Procurement::Supplier.find("a8b99fd3-a790-4366-85b0-2df4af0ca000")
-        assert_equal "a8b99fd3-a790-4366-85b0-2df4af0ca000", supplier.id
+        supplier = Zaikio::Procurement::Supplier.find("b2a0f1ab-7610-451e-acc7-633284300521")
+        assert_equal "b2a0f1ab-7610-451e-acc7-633284300521", supplier.id
       end
     end
   end
 
-  test "fetching articles" do
-    VCR.use_cassette("articles") do
+  test "fetching sites" do
+    VCR.use_cassette("sites") do
       Zaikio::Procurement.with_token(token) do
-        articles = Zaikio::Procurement::Article.all
-        assert articles.any?
+        sites = Zaikio::Procurement::Site.all
+        assert sites.any?
       end
     end
   end
 
-  test "fetch a specific article" do
-    VCR.use_cassette("article") do
+  test "fetching orders" do
+    VCR.use_cassette("orders") do
       Zaikio::Procurement.with_token(token) do
-        article = Zaikio::Procurement::Article.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
-        assert_equal "7cbf51bd-35a8-47a1-84a2-57aa63140234", article.id
+        orders = Zaikio::Procurement::Order.all
+        assert orders.any?
       end
     end
   end
 
-  test "fetch articles by article type or supplier slug" do
-    VCR.use_cassette("articles_by_type_or_slug") do
+  test "fetching a specific order" do
+    VCR.use_cassette("order") do
       Zaikio::Procurement.with_token(token) do
-        articles = Zaikio::Procurement::Article.list_by_article_type_or_supplier_slug("sappi")
-        assert_equal "sappi", Zaikio::Procurement::Supplier.find(articles.first.supplier.id).slug
+        order = Zaikio::Procurement::Order.find("1abe8e70-44db-4fb3-beb4-05232bb71016")
+        assert_equal "1abe8e70-44db-4fb3-beb4-05232bb71016", order.id
       end
     end
   end
 
-  test "fetch articles by article type and supplier slug" do
-    VCR.use_cassette("articles_by_type_and_slug") do
+  test "create an order" do
+    VCR.use_cassette("create_order") do
       Zaikio::Procurement.with_token(token) do
-        articles = Zaikio::Procurement::Article.list_by_article_type_and_supplier_slug(
-          "substrate", "sappi"
-        )
+        order_data = {
+          material_requirement_ids: ["9f98e841-1502-4d7b-9b8a-0cf9b8072875"],
+          references: ["my order reference"],
+          copy_material_requirement_references_to_line_items: true
+        }
 
-        assert_equal "sappi", Zaikio::Procurement::Supplier.find(articles.first.supplier.id).slug
+        assert_difference "Zaikio::Procurement::Order.all.count" do
+          Zaikio::Procurement::Order.create(order_data)
+        end
       end
     end
   end
 
-  test "fetching variants form a specific article" do
-    VCR.use_cassette("variants") do
+  test "place a draft order" do
+    VCR.use_cassette("place_order") do
       Zaikio::Procurement.with_token(token) do
-        article = Zaikio::Procurement::Article.find("7cbf51bd-35a8-47a1-84a2-57aa63140234")
-        variants = article.variants
+        order = Zaikio::Procurement::Order.find("8eaeb37a-d7aa-424a-aac1-1ade4b4030e2")
+        order.place
 
-        assert variants.any?
-        assert_equal article.id, variants.first.article.id
+        order.reload
+        assert_equal "placed", order.state
       end
     end
   end
 
-  test "fetching a specific variant" do
-    VCR.use_cassette("variant") do
+  test "deleting a draft order" do
+    VCR.use_cassette("delete_order") do
       Zaikio::Procurement.with_token(token) do
-        variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
-        assert_equal "845a4d7e-db5a-46a6-9d30-bf2e884cb393", variant.id
+        order = Zaikio::Procurement::Order.find("071c2c7c-a182-42c3-8253-a530585d3266")
+        order.delete
+
+        assert_raises Zaikio::ResourceNotFound do
+          Zaikio::Procurement::Order.find("071c2c7c-a182-42c3-8253-a530585d3266")
+        end
       end
     end
   end
 
-  test "fetching skus form a specific variant" do
-    VCR.use_cassette("skus") do
+  test "cancel a placed order" do
+    VCR.use_cassette("cancel_order") do
       Zaikio::Procurement.with_token(token) do
-        variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
-        skus = variant.skus
+        order = Zaikio::Procurement::Order.find("3d36c6c5-b979-4073-8fcc-78a6cf1bc8bd")
+        order.cancel
 
-        assert skus.any?
-        assert_equal variant.id, skus.first.variant.id
-      end
-    end
-  end
-
-  test "fetching a specific sku" do
-    VCR.use_cassette("sku") do
-      Zaikio::Procurement.with_token(token) do
-        sku = Zaikio::Procurement::Sku.find("08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5")
-        assert_equal "08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5", sku.id
-      end
-    end
-  end
-
-  test "fetching prices form a specific sku" do
-    VCR.use_cassette("prices") do
-      Zaikio::Procurement.with_token(token) do
-        sku = Zaikio::Procurement::Sku.find("08a37cdf-7db7-4c6a-bfdb-4dfc1fb0a7f5")
-        prices = sku.prices
-
-        assert prices.any?
-      end
-    end
-  end
-
-  test "fetching a specific price" do
-    VCR.use_cassette("price") do
-      Zaikio::Procurement.with_token(token) do
-        price = Zaikio::Procurement::Price.find("1d996d17-88ef-4b5d-be96-6601061251a4")
-        assert_equal "1d996d17-88ef-4b5d-be96-6601061251a4", price.id
-      end
-    end
-  end
-
-  test "search all substrate variants" do
-    VCR.use_cassette("search_substrate_variants") do
-      Zaikio::Procurement.with_token(token) do
-        search = Zaikio::Procurement::SubstrateSearch.new("Magno", grain: "long", paper_weight: 80)
-
-        assert search.results.first.article.name.match?(/Magno/i)
-        assert_equal "long", search.results.first.grain
-        assert_equal 80, search.results.first.paper_weight
-
-        assert search.facets.present?
-      end
-    end
-  end
-
-  test "search all substrate variants from a specific supplier" do
-    VCR.use_cassette("search_substrate_variants_from_supplier") do
-      Zaikio::Procurement.with_token(token) do
-        search = Zaikio::Procurement::SubstrateSearch.new(
-          "Magno", grain: "long", paper_weight: 80, supplier_id: "a8b99fd3-a790-4366-85b0-2df4af0ca000"
-        )
-
-        assert search.results.first.article.name.match?(/Magno/i)
-        assert_equal "long", search.results.first.grain
-        assert_equal 80, search.results.first.paper_weight
-        assert_equal "a8b99fd3-a790-4366-85b0-2df4af0ca000", search.results.first.article.supplier.id
-
-        assert search.facets.present?
-      end
-    end
-  end
-
-  test "fetching contracts" do
-    VCR.use_cassette("contracts") do
-      Zaikio::Procurement.with_token(token) do
-        contracts = Zaikio::Procurement::Contract.all
-        assert contracts.any?
-      end
-    end
-  end
-
-  test "fetching a specific contract" do
-    VCR.use_cassette("contract") do
-      Zaikio::Procurement.with_token(token) do
-        contract = Zaikio::Procurement::Contract.find("fd677fc7-abd9-460c-b086-34de1a8349e8")
-        assert_equal "fd677fc7-abd9-460c-b086-34de1a8349e8", contract.id
+        order.reload
+        assert_equal "canceled_by_consumer", order.state
       end
     end
   end
@@ -209,197 +150,20 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
     end
   end
 
-  test "fetching sales groups" do
-    VCR.use_cassette("sales_groups") do
+  test "creating a contract request" do
+    VCR.use_cassette("create_contract_request") do
       Zaikio::Procurement.with_token(token) do
-        sales_groups = Zaikio::Procurement::SalesGroup.all
-        assert sales_groups.any?
-      end
-    end
-  end
-
-  test "fetching a specific sales group" do
-    VCR.use_cassette("sales_group") do
-      Zaikio::Procurement.with_token(token) do
-        sales_group = Zaikio::Procurement::SalesGroup.find("42dcbaf6-e557-4423-96bc-707ebbc223c0")
-        assert_equal "42dcbaf6-e557-4423-96bc-707ebbc223c0", sales_group.id
-      end
-    end
-  end
-
-  test "fetching a line item suggestion for a specific variant" do
-    VCR.use_cassette("line_item_suggestion") do
-      Zaikio::Procurement.with_token(token) do
-        variant = Zaikio::Procurement::Variant.find("845a4d7e-db5a-46a6-9d30-bf2e884cb393")
-        suggestion = variant.line_item_suggestion(amount: 10, unit: "sheet")
-        assert_equal "845a4d7e-db5a-46a6-9d30-bf2e884cb393",
-                     suggestion.flat_map { |h| h[:sku].values_at :variant_id }.join
-      end
-    end
-  end
-
-  test "fetching a line item suggestions for multiple variant from a specifi supplier" do
-    VCR.use_cassette("supplier_line_item_suggestions") do
-      Zaikio::Procurement.with_token(token) do
-        supplier = Zaikio::Procurement::Supplier.find("a8b99fd3-a790-4366-85b0-2df4af0ca000")
-        suggestion = supplier.line_item_suggestions(
-          variants: [
-            {
-              id: "0001b94e-4e87-4ee9-8b14-6ff9910b4f26",
-              amount: 2000,
-              exact_amount: false,
-              environmental_certification: "FSC Mix Credit",
-              unit: "sheet"
-            },
-            {
-              id: "10236394-ecd4-465b-ab72-0fbd79296e6a",
-              amount: 10,
-              exact_amount: false,
-              environmental_certification: "PEFC 100%",
-              unit: "sheet"
-            }
-          ]
-        )
-
-        assert_includes suggestion[:line_item_suggestions].flat_map { |h| h[:variant_id] },
-                        "0001b94e-4e87-4ee9-8b14-6ff9910b4f26"
-      end
-    end
-  end
-
-  test "fetching orders" do
-    VCR.use_cassette("orders") do
-      Zaikio::Procurement.with_token(token) do
-        orders = Zaikio::Procurement::Order.all
-        assert orders.any?
-      end
-    end
-  end
-
-  test "fetching a specific order" do
-    VCR.use_cassette("order") do
-      Zaikio::Procurement.with_token(token) do
-        order = Zaikio::Procurement::Order.find("a29f3c77-5e53-4658-a741-afd1824f4829")
-        assert_equal "a29f3c77-5e53-4658-a741-afd1824f4829", order.id
-      end
-    end
-  end
-
-  test "create an order" do
-    VCR.use_cassette("create_order") do
-      Zaikio::Procurement.with_token(token) do
-        order_data = {
-          contract_id: "fd677fc7-abd9-460c-b086-34de1a8349e8",
-          delivery_mode: "complete",
-          exclusive_sales_group_id: "42dcbaf6-e557-4423-96bc-707ebbc223c0",
-          references: ["CO/XXXXXX"],
-          state_event: "place",
-          deliveries_attributes: [
-            {
-              address_addressee: "Joey’s Print Ltd",
-              address_text: "Emmerich-Josef-Straße 1A, 55116 Mainz",
-              desired_delivery_date: 2.days.from_now,
-              references: ["D/XXXXXX"]
-            }
-          ],
-          order_line_items_attributes: [
-            {
-              sku_id: "26b3aadc-928f-4d1a-ba2d-13ac3c8f523d",
-              amount: 108_000
-            }
-          ]
-        }
-
-        assert_difference "Zaikio::Procurement::Order.all.count" do
-          Zaikio::Procurement::Order.create(order_data)
+        assert_difference "Zaikio::Procurement::ContractRequest.all.count" do
+          Zaikio::Procurement::ContractRequest.create(
+            supplier_id: "061c2b43-ae94-459d-8739-35b20684e47a",
+            customer_number: "1968353479",
+            contact_first_name: "Frank",
+            contact_last_name: "Gallikanokus",
+            contact_email: "fgalli@example.com",
+            contact_phone: "+3333333333333",
+            references: ["my reference"]
+          )
         end
-      end
-    end
-  end
-
-  test "fetching order line items for a specific order" do
-    VCR.use_cassette("order_line_items") do
-      Zaikio::Procurement.with_token(token) do
-        order = Zaikio::Procurement::Order.find("a29f3c77-5e53-4658-a741-afd1824f4829")
-        assert order.order_line_items.any?
-      end
-    end
-  end
-
-  test "fetching a specific order line item" do
-    VCR.use_cassette("order_line_item") do
-      Zaikio::Procurement.with_token(token) do
-        order_line_item = Zaikio::Procurement::OrderLineItem.find("42e5b736-a015-4b9f-a8e0-218e98e2c15f")
-        assert_equal "42e5b736-a015-4b9f-a8e0-218e98e2c15f", order_line_item.id
-      end
-    end
-  end
-
-  test "add order line item to an exisiting draft order" do
-    VCR.use_cassette("add_order_line_item") do
-      Zaikio::Procurement.with_token(token) do
-        order = Zaikio::Procurement::Order.find("86b4a0c5-6d54-4702-a059-da258643f260")
-        assert_difference "order.order_line_items.count" do
-          order.order_line_items.create(sku_id: "6535eeb0-45c2-4c63-8cb9-4814562bb875", amount: 68_000)
-        end
-      end
-    end
-  end
-
-  test "update a specific order line item" do
-    VCR.use_cassette("update_order_line_item") do
-      Zaikio::Procurement.with_token(token) do
-        order_line_item = Zaikio::Procurement::OrderLineItem.find("058a5513-925e-4d0c-923d-fa1ed4bfb3ce")
-        order_line_item.update(amount: 69_000)
-        assert_equal 69_000, order_line_item.amount
-      end
-    end
-  end
-
-  test "delete a specific order line item" do
-    VCR.use_cassette("delete_order_line_item") do
-      Zaikio::Procurement.with_token(token) do
-        order_line_item = Zaikio::Procurement::OrderLineItem.find("2f5a99c2-9734-4aac-9cee-911b061d3a5a")
-        assert_difference "order_line_item.order.order_line_items.count", -1 do
-          order_line_item.delete
-        end
-      end
-    end
-  end
-
-  test "fetching deliveries for a specific order" do
-    VCR.use_cassette("deliveries") do
-      Zaikio::Procurement.with_token(token) do
-        order = Zaikio::Procurement::Order.find("a29f3c77-5e53-4658-a741-afd1824f4829")
-        assert order.deliveries.any?
-      end
-    end
-  end
-
-  test "fetching a specific delivery and address" do
-    VCR.use_cassette("delivery") do
-      Zaikio::Procurement.with_token(token) do
-        delivery = Zaikio::Procurement::Delivery.find("46a67d80-ff21-403a-9cb3-5b3a9464ae0f")
-        assert_equal "46a67d80-ff21-403a-9cb3-5b3a9464ae0f", delivery.id
-        assert_equal "John Doe", delivery.address.addressee
-      end
-    end
-  end
-
-  test "fetching delivery line items for a specific delivery" do
-    VCR.use_cassette("delivery_line_items") do
-      Zaikio::Procurement.with_token(token) do
-        delivery = Zaikio::Procurement::Delivery.find("46a67d80-ff21-403a-9cb3-5b3a9464ae0f")
-        assert delivery.delivery_line_items.any?
-      end
-    end
-  end
-
-  test "fetching a specific delivery line item" do
-    VCR.use_cassette("delivery_line_item") do
-      Zaikio::Procurement.with_token(token) do
-        delivery_line_item = Zaikio::Procurement::DeliveryLineItem.find("75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0")
-        assert_equal "75bcb56f-63c2-4ff3-9374-2d0f9c29f0e0", delivery_line_item.id
       end
     end
   end
@@ -416,8 +180,42 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
   test "fetching a specific material requirement" do
     VCR.use_cassette("material_requirement") do
       Zaikio::Procurement.with_token(token) do
-        material_requirement = Zaikio::Procurement::MaterialRequirement.find("4f23019a-b856-4330-9feb-962d10f53125")
-        assert_equal "4f23019a-b856-4330-9feb-962d10f53125", material_requirement.id
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("92e177a8-76b8-4935-b8f9-666782b9bc57")
+        assert_equal "92e177a8-76b8-4935-b8f9-666782b9bc57", material_requirement.id
+      end
+    end
+  end
+
+  test "updating a specific material requirement" do
+    VCR.use_cassette("update_material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("dbbeb282-1dca-4cf6-bbd6-0c176190c8b6")
+        material_requirement.update(amount: 200)
+
+        assert_equal 200, material_requirement.amount
+      end
+    end
+  end
+
+  test "archive a canceled material requirement" do
+    VCR.use_cassette("archive_material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        assert_difference "Zaikio::Procurement::MaterialRequirement.all.count", -1 do
+          material_requirement = Zaikio::Procurement::MaterialRequirement.find("9c8e55c7-3aa3-4168-9f8a-ef89f8b16acf")
+          material_requirement.archive
+        end
+      end
+    end
+  end
+
+  test "refresh a material requirement" do
+    VCR.use_cassette("refresh_material_requirement") do
+      Zaikio::Procurement.with_token(token) do
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("848e864a-d883-4195-9cbb-22f4161969e1")
+        material_requirement.refresh
+
+        material_requirement.reload
+        assert_equal "in_verification", material_requirement.pricing.accuracy
       end
     end
   end
@@ -426,9 +224,16 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
     VCR.use_cassette("create_material_requirement") do
       Zaikio::Procurement.with_token(token) do
         material_requirement_data = {
-          amount: 100,
-          unit: "sheet",
-          description: "Custom Material Requirement"
+          amount: 200,
+          job_client: "Awesome Client",
+          job_description: "Awesome print product",
+          job_link: "https://www.example.com",
+          job_reference: "my job reference",
+          material_required_at: "2022-08-03",
+          supplier_id: "b2a0f1ab-7610-451e-acc7-633284300521",
+          variant_id: "31924842-b38b-47b2-90b0-68f8f42f37d6",
+          references: ["my requirement reference"],
+          visible_in_web: true
         }
 
         assert_difference "Zaikio::Procurement::MaterialRequirement.all.count" do
@@ -438,40 +243,52 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
     end
   end
 
-  test "updating a specific material requirement" do
-    VCR.use_cassette("update_material_requirement") do
-      Zaikio::Procurement.with_token(token) do
-        material_requirement = Zaikio::Procurement::MaterialRequirement.find("4f23019a-b856-4330-9feb-962d10f53125")
-        material_requirement.update(amount: 1)
-
-        assert_equal 1, material_requirement.amount
-      end
-    end
-  end
-
   test "deleting a specific material requirement" do
     VCR.use_cassette("delete_material_requirement") do
       Zaikio::Procurement.with_token(token) do
-        material_requirement = Zaikio::Procurement::MaterialRequirement.find("9f22a39c-6d86-4077-94d4-58b528ce6f07")
+        material_requirement = Zaikio::Procurement::MaterialRequirement.find("92e177a8-76b8-4935-b8f9-666782b9bc57")
         material_requirement.delete
 
         assert_raises Zaikio::ResourceNotFound do
-          Zaikio::Procurement::MaterialRequirement.find("9f22a39c-6d86-4077-94d4-58b528ce6f07")
+          Zaikio::Procurement::MaterialRequirement.find("92e177a8-76b8-4935-b8f9-666782b9bc57")
         end
       end
     end
   end
 
-  test "order a specific material requirement" do
-    VCR.use_cassette("order_material_requirement") do
+  test "search variants" do
+    VCR.use_cassette("search_variants") do
       Zaikio::Procurement.with_token(token) do
-        material_requirement = Zaikio::Procurement::MaterialRequirement.find("55ffe17b-427f-4797-ac9c-5e28718d0e04")
-        material_requirement.order(purchaser_id: "383663bc-149a-5b76-b50d-ee039046c12e")
+        search = Zaikio::Procurement::VariantSearch.new(
+          type: "sheet_substrate", query: "Soap",
+          grain: "short", paper_weight: 80
+        )
 
-        material_requirement.reload
+        assert search.results.first.article.name.match?(/Soap/i)
+        assert search.available_filters.present?
+        assert_equal "short", search.results.first.grain
+        assert_equal 80, search.results.first.paper_weight
+        assert_equal "b1475f65-236c-58b8-96e1-e1778b43beb7", search.results.first.skus.first.suppliers.first.id
+      end
+    end
+  end
 
-        assert_equal "ordered", material_requirement.state
-        assert material_requirement.order_line_items.any?
+  test "fetching a specific variant" do
+    VCR.use_cassette("variant") do
+      Zaikio::Procurement.with_token(token) do
+        variant = Zaikio::Procurement::Variant.find("bbc0a889-4d54-481e-a3dd-0ad7a52d0243")
+        assert_equal "bbc0a889-4d54-481e-a3dd-0ad7a52d0243", variant.id
+      end
+    end
+  end
+
+  test "fetching skus form a specific variant" do
+    VCR.use_cassette("skus") do
+      Zaikio::Procurement.with_token(token) do
+        variant = Zaikio::Procurement::Variant.find("bbc0a889-4d54-481e-a3dd-0ad7a52d0243")
+        skus = variant.skus
+
+        assert skus.any?
       end
     end
   end

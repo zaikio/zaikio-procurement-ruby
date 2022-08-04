@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://procurement.zaikio.test/consumers/api/v1/suppliers/a8b99fd3-a790-4366-85b0-2df4af0ca000
+    uri: https://procurement.zaikio.test/api/v2/suppliers/b2a0f1ab-7610-451e-acc7-633284300521
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.10.0
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJaQUkiLCJpYXQiOjE2MjEyNDkxMDksImV4cCI6MTY1Mjc4NTEwOSwiYXVkIjoia2V5bGluZV9jbGFzc2ljIiwic3ViIjoiT3JnYW5pemF0aW9uLzMwMTYwZGZhLTc0YjYtNGVhMS1iNTA0LWQyZDA2MzVhMGMwMiJ9.X_pVWyj_UNALc83CdH1wGabz_A96b9hhhrucoIg143Q
+      - Bearer eyJraWQiOiI0ZmZhNTc5MmQwMTJlMjY0YTEzODk5ZmZkYTA3YmVhYzkwOTA4NjRhNmY4MWU5YjQxMGNkOTFkY2UxOTNlODg3IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJaQUkiLCJzdWIiOiJPcmdhbml6YXRpb24vNWU0ODM4M2QtYjI3Ni00ZDcwLWI2OTAtOWUyMDMyZTNjZDNhIiwiYXVkIjpbImtleWxpbmVfY2xhc3NpYyJdLCJqdGkiOiJkODM1YzkxNy04ZTA0LTQyMmUtYTVmOC0yMGUxOTAwNzMwZDIiLCJuYmYiOjE2NTk0NDAwNDEsImV4cCI6MTY1OTQ0MzY0MSwiamt1IjoiaHR0cHM6Ly9odWIuc2FuZGJveC56YWlraW8uY29tL2FwaS92MS9qd3RfcHVibGljX2tleXMiLCJzY29wZSI6WyJkaXJlY3Rvcnkub3JnYW5pemF0aW9uLnIiLCJkaXJlY3Rvcnkuc2l0ZXMucnciLCJwcm9jdXJlbWVudF9jb25zdW1lci5hcnRpY2xlX2Jhc2UuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNhdGFsb2cuciIsInByb2N1cmVtZW50X2NvbnN1bWVyLmNvbnRyYWN0cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm1hdGVyaWFsX3JlcXVpcmVtZW50cy5ydyIsInByb2N1cmVtZW50X2NvbnN1bWVyLm9yZGVycy5ydyIsIndhcmVob3VzZS5maW5pc2hlZF9nb29kc19jYWxsX29mZnMuciIsIndhcmVob3VzZS5za3VzLnIiXX0.ouLARtIqZ6DUTaSEBW0IwXeXh6FTWi8GNbr91w7hA4wAB569d0xrVHppEC_2wzXCz6l2R1ZdntJQ-1wp6-UIDJLEM9oBMbq0KLoByHblqu_clKZ3yNM3gbEBa6V7927d-7nGGq6nudTXw08XKX-8_v_QKKSblwRRWikIYx8x_-JG1jehrujX5Wv295ZSaYZDAeZuEt9ZFuk0kFsWZryCEgZ0OQYJ6-4BkxyTjncXu15321SFPcWkejMilFSg-CQje1TJ28e1is7qs2YvYyT3OhCh3nmReAbflB575wuU0uMLyLzQCzv60YIbMHy6Qi-yVuEIgFESfDfDeVUa8Rt-gw
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,13 +23,13 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 26 Jan 2021 10:37:04 GMT
+      - Tue, 02 Aug 2022 11:34:57 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
-      - 1; mode=block
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
@@ -41,23 +41,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5adda9aeb711e5127c24d03715419f9b"
+      - W/"e7fbabb5ce5ca70b33a72d66031d3e64"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 207286cc-9bec-4a35-ae83-cd056e122d67
+      - bd6b1510-ac6e-427a-bb63-15c4a325f728
       X-Runtime:
-      - '0.016731'
+      - '0.020190'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
-      Vary:
-      - Origin
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":"a8b99fd3-a790-4366-85b0-2df4af0ca000","cancelation_policy":"before_production","display_name":"Sappi","slug":"sappi","supports_split_delivery":false,"created_at":"2020-04-28T13:16:17.689Z","updated_at":"2020-12-02T13:33:12.326Z"}'
-  recorded_at: Tue, 26 Jan 2021 10:37:04 GMT
+      string: '{"id":"b2a0f1ab-7610-451e-acc7-633284300521","slug":"awesome-supplier","name":"Awesome
+        Supplier","connected":true,"currency":"EUR","customer_number":"1968353479","prices_updated_at":null,"additional_pricing_agreements":[],"article_types":["ink","laminating_foil","offset_printing_blanket","ring_binding","sheet_substrate","sleeking_foil","web_substrate","blanket_print","ink_offset","paper_proofing","paper_sheetfed"],"automatically_accept_contract_requests":false,"brand_color":null,"cancelation_policy":"before_production","logo_url":"https://hub.sandbox.zaikio.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxrWW1NNE1tUTRaQzB6T0RrNUxUUmhNell0T0RsbU5pMW1NRGRoWXpWbE16QTVPREVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--1406a6416b9267bad65c33bc9a73a89f9d5d58a2/dd5835d43ccc41fcb1b2a258aad1914a.png","maximum_days_until_delivery":null,"minimum_days_before_delivery":null,"supports_split_delivery":true,"maximum_order_size":null,"created_at":"2022-03-24T09:15:55.652Z","updated_at":"2022-03-24T09:19:04.084Z"}'
+  recorded_at: Tue, 02 Aug 2022 11:34:57 GMT
 recorded_with: VCR 6.0.0
