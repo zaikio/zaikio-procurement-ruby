@@ -6,13 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.0.2] - 2022-08-05
 ### Changed
-- **Removed** `Zaikio::Procurement::Supplier#create_contract_request(...)` in favor of `Zaikio::Procurement::Supplier#contract_requests.create(...)` to get errors in the same way as the ActiveModel::Errors
+ - **Removed** `Zaikio::Procurement::Supplier#create_contract_request(...)` in favor of `Zaikio::Procurement::Supplier#contract_requests.create(...)` to get errors in the same way as the ActiveModel::Errors
+## [2.0.1] - 2022-08-04
 ### Added
 - `Zaikio::Procurement::Supplier#create_contract_request(...)` which is closer to the actual API specification
 ### Removed
 - `Zaikio::Procurement::ContractRequest.create(supplier_id: ...)`
-
 ## [2.0.0] - 2022-08-04
   * **BREAKING CHANGE:** Support for Consumer API v1(legacy) and Supplier API has been completely removed.
   For the the supplier API, you have to stick with **[v0.4.1](  https://github.com/zaikio/zaikio-procurement-ruby/tree/v0.4.1)**
@@ -63,7 +64,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added support for material requirements
 
-[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.1..HEAD
+[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.2..HEAD
+[2.0.2]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.1..v2.0.2
 [2.0.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.0..v2.0.1
 [2.0.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.4.1..v2.0.0
 [0.4.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.4.0..v0.4.1
