@@ -164,7 +164,7 @@ class Zaikio::ProcurementConsumerTest < ActiveSupport::TestCase
         }
 
         assert_difference "Zaikio::Procurement::ContractRequest.all.count" do
-          supplier.create_contract_request(contract_request_data)
+          supplier.contract_requests.create(contract_request_data)
         end
       end
     end

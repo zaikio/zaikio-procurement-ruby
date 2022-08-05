@@ -70,7 +70,7 @@ Zaikio::Procurement.with_token(token) do
 
   # Create a ContractRequest
   supplier = Zaikio::Procurement::Supplier.find("5fd82941-ba2f-4d0b-971a-7050fbbafcef")
-  supplier.create_contract_request(
+  supplier.contract_requests.create(
     customer_number: "1968353479",
     contact_first_name: "Frank",
     contact_last_name: "Gallikanokus",
