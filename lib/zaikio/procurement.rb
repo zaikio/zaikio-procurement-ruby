@@ -2,7 +2,6 @@ require "faraday"
 require "spyke"
 require "zaikio-client-helpers"
 require "zaikio/procurement/configuration"
-require "zaikio/procurement/authorization_middleware"
 
 # Models
 require "zaikio/procurement/base"
@@ -40,24 +39,12 @@ module Zaikio
         Base.connection = create_connection
       end
 
-      def with_token(token)
-        original_token = AuthorizationMiddleware.token
-        AuthorizationMiddleware.token = token
-        yield
-      ensure
-        AuthorizationMiddleware.token = original_token
+      def with_token(token, &block)
+        Zaikio::Client.with_token(token, &block)
       end
 
       def create_connection
-        self.connection = Faraday.new(url: configuration.host,
-                                      ssl: { verify: configuration.environment != :test }) do |c|
-          c.request     :json
-          c.response    :logger, configuration&.logger, headers: false
-          c.use         Zaikio::Client::Helpers::Pagination::FaradayMiddleware
-          c.use         Zaikio::Client::Helpers::JSONParser
-          c.use         AuthorizationMiddleware
-          c.adapter     Faraday.default_adapter
-        end
+        self.connection = Zaikio::Client.create_connection(configuration)
       end
     end
   end
