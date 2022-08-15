@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.1.0] - 2022-08-15
+
+- Reuse client helpers to enable `Zaikio::Client.with_token(...)`
+
+
 ## [2.0.2] - 2022-08-05
 ### Changed
  - **Removed** `Zaikio::Procurement::Supplier#create_contract_request(...)` in favor of `Zaikio::Procurement::Supplier#contract_requests.create(...)` to get errors in the same way as the ActiveModel::Errors
@@ -64,7 +70,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added support for material requirements
 
-[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.2..HEAD
+[Unreleased]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.1.0..HEAD
+[2.1.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.2..v2.1.0
 [2.0.2]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.1..v2.0.2
 [2.0.1]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v2.0.0..v2.0.1
 [2.0.0]: https://github.com/zaikio/zaikio-procurement-ruby/compare/v0.4.1..v2.0.0
