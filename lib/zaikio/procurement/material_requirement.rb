@@ -17,6 +17,7 @@ module Zaikio
       has_one :quantity, class_name: "Zaikio::Procurement::Quantity", uri: nil
       has_one :job, class_name: "Zaikio::Procurement::Job", uri: nil
       has_one :creator, class_name: "Zaikio::Procurement::Person", uri: nil
+      has_many :line_items, class_name: "Zaikio::Procurement::LineItem", uri: nil
 
       def archive
         Zaikio::Procurement::MaterialRequirement.new(

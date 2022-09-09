@@ -6,12 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-
+### Changed
+ - Updated `MaterialRequirement` associations
 ## [2.1.0] - 2022-08-15
-
 - Reuse client helpers to enable `Zaikio::Client.with_token(...)`
-
-
 ## [2.0.2] - 2022-08-05
 ### Changed
  - **Removed** `Zaikio::Procurement::Supplier#create_contract_request(...)` in favor of `Zaikio::Procurement::Supplier#contract_requests.create(...)` to get errors in the same way as the ActiveModel::Errors
