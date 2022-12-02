@@ -7,7 +7,8 @@ module Zaikio
       def self.types
         %w[carbonless_copy_paper coating coating_plate envelope ink laminating_foil
            offset_printing_blanket plate ring_binding self_adhesive sheet_substrate
-           sleeking_foil specialized_printing_blanket web_substrate].freeze
+           sleeking_foil specialized_printing_blanket web_substrate paper_proofing
+           paper_sheetfed paper_webfed].freeze
       end
 
       # Attributes
