@@ -5,16 +5,9 @@ module Zaikio
         @type         = type.split.join
         @query        = query
         @filters      = filters
-        @valid_types  = Zaikio::Procurement::Variant.types + ["all"]
 
         unless @filters.respond_to?(:stringify_keys)
           raise ArgumentError, "When using additional search parameters, you must pass a hash as an argument."
-        end
-
-        unless @type.split(",").all? { |t| @valid_types.include?(t) }
-          raise ArgumentError,
-                "When using the type parameter, you must pass one or more of \
-                 the following types: #{@valid_types.join(', ')}."
         end
 
         @response = Zaikio::Procurement::Base.with(path).get

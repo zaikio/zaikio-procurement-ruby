@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Removed article type validation
+
 ## [2.1.3] - 2022-12-02
 
 - Added missing article types: `paper_proofing`, `paper_sheetfed`, `paper_webfed`
