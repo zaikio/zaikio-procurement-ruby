@@ -3,14 +3,6 @@ module Zaikio
     class Variant < Base
       include_root_in_json :variant
 
-      # Constants
-      def self.types
-        %w[carbonless_copy_paper coating coating_plate envelope ink laminating_foil
-           offset_printing_blanket plate ring_binding self_adhesive sheet_substrate
-           sleeking_foil specialized_printing_blanket web_substrate paper_proofing
-           paper_sheetfed paper_webfed].freeze
-      end
-
       # Attributes
       attributes :type, :summary, :global_trade_item_number, :brightness, :category, :color,
                  :dimensions_unit, :form, :grain, :height, :optical_brightness_agent,
